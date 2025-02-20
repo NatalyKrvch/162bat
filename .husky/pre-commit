@@ -1,0 +1,2 @@
+npm run lint || { echo "ESLint errors detected. Aborting commit."; exit 1; }
+npm run format || { echo "Prettier errors detected. Aborting commit."; exit 1; }
