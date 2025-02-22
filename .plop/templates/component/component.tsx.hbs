@@ -1,0 +1,21 @@
+{{#if hasProps}}
+import { type FC } from 'react'
+
+interface Props {
+
+}
+
+const {{properCase name}}: FC<Props> = ({}) => {
+  return (
+    <></>
+  ) 
+}
+{{else}}
+const {{properCase name}} = () => {
+  return (
+    <></>
+  ) 
+}
+{{/if}}
+
+export default {{properCase name}}

@@ -11,7 +11,8 @@
     "prepare": "husky",
     "test": "jest --passWithNoTests",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "plop": "plop --plopfile .plop/plopfile.js"
   },
   "dependencies": {
     "next": "15.1.7",
@@ -43,6 +44,7 @@
     "husky": "^9.1.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "plop": "^4.0.1",
     "prettier": "^3.5.1",
     "storybook": "^8.5.8",
     "ts-node": "^10.9.2",

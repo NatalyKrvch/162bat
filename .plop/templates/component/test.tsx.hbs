@@ -1,0 +1,9 @@
+import { render } from '@testing-library/react'
+import {{properCase name}} from '../{{properCase name}}'
+
+describe('{{titleCase name}}', () => {
+  it('should match snapshot', () => {
+    const { container } = render(<{{properCase name}} />)
+    expect(container).toMatchSnapshot()
+  })
+})
