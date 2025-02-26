@@ -30,8 +30,19 @@ module.exports = plop => {
         path: '../src/components/{{properCase name}}/__test__/{{properCase name}}.test.tsx',
         templateFile: 'templates/component/test.tsx.hbs',
       },
+      {
+        type: 'add',
+        path: '../src/components/{{properCase name}}/index.ts',
+        templateFile: 'templates/component/index.ts.hbs',
+      },
+      {
+        type: 'add',
+        path: '../src/components/{{properCase name}}/types.ts',
+        templateFile: 'templates/component/types.ts.hbs',
+        skip: data => (!data.hasProps ? 'Skipping types file' : undefined),
+      },
     ],
-  })
+  });
 
   plop.setGenerator('page', {
     description: 'Create a page',
@@ -49,5 +60,5 @@ module.exports = plop => {
         templateFile: 'templates/page/page.tsx.hbs',
       },
     ],
-  })
-}
+  });
+};
