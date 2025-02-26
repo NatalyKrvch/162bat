@@ -43,22 +43,4 @@ module.exports = plop => {
       },
     ],
   });
-
-  plop.setGenerator('page', {
-    description: 'Create a page',
-    prompts: [
-      {
-        type: 'input',
-        name: 'name',
-        message: 'Page name:',
-      },
-    ],
-    actions: [
-      {
-        type: 'add',
-        path: '../src/app/{{dashCase name}}/page.tsx',
-        templateFile: 'templates/page/page.tsx.hbs',
-      },
-    ],
-  });
 };
