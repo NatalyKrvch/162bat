@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@theme {
+  /*Colors */
+  --color-main: #6a994e;
+
+  --colo-bg-primary: #151312;
+  --color-bg-secondary: #181818;
+
+  --color-stroke-focused: #f845fc;
+  --color-stroke-grey: #bdbcdb;
+
+  --color-text-white: #ffffff;
+  --color-text-green: #6a994e;
+  --color-text-disabled: #212121;
+  --color-text-validation: #605dec;
+  --color-text-error: #f93232;
+  --color-text-success: #439f6e;
+
+  --color-btn-bg: #6a994e;
+  --color-btn-text: #ffffff;
+  --color-btn-bg-hover: #a7c957;
+  --color-btn-text-hover: #ffffff;
+  --color-btn-bg-click: #386641;
+  --color-btn-text-click: #ffffff;
+  --color-btn-bg-disabled: #f4f3fe;
+  --color-btn-text-disabled: #c5c0db;
+
+  --color-btn-text-secondary: #ffffff;
+  --color-btn-text-hover-secondary: #a7c957;
+  --color-btn-text-click-secondary: #605dec;
+  --color-btn-text-disabled-secondary: #c5c0db;
+
+  --color-form-color: #1e1e1e;
+  --color-description: #7b7b7b;
+  --color-input-text: #212121;
+  --color-input-stroke-hover: #3d3d3d;
+  --color-input-stroke-focused: #b5cca7;
+  --color-input-text-disabled: #a5a5a7;
+  --color-input-stroke-valid: #439f6e;
+  --color-input-stroke-error: #ffd8d8;
+
+  /*Typography */
+  --font-sans: 'Nunito Sans', sans-serif;
+
+  --text-xs: [ '12px', {lineHeight: '120%'}];
+  --text-sm: [ '14px', {lineHeight: '120%'}];
+  --text-base: [ '16px', {lineHeight: '120%'}];
+  --text-md: [ '18px', {lineHeight: '120%'}];
+  --text-lg: [ '20px', {lineHeight: '120%'}];
+  --text-xl: [ '24px', {lineHeight: '120%'}];
+  --text-2xl: [ '32px', {lineHeight: '120%'}];
+  --text-3xl: [ '48px', {lineHeight: '110%'}];
+  --text-4xl: [ '56px', {lineHeight: '110%'}];
+}
