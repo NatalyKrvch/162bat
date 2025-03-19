@@ -50,6 +50,7 @@
     "plop": "^4.0.1",
     "postcss": "^8.5.3",
     "prettier": "^3.5.1",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "storybook": "^8.5.8",
     "tailwindcss": "^4.0.14",
     "ts-node": "^10.9.2",
