@@ -12,5 +12,6 @@
   "jsxSingleQuote": false,
   "quoteProps": "as-needed",
   "endOfLine": "lf",
-  "insertFinalNewline": true
+  "insertFinalNewline": true,
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
