@@ -4,7 +4,7 @@
   /*Colors */
   --color-main: #6a994e;
 
-  --colo-bg-primary: #151312;
+  --color-bg-primary: #151312;
   --color-bg-secondary: #181818;
 
   --color-stroke-focused: #f845fc;
@@ -13,7 +13,7 @@
   --color-text-white: #ffffff;
   --color-text-green: #6a994e;
   --color-text-disabled: #212121;
-  --color-text-validation: #605dec;
+  --color-text-validation: #386641;
   --color-text-error: #f93232;
   --color-text-success: #439f6e;
 
@@ -28,7 +28,7 @@
 
   --color-btn-text-secondary: #ffffff;
   --color-btn-text-hover-secondary: #a7c957;
-  --color-btn-text-click-secondary: #605dec;
+  --color-btn-text-click-secondary: #386641;
   --color-btn-text-disabled-secondary: #c5c0db;
 
   --color-form-color: #1e1e1e;
@@ -42,14 +42,10 @@
 
   /*Typography */
   --font-sans: 'Nunito Sans', sans-serif;
+}
 
-  --text-xs: [ '12px', {lineHeight: '120%'}];
-  --text-sm: [ '14px', {lineHeight: '120%'}];
-  --text-base: [ '16px', {lineHeight: '120%'}];
-  --text-md: [ '18px', {lineHeight: '120%'}];
-  --text-lg: [ '20px', {lineHeight: '120%'}];
-  --text-xl: [ '24px', {lineHeight: '120%'}];
-  --text-2xl: [ '32px', {lineHeight: '120%'}];
-  --text-3xl: [ '48px', {lineHeight: '110%'}];
-  --text-4xl: [ '56px', {lineHeight: '110%'}];
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-white);
 }
