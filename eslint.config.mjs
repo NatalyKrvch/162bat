@@ -19,6 +19,19 @@ const eslintConfig = [
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
     },
+    settings: {
+      'import/resolver': {
+        alias: {
+          map: [
+            ['@', './src'],
+            ['@components', './src/components'],
+            ['@modules', './src/modules'],
+            ['@style', './src/style'],
+          ],
+          extensions: ['.js', '.jsx', '.ts', '.tsx', '.css'],
+        },
+      },
+    },
   }),
 ];
 
