@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InternalLink Component applies hover and active styles correctly 1`] = `
+<div>
+  <a
+    class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary text-base/4 sm:text-xl/5 custom-class"
+    data-testid="internal-link"
+    href="/test-page"
+    title="Test Link"
+  />
+</div>
+`;
+
+exports[`InternalLink Component matches snapshot 1`] = `
+<div>
+  <a
+    class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary text-base/4 sm:text-xl/5 custom-class"
+    data-testid="internal-link"
+    href="/test-page"
+    title="Test Link"
+  />
+</div>
+`;
+
+exports[`InternalLink Component renders the link with correct text and href 1`] = `
+<div>
+  <a
+    class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary text-base/4 sm:text-xl/5 custom-class"
+    data-testid="internal-link"
+    href="/test-page"
+    title="Test Link"
+  />
+</div>
+`;
