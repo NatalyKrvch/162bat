@@ -1,7 +1,8 @@
 import '@testing-library/jest-dom';
 
-import { INTERNAL_LINK_TEST_ID } from '@components/testIds';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+
+import { INTERNAL_LINK_TEST_ID } from '@/lib/testIds';
 
 import InternalLink from '../InternalLink';
 import { InternalLinkProps } from '../types';
@@ -39,20 +40,6 @@ describe('InternalLink Component', () => {
     expect(linkElement).toBeInTheDocument();
     expect(linkElement).toHaveAttribute('href', '/test-page');
     expect(linkElement).toHaveClass('custom-class');
-    expect(container).toMatchSnapshot();
-  });
-
-  it('applies hover and active styles correctly', () => {
-    const { container } = render(<InternalLink {...defaultProps} />);
-
-    const linkElement = screen.getByTestId(INTERNAL_LINK_TEST_ID);
-
-    fireEvent.mouseEnter(linkElement);
-    expect(linkElement).toHaveClass('hover:text-btn-text-hover-secondary');
-
-    fireEvent.mouseDown(linkElement);
-    expect(linkElement).toHaveClass('active:text-btn-text-click-secondary');
-
     expect(container).toMatchSnapshot();
   });
 

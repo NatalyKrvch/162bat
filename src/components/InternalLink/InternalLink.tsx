@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { type PropsWithChildren } from 'react';
 
-import { INTERNAL_LINK_TEST_ID } from '../testIds';
+import { INTERNAL_LINK_TEST_ID } from '@/lib/testIds';
+
 import { InternalLinkProps } from './types';
 
 const InternalLink = ({
@@ -12,9 +13,10 @@ const InternalLink = ({
 }: PropsWithChildren<InternalLinkProps>) => {
   return (
     <Link
+      prefetch
       href={href}
       title={title}
-      className={`hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary text-base/4 sm:text-xl/5 ${className || ''}`}
+      className={className}
       data-testid={INTERNAL_LINK_TEST_ID}
     >
       {children}
