@@ -18,7 +18,8 @@
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@modules/*": ["src/modules/*"],
-      "@style/*": ["src/style/*"]
+      "@style/*": ["src/style/*"],
+      "@lib/*": ["src/lib/*"]
     },
     "types": ["jest", "@testing-library/jest-dom"],
     "plugins": [

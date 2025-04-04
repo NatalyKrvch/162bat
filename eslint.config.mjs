@@ -27,6 +27,7 @@ const eslintConfig = [
             ['@components', './src/components'],
             ['@modules', './src/modules'],
             ['@style', './src/style'],
+            ['@lib', './src/lib'],
           ],
           extensions: ['.js', '.jsx', '.ts', '.tsx', '.css'],
         },
