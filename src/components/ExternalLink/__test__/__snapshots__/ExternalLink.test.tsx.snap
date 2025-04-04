@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExternalLink Component applies "target" and "rel" attributes correctly for external links 1`] = `
+<div>
+  <a
+    class="custom-class"
+    data-testid="external-link"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Test External Link"
+  />
+</div>
+`;
+
+exports[`ExternalLink Component renders children correctly 1`] = `
+<div>
+  <a
+    class="custom-class"
+    data-testid="external-link"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Test External Link"
+  >
+    <div
+      data-testid="child"
+    >
+      Test Child
+    </div>
+  </a>
+</div>
+`;
+
+exports[`ExternalLink Component renders the link with correct text and href 1`] = `
+<div>
+  <a
+    class="custom-class"
+    data-testid="external-link"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Test External Link"
+  />
+</div>
+`;
