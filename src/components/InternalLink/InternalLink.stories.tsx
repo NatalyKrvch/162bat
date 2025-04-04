@@ -24,7 +24,9 @@ export const Default: StoryObj = {
   args: {
     title: 'Головна',
     href: '/home',
-    className: '',
+    className:
+      'hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary text-base/4 sm:text-xl/5',
+    children: 'Головна',
   },
 };
 
@@ -32,6 +34,8 @@ export const Underlined: StoryObj = {
   args: {
     title: 'Читати повністю',
     href: '/history_of_the_batalion',
-    className: 'underline',
+    className:
+      'underline hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary text-base/4 sm:text-xl/5',
+    children: 'Читати повністю',
   },
 };
