@@ -40,6 +40,10 @@
   --color-input-stroke-valid: #439f6e;
   --color-input-stroke-error: #ffd8d8;
 
+  --color-divider-grey: #3d3d3d;
+  --color-divider-grey-50: #3d3d3d80;
+  --color-divider-green: #6a994e;
+
   /*Typography */
   --font-sans: 'Nunito Sans', sans-serif;
 }
@@ -48,4 +52,29 @@ body {
   font-family: var(--font-sans);
   background-color: var(--color-bg-primary);
   color: var(--color-text-white);
+}
+
+.bg-divider-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--color-divider-grey-50),
+    var(--color-divider-green),
+    var(--color-divider-grey-50)
+  );
+}
+
+.divider-stripes-8 {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--color-bg-primary) 0 8px,
+    transparent 8px 16px
+  );
+}
+
+.divider-stripes-4 {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--color-bg-primary) 0 4px,
+    transparent 4px 8px
+  );
 }
