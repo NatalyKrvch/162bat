@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasicCard should apply custom className and render custom content 1`] = `
+<div>
+  <div
+    class="rounded-default h-full w-full bg-card-gradient-top pt-px"
+    data-testid="basic-card-test-id"
+  >
+    <div
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 p-8 border-t-0 text-accent font-bold"
+    >
+      <div>
+        <h3>
+          Custom Title
+        </h3>
+        <p>
+          Custom paragraph inside the card.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BasicCard should render correctly with the top gradient by default 1`] = `
+<div>
+  <div
+    class="rounded-default h-full w-full bg-card-gradient-top pt-px"
+    data-testid="basic-card-test-id"
+  >
+    <div
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 p-8 border-t-0"
+    >
+      Top gradient content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BasicCard should render with the left gradient 1`] = `
+<div>
+  <div
+    class="rounded-default h-full w-full bg-card-gradient-left pl-px"
+    data-testid="basic-card-test-id"
+  >
+    <div
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 p-8 border-l-0"
+    >
+      Left gradient content
+    </div>
+  </div>
+</div>
+`;
