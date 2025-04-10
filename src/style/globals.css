@@ -40,12 +40,16 @@
   --color-input-stroke-valid: #439f6e;
   --color-input-stroke-error: #ffd8d8;
 
-  --color-divider-grey: #3d3d3d;
-  --color-divider-grey-50: #3d3d3d80;
-  --color-divider-green: #6a994e;
+  --color-grey: #3d3d3d;
+  --color-grey-50: #3d3d3d80;
+  --color-green: #6a994e;
 
   /*Typography */
   --font-sans: 'Nunito Sans', sans-serif;
+
+  /*Borders*/
+  --radius-default: 10px;
+  --radius-inner-card: 9px;
 }
 
 body {
@@ -57,9 +61,9 @@ body {
 .bg-divider-gradient {
   background-image: linear-gradient(
     to right,
-    var(--color-divider-grey-50),
-    var(--color-divider-green),
-    var(--color-divider-grey-50)
+    var(--color-grey-50),
+    var(--color-green),
+    var(--color-grey-50)
   );
 }
 
@@ -76,5 +80,23 @@ body {
     to right,
     var(--color-bg-primary) 0 4px,
     transparent 4px 8px
+  );
+}
+
+.bg-card-gradient-left {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-grey),
+    var(--color-green),
+    var(--color-grey)
+  );
+}
+
+.bg-card-gradient-top {
+  background-image: linear-gradient(
+    to right,
+    var(--color-grey),
+    var(--color-green),
+    var(--color-grey)
   );
 }
