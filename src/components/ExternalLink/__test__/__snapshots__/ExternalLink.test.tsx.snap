@@ -4,7 +4,7 @@ exports[`ExternalLink Component applies "target" and "rel" attributes correctly 
 <div>
   <a
     class="custom-class"
-    data-testid="external-link"
+    data-testid="external-link-test-id"
     href="https://example.com"
     rel="noopener noreferrer"
     target="_blank"
@@ -17,7 +17,7 @@ exports[`ExternalLink Component renders children correctly 1`] = `
 <div>
   <a
     class="custom-class"
-    data-testid="external-link"
+    data-testid="external-link-test-id"
     href="https://example.com"
     rel="noopener noreferrer"
     target="_blank"
@@ -36,7 +36,7 @@ exports[`ExternalLink Component renders the link with correct text and href 1`] 
 <div>
   <a
     class="custom-class"
-    data-testid="external-link"
+    data-testid="external-link-test-id"
     href="https://example.com"
     rel="noopener noreferrer"
     target="_blank"

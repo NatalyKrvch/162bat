@@ -4,7 +4,7 @@ exports[`InternalLink Component matches snapshot 1`] = `
 <div>
   <a
     class="custom-class"
-    data-testid="internal-link"
+    data-testid="internal-link-test-id"
     href="/test-page"
     title="Test Link"
   />
@@ -15,7 +15,7 @@ exports[`InternalLink Component renders the link with correct text and href 1`] 
 <div>
   <a
     class="custom-class"
-    data-testid="internal-link"
+    data-testid="internal-link-test-id"
     href="/test-page"
     title="Test Link"
   />
