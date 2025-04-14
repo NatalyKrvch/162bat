@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component calls the onClick function when clicked 1`] = `
+<div>
+  <button
+    class="rounded-default w-full px-6 py-4 text-xl/5 transition-colors sm:px-8 sm:py-5 sm:text-2xl/7 bg-btn-bg text-text-white hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled"
+    data-testid="button-test-id"
+  >
+    click me
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a link button with disabled=false 1`] = `
+<div>
+  <button
+    class="rounded-default w-full px-6 py-4 transition-colors sm:px-8 sm:py-5 underline text-text-white text-base/4 sm:text-xl/5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary"
+    data-testid="button-test-id"
+  >
+    link Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a link button with disabled=true 1`] = `
+<div>
+  <button
+    class="rounded-default w-full px-6 py-4 transition-colors sm:px-8 sm:py-5 underline text-text-white text-base/4 sm:text-xl/5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary"
+    data-testid="button-test-id"
+    disabled=""
+  >
+    link Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a primary button with disabled=false 1`] = `
+<div>
+  <button
+    class="rounded-default w-full px-6 py-4 text-xl/5 transition-colors sm:px-8 sm:py-5 sm:text-2xl/7 bg-btn-bg text-text-white hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled"
+    data-testid="button-test-id"
+  >
+    primary Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a primary button with disabled=true 1`] = `
+<div>
+  <button
+    class="rounded-default w-full px-6 py-4 text-xl/5 transition-colors sm:px-8 sm:py-5 sm:text-2xl/7 bg-btn-bg text-text-white hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled"
+    data-testid="button-test-id"
+    disabled=""
+  >
+    primary Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a secondary button with disabled=false 1`] = `
+<div>
+  <button
+    class="rounded-default w-full px-6 py-4 text-xl/5 transition-colors sm:px-8 sm:py-5 sm:text-2xl/7 border-2 border-btn-bg text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary"
+    data-testid="button-test-id"
+  >
+    secondary Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a secondary button with disabled=true 1`] = `
+<div>
+  <button
+    class="rounded-default w-full px-6 py-4 text-xl/5 transition-colors sm:px-8 sm:py-5 sm:text-2xl/7 border-2 border-btn-bg text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary"
+    data-testid="button-test-id"
+    disabled=""
+  >
+    secondary Button
+  </button>
+</div>
+`;
