@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StageCard renders correctly with valid data 1`] = `
+<div>
+  <div
+    class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-8 py-6"
+    data-testid="stage-card-test-id"
+  >
+    <p
+      class="rotated text-description text-4xl-40 font-bold"
+    >
+      КРОК 1
+    </p>
+    <div
+      class="flex flex-col gap-3"
+    >
+      <h3
+        class="text-2xl/7 font-bold"
+      >
+        Залишаєте заявку
+      </h3>
+      <p
+        class="text-lg/6"
+      >
+        Просто заповніть форму, і ми з вами зв'яжемося найближчим часом.
+      </p>
+    </div>
+  </div>
+</div>
+`;
