@@ -1,4 +1,5 @@
 export { ArrowBack } from './ArrowBack';
+export { ArrowForward } from './ArrowForward';
 export { BasicCard } from './BasicCard';
 export { Button } from './Button';
 export { Divider } from './Divider';
