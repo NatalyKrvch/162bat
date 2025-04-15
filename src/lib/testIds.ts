@@ -5,3 +5,4 @@ export const BASIC_CARD_TEST_ID = 'basic-card-test-id';
 export const CAROUSEL_TEST_ID = 'carousel-test-id';
 export const BUTTON_TEST_ID = 'button-test-id';
 export const ARROW_TEST_ID = 'arrow-test-id';
+export const STAGE_CARD_TEST_ID = 'stage-card-test-id';
