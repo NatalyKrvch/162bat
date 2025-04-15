@@ -47,6 +47,9 @@
   /*Typography */
   --font-sans: 'Nunito Sans', sans-serif;
 
+  --text-4xl-40: 40px;
+  --text-4xl-40--leading: 140%;
+
   /*Borders*/
   --radius-default: 10px;
   --radius-inner-card: 9px;
@@ -99,4 +102,9 @@ body {
     var(--color-green),
     var(--color-grey)
   );
+}
+
+.rotated {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
 }
