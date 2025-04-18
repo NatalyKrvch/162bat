@@ -1,5 +1,4 @@
-export { ArrowBack } from './ArrowBack';
-export { ArrowForward } from './ArrowForward';
+export { Arrow } from './Arrow';
 export { BasicCard } from './BasicCard';
 export { Button } from './Button';
 export { Carousel } from './Carousel';
