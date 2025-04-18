@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
+import { Arrow } from '../Arrow';
 import Button from './Button';
 
 export default {
@@ -9,7 +10,7 @@ export default {
   argTypes: {
     variant: {
       control: { type: 'select' },
-      options: ['primary', 'secondary', 'link'],
+      options: ['primary', 'secondary', 'link', 'icon'],
     },
     className: {
       control: { type: 'text' },
@@ -64,6 +65,21 @@ export const LinkDisabled: StoryObj = {
   args: {
     children: 'Link Disabled',
     variant: 'link',
+    disabled: true,
+  },
+};
+
+export const Icon: StoryObj = {
+  args: {
+    children: <Arrow direction="right" />,
+    variant: 'icon',
+  },
+};
+
+export const IconDisabled: StoryObj = {
+  args: {
+    children: <Arrow direction="right" />,
+    variant: 'icon',
     disabled: true,
   },
 };
