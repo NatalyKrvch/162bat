@@ -1,9 +1,14 @@
-import { ARROW_FORWARD_TEST_ID } from '@/lib/testIds';
+import { ARROW_TEST_ID } from '@/lib/testIds';
 
-const ArrowForward = () => {
+import { ArrowProps } from './types';
+
+const Arrow = ({ direction }: ArrowProps) => {
+  const isLeftDirection = direction === 'left';
+
   return (
     <svg
-      data-testid={ARROW_FORWARD_TEST_ID}
+      className={isLeftDirection ? 'rotate-180' : ''}
+      data-testid={ARROW_TEST_ID}
       xmlns="http://www.w3.org/2000/svg"
       width="37"
       height="16"
@@ -15,4 +20,4 @@ const ArrowForward = () => {
   );
 };
 
-export default ArrowForward;
+export default Arrow;
