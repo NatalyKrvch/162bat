@@ -11,6 +11,53 @@ exports[`Button Component calls the onClick function when clicked 1`] = `
 </div>
 `;
 
+exports[`Button Component renders a icon button with disabled=false 1`] = `
+<div>
+  <button
+    class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+    data-testid="button-test-id"
+  >
+    <svg
+      class=""
+      data-testid="arrow-test-id"
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 37 16"
+      width="37"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a icon button with disabled=true 1`] = `
+<div>
+  <button
+    class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+    data-testid="button-test-id"
+    disabled=""
+  >
+    <svg
+      class=""
+      data-testid="arrow-test-id"
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 37 16"
+      width="37"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
 exports[`Button Component renders a link button with disabled=false 1`] = `
 <div>
   <button
