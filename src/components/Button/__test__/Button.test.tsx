@@ -2,12 +2,14 @@ import '@testing-library/jest-dom';
 
 import { fireEvent, render } from '@testing-library/react';
 
+import { Arrow } from '@/components';
 import { BUTTON_TEST_ID } from '@/lib/testIds';
 
 import Button from '../Button';
+import { BUTTON_VARIANT_CLASSES } from '../constants/constants';
 import { ButtonVariant } from '../types';
 
-const variants: ButtonVariant[] = ['primary', 'secondary', 'link'];
+const variants: ButtonVariant[] = ['primary', 'secondary', 'link', 'icon'];
 const disabledStates = [true, false];
 
 describe('Button Component', () => {
@@ -16,7 +18,11 @@ describe('Button Component', () => {
       it(`renders a ${variant} button with disabled=${disabled}`, () => {
         const { container, getByTestId } = render(
           <Button variant={variant} disabled={disabled}>
-            {`${variant} Button`}
+            {variant === 'icon' ? (
+              <Arrow direction="right" />
+            ) : (
+              `${variant} Button`
+            )}
           </Button>,
         );
 
@@ -24,11 +30,13 @@ describe('Button Component', () => {
         expect(container).toMatchSnapshot();
 
         if (variant === 'primary') {
-          expect(button).toHaveClass('bg-btn-bg', 'text-text-white');
+          expect(button).toHaveClass(BUTTON_VARIANT_CLASSES['primary']);
         } else if (variant === 'secondary') {
-          expect(button).toHaveClass('text-text-green', 'border-btn-bg');
+          expect(button).toHaveClass(BUTTON_VARIANT_CLASSES['secondary']);
         } else if (variant === 'link') {
-          expect(button).toHaveClass('underline', 'text-text-white');
+          expect(button).toHaveClass(BUTTON_VARIANT_CLASSES['link']);
+        } else if (variant === 'icon') {
+          expect(button).toHaveClass(BUTTON_VARIANT_CLASSES['icon']);
         }
 
         if (disabled) {
@@ -38,6 +46,7 @@ describe('Button Component', () => {
         }
 
         fireEvent.mouseOver(button);
+
         if (variant === 'primary') {
           expect(button).toHaveClass('hover:bg-btn-bg-hover');
         } else if (variant === 'secondary') {
@@ -47,6 +56,12 @@ describe('Button Component', () => {
           );
         } else if (variant === 'link') {
           expect(button).toHaveClass('hover:text-btn-text-hover-secondary');
+        } else if (variant === 'icon') {
+          expect(button).toHaveClass(
+            'hover:border-btn-bg-hover',
+            'hover:bg-btn-bg-hover',
+            'hover:text-white',
+          );
         }
 
         fireEvent.mouseDown(button);
@@ -59,6 +74,12 @@ describe('Button Component', () => {
           );
         } else if (variant === 'link') {
           expect(button).toHaveClass('active:text-btn-text-click-secondary');
+        } else if (variant === 'icon') {
+          expect(button).toHaveClass(
+            'active:bg-btn-bg-click',
+            'active:border-btn-bg-click',
+            'active:text-white',
+          );
         }
       });
     });
