@@ -4,27 +4,38 @@ exports[`Carousel calls navigation handlers when buttons are clicked 1`] = `
 <div>
   <div
     class="flex w-full flex-col items-center gap-3"
-    data-testid="carousel-test-id"
   >
     <div
       class="keen-slider"
+      data-testid="carousel-test-id"
+      tabindex="0"
     >
-      <div>
-        Slide 1
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 1
+        </div>
       </div>
-      <div>
-        Slide 2
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 2
+        </div>
       </div>
     </div>
     <div
       class="flex gap-6"
     >
       <button
+        aria-label="Попередній слайд"
         class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
       >
         <svg
-          data-testid="arrow-back-test-id"
+          class="rotate-180"
+          data-testid="arrow-test-id"
           fill="currentColor"
           height="16"
           viewBox="0 0 37 16"
@@ -32,16 +43,18 @@ exports[`Carousel calls navigation handlers when buttons are clicked 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93zM37 7H1v2h36z"
+            d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
           />
         </svg>
       </button>
       <button
+        aria-label="Наступний слайд"
         class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
       >
         <svg
-          data-testid="arrow-forward-test-id"
+          class=""
+          data-testid="arrow-test-id"
           fill="currentColor"
           height="16"
           viewBox="0 0 37 16"
@@ -62,27 +75,38 @@ exports[`Carousel disables next button when on last slide 1`] = `
 <div>
   <div
     class="flex w-full flex-col items-center gap-3"
-    data-testid="carousel-test-id"
   >
     <div
       class="keen-slider"
+      data-testid="carousel-test-id"
+      tabindex="0"
     >
-      <div>
-        Slide 1
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 1
+        </div>
       </div>
-      <div>
-        Slide 2
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 2
+        </div>
       </div>
     </div>
     <div
       class="flex gap-6"
     >
       <button
+        aria-label="Попередній слайд"
         class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
       >
         <svg
-          data-testid="arrow-back-test-id"
+          class="rotate-180"
+          data-testid="arrow-test-id"
           fill="currentColor"
           height="16"
           viewBox="0 0 37 16"
@@ -90,17 +114,19 @@ exports[`Carousel disables next button when on last slide 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93zM37 7H1v2h36z"
+            d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
           />
         </svg>
       </button>
       <button
+        aria-label="Наступний слайд"
         class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
         disabled=""
       >
         <svg
-          data-testid="arrow-forward-test-id"
+          class=""
+          data-testid="arrow-test-id"
           fill="currentColor"
           height="16"
           viewBox="0 0 37 16"
@@ -121,28 +147,39 @@ exports[`Carousel disables previous button when on first slide 1`] = `
 <div>
   <div
     class="flex w-full flex-col items-center gap-3"
-    data-testid="carousel-test-id"
   >
     <div
       class="keen-slider"
+      data-testid="carousel-test-id"
+      tabindex="0"
     >
-      <div>
-        Slide 1
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 1
+        </div>
       </div>
-      <div>
-        Slide 2
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 2
+        </div>
       </div>
     </div>
     <div
       class="flex gap-6"
     >
       <button
+        aria-label="Попередній слайд"
         class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
         disabled=""
       >
         <svg
-          data-testid="arrow-back-test-id"
+          class="rotate-180"
+          data-testid="arrow-test-id"
           fill="currentColor"
           height="16"
           viewBox="0 0 37 16"
@@ -150,16 +187,18 @@ exports[`Carousel disables previous button when on first slide 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93zM37 7H1v2h36z"
+            d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
           />
         </svg>
       </button>
       <button
+        aria-label="Наступний слайд"
         class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
       >
         <svg
-          data-testid="arrow-forward-test-id"
+          class=""
+          data-testid="arrow-test-id"
           fill="currentColor"
           height="16"
           viewBox="0 0 37 16"
@@ -180,27 +219,38 @@ exports[`Carousel renders correctly and matches snapshot 1`] = `
 <div>
   <div
     class="flex w-full flex-col items-center gap-3"
-    data-testid="carousel-test-id"
   >
     <div
       class="keen-slider"
+      data-testid="carousel-test-id"
+      tabindex="0"
     >
-      <div>
-        Slide 1
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 1
+        </div>
       </div>
-      <div>
-        Slide 2
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 2
+        </div>
       </div>
     </div>
     <div
       class="flex gap-6"
     >
       <button
+        aria-label="Попередній слайд"
         class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
       >
         <svg
-          data-testid="arrow-back-test-id"
+          class="rotate-180"
+          data-testid="arrow-test-id"
           fill="currentColor"
           height="16"
           viewBox="0 0 37 16"
@@ -208,16 +258,89 @@ exports[`Carousel renders correctly and matches snapshot 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93zM37 7H1v2h36z"
+            d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
           />
         </svg>
       </button>
       <button
+        aria-label="Наступний слайд"
         class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
       >
         <svg
-          data-testid="arrow-forward-test-id"
+          class=""
+          data-testid="arrow-test-id"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 37 16"
+          width="37"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Carousel responds to ArrowLeft and ArrowRight keys 1`] = `
+<div>
+  <div
+    class="flex w-full flex-col items-center gap-3"
+  >
+    <div
+      class="keen-slider"
+      data-testid="carousel-test-id"
+      tabindex="0"
+    >
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 1
+        </div>
+      </div>
+      <div
+        class="keen-slider__slide"
+      >
+        <div>
+          Slide 2
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex gap-6"
+    >
+      <button
+        aria-label="Попередній слайд"
+        class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        data-testid="button-test-id"
+      >
+        <svg
+          class="rotate-180"
+          data-testid="arrow-test-id"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 37 16"
+          width="37"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="Наступний слайд"
+        class="rounded-default text-xl/5 transition-colors sm:text-2xl/7 border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        data-testid="button-test-id"
+      >
+        <svg
+          class=""
+          data-testid="arrow-test-id"
           fill="currentColor"
           height="16"
           viewBox="0 0 37 16"
