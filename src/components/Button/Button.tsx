@@ -12,6 +12,7 @@ const Button = ({
   children,
   variant = 'primary',
   className = '',
+  ...rest
 }: PropsWithChildren<ButtonProps>) => {
   const getVariantClasses = useButtonClasses();
 
@@ -25,6 +26,7 @@ const Button = ({
         getVariantClasses(variant),
         className,
       )}
+      {...rest}
     >
       {children}
     </button>
