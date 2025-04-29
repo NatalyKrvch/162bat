@@ -2,7 +2,7 @@
 
 exports[`StageCard renders correctly with valid data 1`] = `
 <div>
-  <div
+  <article
     class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-8 py-6"
     data-testid="stage-card-test-id"
   >
@@ -25,6 +25,6 @@ exports[`StageCard renders correctly with valid data 1`] = `
         Просто заповніть форму, і ми з вами зв'яжемося найближчим часом.
       </p>
     </div>
-  </div>
+  </article>
 </div>
 `;
