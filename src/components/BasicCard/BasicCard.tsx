@@ -13,7 +13,7 @@ const BasicCard = ({
   const isTopGradient = gradientPosition === 'top';
 
   return (
-    <div
+    <article
       data-testid={BASIC_CARD_TEST_ID}
       className={`rounded-default h-full w-full ${isTopGradient ? 'bg-card-gradient-top pt-px' : 'bg-card-gradient-left pl-px'}`}
     >
@@ -25,7 +25,7 @@ const BasicCard = ({
       >
         {children}
       </div>
-    </div>
+    </article>
   );
 };
 

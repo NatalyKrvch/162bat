@@ -4,7 +4,7 @@ import { StageCardProps } from './types';
 
 const StageCard = ({ step, title, description }: StageCardProps) => {
   return (
-    <div
+    <article
       data-testid={STAGE_CARD_TEST_ID}
       className="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-8 py-6"
     >
@@ -13,7 +13,7 @@ const StageCard = ({ step, title, description }: StageCardProps) => {
         <h3 className="text-2xl/7 font-bold">{title}</h3>
         <p className="text-lg/6">{description}</p>
       </div>
-    </div>
+    </article>
   );
 };
 
