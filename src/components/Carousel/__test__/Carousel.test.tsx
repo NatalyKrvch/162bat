@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom';
-
 import { fireEvent, render } from '@testing-library/react';
 
 import { CAROUSEL_TEST_ID } from '@/lib/testIds';

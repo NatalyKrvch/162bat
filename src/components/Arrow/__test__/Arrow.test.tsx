@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom';
-
 import { render } from '@testing-library/react';
 
 import { ARROW_TEST_ID } from '@/lib/testIds';

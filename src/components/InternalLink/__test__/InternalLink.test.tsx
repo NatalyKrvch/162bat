@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom';
-
 import { render, screen } from '@testing-library/react';
 
 import { INTERNAL_LINK_TEST_ID } from '@/lib/testIds';
