@@ -31,7 +31,7 @@ exports[`Divider Component renders correctly with gradient variant 1`] = `
 exports[`Divider Component renders correctly with grey variant 1`] = `
 <div>
   <div
-    class="relative h-0.5 w-full bg-divider-grey"
+    class="relative h-0.5 w-full bg-grey"
     data-testid="divider-test-id"
     role="separator"
   >

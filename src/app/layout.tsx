@@ -1,9 +1,9 @@
-import '@/style/globals.css';
+import '@style/globals.css';
 
-import { Nunito_Sans } from 'next/font/google';
+import { Play } from 'next/font/google';
 import { ReactNode } from 'react';
 
-const nunitoSans = Nunito_Sans({
+const play = Play({
   weight: ['400', '700'],
   subsets: ['latin', 'cyrillic'],
   display: 'swap',
@@ -11,7 +11,7 @@ const nunitoSans = Nunito_Sans({
 
 const layout = ({ children }: { children: ReactNode }) => {
   return (
-    <html lang="uk" className={nunitoSans.className}>
+    <html lang="uk" className={play.className}>
       <body>{children}</body>
     </html>
   );

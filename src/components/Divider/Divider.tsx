@@ -9,7 +9,7 @@ const Divider = ({ variant = 'gradient' }: DividerProps) => {
     <div
       role="separator"
       data-testid={DIVIDER_TEST_ID}
-      className={`relative h-0.5 w-full ${isGreyVariant ? 'bg-divider-grey' : 'bg-divider-gradient'}`}
+      className={`relative h-0.5 w-full ${isGreyVariant ? 'bg-grey' : 'bg-divider-gradient'}`}
     >
       <span
         className={`absolute inset-0 h-full w-full ${isGreyVariant ? 'divider-stripes-4' : 'divider-stripes-8'}`}
