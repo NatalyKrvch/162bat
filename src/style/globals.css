@@ -45,7 +45,7 @@
   --color-green: #6a994e;
 
   /*Typography */
-  --font-sans: 'Nunito Sans', sans-serif;
+  --font-sans: 'Play';
 
   --text-4xl-40: 40px;
   --text-4xl-40--leading: 140%;
@@ -56,7 +56,7 @@
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-sans), sans-serif;
   background-color: var(--color-bg-primary);
   color: var(--color-text-white);
 }
