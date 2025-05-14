@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly and matches snapshot 1`] = `
+<div>
+  <footer
+    class="bg-bg-secondary container mx-auto flex flex-col flex-wrap items-center gap-5.5 px-8 py-10 sm:items-start md:gap-8 lg:gap-10"
+    data-testid="footer-test-id"
+  >
+    <div
+      class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:gap-12 md:gap-20 lg:gap-30"
+    >
+      <div
+        class="flex h-25 w-21 flex-shrink-0"
+      >
+        <img
+          alt="Логотип батальйону"
+          class="h-auto w-full object-cover"
+          data-nimg="1"
+          decoding="async"
+          height="100"
+          loading="lazy"
+          src="/logo.svg"
+          style="color: transparent;"
+          width="84"
+        />
+      </div>
+      <div
+        class="flex flex-col gap-10 lg:items-center"
+      >
+        <ul
+          class="flex flex-col flex-wrap gap-2 sm:flex-row sm:gap-x-11"
+        >
+          <li>
+            <a
+              class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
+              data-testid="internal-link-test-id"
+              href="/"
+              title="Головна"
+            >
+              Головна
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
+              data-testid="internal-link-test-id"
+              href="/about"
+              title="Про батальйон"
+            >
+              Про батальйон
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
+              data-testid="internal-link-test-id"
+              href="/vacancies"
+              title="Вакансії"
+            >
+              Вакансії
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
+              data-testid="internal-link-test-id"
+              href="/faq"
+              title="FAQ"
+            >
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
+              data-testid="internal-link-test-id"
+              href="/contacts"
+              title="Контакти"
+            >
+              Контакти
+            </a>
+          </li>
+        </ul>
+        <div
+          class="flex w-full flex-col gap-4 lg:flex-row lg:items-center lg:gap-21"
+        >
+          <div
+            class="flex flex-col gap-2 sm:flex-row md:items-center"
+          >
+            <p
+              class="text-base/6 whitespace-nowrap sm:text-xl/5"
+            >
+              Зв'язатись з нами:
+            </p>
+            <a
+              class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
+              data-testid="internal-link-test-id"
+              href="tel:+38093 000 00 00"
+            >
+              +38093 000 00 00
+            </a>
+          </div>
+          <button
+            aria-label="Заповнити анкету"
+            class="rounded-default w-full transition-colors sm:text-xl/5 md:text-2xl/7 bg-btn-bg text-text-white hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled flex items-center p-3 whitespace-nowrap sm:w-fit sm:px-8 sm:py-5 lg:h-15"
+            data-testid="button-test-id"
+            title="Заповнити анкету"
+          >
+            Заповнити анкету
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative h-0.5 w-full bg-grey"
+      data-testid="divider-test-id"
+      role="separator"
+    >
+      <span
+        class="absolute inset-0 h-full w-full divider-stripes-4"
+      />
+    </div>
+    <div
+      class="flex items-center"
+    >
+      2025 162 bat TRO
+    </div>
+  </footer>
+</div>
+`;
