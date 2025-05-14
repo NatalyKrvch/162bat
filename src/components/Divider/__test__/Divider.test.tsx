@@ -1,5 +1,3 @@
-import '@testing-library/jest-dom';
-
 import { render } from '@testing-library/react';
 
 import { DIVIDER_TEST_ID } from '@/lib/testIds';
@@ -22,7 +20,7 @@ describe('Divider Component', () => {
 
     const divider = getByTestId(DIVIDER_TEST_ID);
     expect(divider).toBeInTheDocument();
-    expect(divider).toHaveClass('bg-divider-grey');
+    expect(divider).toHaveClass('bg-grey');
     expect(divider.querySelector('span')).toHaveClass('divider-stripes-4');
     expect(container).toMatchSnapshot();
   });
