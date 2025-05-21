@@ -7,3 +7,4 @@ export const BUTTON_TEST_ID = 'button-test-id';
 export const ARROW_TEST_ID = 'arrow-test-id';
 export const STAGE_CARD_TEST_ID = 'stage-card-test-id';
 export const FOOTER_TEST_ID = 'footer-test-id';
+export const SECTION_TITLE_TEST_ID = 'section-title-test-id';
