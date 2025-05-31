@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/nextjs';
 
-import { Button } from '../Button';
 import Arrow from './Arrow';
 
 export default {
@@ -16,17 +15,9 @@ export default {
 } as Meta;
 
 export const LeftArrow: StoryObj = {
-  render: () => (
-    <Button variant="icon" onClick={() => console.log('Arrow left clicked')}>
-      <Arrow direction="left" />
-    </Button>
-  ),
+  render: () => <Arrow direction="left" />,
 };
 
 export const RightArrow: StoryObj = {
-  render: () => (
-    <Button variant="icon" onClick={() => console.log('Arrow right clicked')}>
-      <Arrow direction="right" />
-    </Button>
-  ),
+  render: () => <Arrow direction="right" />,
 };
