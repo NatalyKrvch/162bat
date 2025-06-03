@@ -1,4 +1,4 @@
 export interface BasicCardProps {
   className?: string;
-  gradientPosition?: 'top' | 'left';
+  gradientVariant?: 'default' | 'top' | 'left' | 'borderless';
 }
