@@ -55,7 +55,7 @@ exports[`BasicCard should render with the left gradient 1`] = `
 exports[`BasicCard should render without border 1`] = `
 <div>
   <article
-    class="rounded-default h-full w-full pl-0 pt-0"
+    class="rounded-default h-full w-full pt-0 pl-0"
     data-testid="basic-card-test-id"
   >
     <div
