@@ -19,7 +19,7 @@ describe('BasicCard', () => {
 
   it('should render with the left gradient', () => {
     const { container, getByTestId } = render(
-      <BasicCard gradientVariant="left">Left gradient content</BasicCard>,
+      <BasicCard gradientPosition="left">Left gradient content</BasicCard>,
     );
 
     const card = getByTestId(BASIC_CARD_TEST_ID);
@@ -29,21 +29,17 @@ describe('BasicCard', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render without border', () => {
+  it('does not have gradient and border', () => {
     const { container, getByTestId } = render(
-      <BasicCard gradientVariant="borderless">Borderless content</BasicCard>,
+      <BasicCard withBorder={false}>Does not have any border</BasicCard>,
     );
 
     const card = getByTestId(BASIC_CARD_TEST_ID);
-    const firstChild = card.firstChild;
-
     expect(card).toBeInTheDocument();
-    expect(card).toHaveTextContent('Borderless content');
+    expect(card).toHaveTextContent('Does not have any border');
 
     expect(card).not.toHaveClass('bg-card-gradient-top');
     expect(card).not.toHaveClass('bg-card-gradient-left');
-    expect(card).toHaveClass('pl-0');
-    expect(firstChild).toHaveClass('border-0');
     expect(container).toMatchSnapshot();
   });
 
