@@ -7,9 +7,12 @@ export default {
   title: 'Basic Card',
   tags: ['autodocs'],
   argTypes: {
-    gradientVariant: {
+    gradientPosition: {
       control: 'radio',
-      options: ['top', 'left', 'borderless', 'default'],
+      options: ['top', 'left'],
+    },
+    withBorder: {
+      control: 'boolean',
     },
     className: {
       control: false,
@@ -28,28 +31,28 @@ export const Default: StoryObj = {
 
 export const TopGradient: StoryObj = {
   args: {
-    gradientVariant: 'top',
+    gradientPosition: 'top',
     children: 'This card has a top gradient border.',
   },
 };
 
 export const LeftGradient: StoryObj = {
   args: {
-    gradientVariant: 'left',
+    gradientPosition: 'left',
     children: 'This card has a left gradient border.',
   },
 };
 
-export const BorderLessCard: StoryObj = {
+export const BorderlessCard: StoryObj = {
   args: {
-    gradientVariant: 'borderless',
+    withBorder: false,
     children: 'This card has no borders.',
   },
 };
 
 export const BorderLessCardWithPic: StoryObj = {
   args: {
-    gradientVariant: 'borderless',
+    withBorder: false,
     children: 'This card has a background image and no border.',
     className:
       'bg-[url("/images/e9a0cd65a811448b5a17ee070b62b073b4ed79b7.jpg")] bg-cover bg-center bg-black/55 bg-blend-overlay',
