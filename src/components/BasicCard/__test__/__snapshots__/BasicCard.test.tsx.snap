@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`BasicCard does not have gradient and border 1`] = `
+<div>
+  <article
+    class="rounded-default h-full w-full"
+    data-testid="basic-card-test-id"
+  >
+    <div
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8"
+    >
+      Does not have any border
+    </div>
+  </article>
+</div>
+`;
+
 exports[`BasicCard should apply custom className and render custom content 1`] = `
 <div>
   <article
@@ -7,7 +22,7 @@ exports[`BasicCard should apply custom className and render custom content 1`] =
     data-testid="basic-card-test-id"
   >
     <div
-      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 p-8 border-t-0 text-accent font-bold"
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8 border-1 border-t-0 text-accent font-bold"
     >
       <div>
         <h3>
@@ -29,7 +44,7 @@ exports[`BasicCard should render correctly with the top gradient by default 1`] 
     data-testid="basic-card-test-id"
   >
     <div
-      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 p-8 border-t-0"
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8 border-1 border-t-0"
     >
       Top gradient content
     </div>
@@ -44,24 +59,9 @@ exports[`BasicCard should render with the left gradient 1`] = `
     data-testid="basic-card-test-id"
   >
     <div
-      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 p-8 border-l-0"
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8 border-1 border-l-0"
     >
       Left gradient content
-    </div>
-  </article>
-</div>
-`;
-
-exports[`BasicCard should render without border 1`] = `
-<div>
-  <article
-    class="rounded-default h-full w-full pt-0 pl-0"
-    data-testid="basic-card-test-id"
-  >
-    <div
-      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8 border-0"
-    >
-      Borderless content
     </div>
   </article>
 </div>
