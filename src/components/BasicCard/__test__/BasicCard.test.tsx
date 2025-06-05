@@ -29,9 +29,9 @@ describe('BasicCard', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('does not have gradient and border', () => {
+  it('should render correctly without gradient and border', () => {
     const { container, getByTestId } = render(
-      <BasicCard withBorder={false}>Does not have any border</BasicCard>,
+      <BasicCard hasBorder={false}>Does not have any border</BasicCard>,
     );
 
     const card = getByTestId(BASIC_CARD_TEST_ID);
