@@ -45,14 +45,14 @@ export const LeftGradient: StoryObj = {
 
 export const BorderlessCard: StoryObj = {
   args: {
-    withBorder: false,
+    hasBorder: false,
     children: 'This card has no borders.',
   },
 };
 
 export const BorderLessCardWithPic: StoryObj = {
   args: {
-    withBorder: false,
+    hasBorder: false,
     children: 'This card has a background image and no border.',
     className:
       'bg-[url("/images/e9a0cd65a811448b5a17ee070b62b073b4ed79b7.jpg")] bg-cover bg-center bg-black/55 bg-blend-overlay',
