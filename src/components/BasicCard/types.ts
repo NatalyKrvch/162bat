@@ -1,5 +1,5 @@
 export interface BasicCardProps {
   className?: string;
-  withBorder?: boolean;
+  hasBorder?: boolean;
   gradientPosition?: 'top' | 'left';
 }
