@@ -6,7 +6,7 @@ import { BASIC_CARD_TEST_ID } from '@/lib/testIds';
 import { BasicCardProps } from './types';
 
 const BasicCard = ({
-  withBorder = true,
+  hasBorder = true,
   gradientPosition = 'top',
   className = '',
   children,
@@ -18,7 +18,7 @@ const BasicCard = ({
       data-testid={BASIC_CARD_TEST_ID}
       className={twMerge(
         'rounded-default h-full w-full',
-        withBorder &&
+        hasBorder &&
           (isTopGradient
             ? 'bg-card-gradient-top pt-px'
             : 'bg-card-gradient-left pl-px'),
@@ -26,8 +26,8 @@ const BasicCard = ({
     >
       <div
         className={twMerge(
-          `bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8`,
-          withBorder &&
+          'bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8',
+          hasBorder &&
             `border-1 ${isTopGradient ? 'border-t-0' : 'border-l-0'}`,
           className,
         )}
