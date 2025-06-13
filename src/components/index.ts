@@ -6,4 +6,5 @@ export { Container } from './Container';
 export { Divider } from './Divider';
 export { ExternalLink } from './ExternalLink';
 export { InternalLink } from './InternalLink';
+export { List } from './List';
 export { SectionTitle } from './SectionTitle';
