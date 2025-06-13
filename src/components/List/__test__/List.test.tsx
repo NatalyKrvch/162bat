@@ -1,19 +1,22 @@
-import { render } from '@testing-library/react';
+import { render, within } from '@testing-library/react';
 
+import { listItemsRich, listItemsSimple } from '@/data/mock/listItems';
 import { LIST_TEST_ID } from '@/lib/testIds';
 
 import List from '../List';
 
 describe('List', () => {
-  const items = ['item1', 'item2', 'item3'];
-
   it('should render correctly with default props', () => {
-    const { container, getByTestId } = render(<List items={items} />);
+    const { container, getByTestId } = render(
+      <List listItems={listItemsSimple} />,
+    );
 
     const list = getByTestId(LIST_TEST_ID);
     expect(list).toBeInTheDocument();
 
-    expect(list).toHaveTextContent('item1');
+    listItemsSimple.forEach(item => {
+      expect(list).toHaveTextContent(item);
+    });
 
     expect(list).toHaveClass('list-disc');
     expect(container).toMatchSnapshot();
@@ -21,13 +24,15 @@ describe('List', () => {
 
   it('should render correctly with circle bullet', () => {
     const { container, getByTestId } = render(
-      <List items={items} bulletType="circle" />,
+      <List listItems={listItemsSimple} bulletType="circle" />,
     );
 
     const list = getByTestId(LIST_TEST_ID);
     expect(list).toBeInTheDocument();
 
-    expect(list).toHaveTextContent('item1');
+    listItemsSimple.forEach(item => {
+      expect(list).toHaveTextContent(item);
+    });
 
     expect(list).toHaveClass('list-disc');
     expect(container).toMatchSnapshot();
@@ -35,26 +40,57 @@ describe('List', () => {
 
   it('should render correctly with star bullet', () => {
     const { container, getByTestId } = render(
-      <List items={items} bulletType="star" />,
+      <List listItems={listItemsSimple} bulletType="star" />,
     );
 
     const list = getByTestId(LIST_TEST_ID);
     expect(list).toBeInTheDocument();
 
-    expect(list).toHaveTextContent('item1');
+    listItemsSimple.forEach(item => {
+      expect(list).toHaveTextContent(item);
+    });
 
     expect(list).not.toHaveClass('list-disc');
 
     const listItems = list.querySelectorAll('li');
-    expect(listItems[0]).toHaveClass('flex items-center gap-2');
-    expect(listItems[0].querySelector('svg')).toBeInTheDocument();
+    listItems.forEach(item => {
+      expect(item).toHaveClass('flex items-center gap-4');
+      expect(within(item).getByTestId('star-icon')).toBeInTheDocument();
+    });
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should render correctly with star bullet and richText', () => {
+    const { container, getByTestId } = render(
+      <List listItems={listItemsRich} bulletType="star" />,
+    );
+
+    const plaintTexsts = listItemsRich.map(item =>
+      item.map(i => i.text).join(''),
+    );
+
+    const list = getByTestId(LIST_TEST_ID);
+    expect(list).toBeInTheDocument();
+
+    plaintTexsts.forEach(item => {
+      expect(list).toHaveTextContent(item);
+    });
+
+    expect(list).not.toHaveClass('list-disc');
+
+    const listItems = list.querySelectorAll('li');
+    listItems.forEach(item => {
+      expect(item).toHaveClass('flex items-center gap-4');
+      expect(within(item).getByTestId('star-icon')).toBeInTheDocument();
+    });
     expect(container).toMatchSnapshot();
   });
 
   it('should apply custom className', () => {
     const customClass = 'custom-class';
     const { container, getByTestId } = render(
-      <List items={items} className={customClass} />,
+      <List listItems={listItemsSimple} className={customClass} />,
     );
 
     const list = getByTestId(LIST_TEST_ID);
@@ -62,12 +98,12 @@ describe('List', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render empty list without crashing', () => {
-    const { container, getByTestId } = render(<List items={[]} />);
+  it('should not render  ul if listItems is empty', () => {
+    const { container, queryByTestId } = render(<List listItems={[]} />);
 
-    const list = getByTestId(LIST_TEST_ID);
-    expect(list).toBeInTheDocument();
-    expect(list).toHaveTextContent('');
-    expect(container).toMatchSnapshot();
+    const list = queryByTestId(LIST_TEST_ID);
+    expect(list).toBeNull();
+    expect(container).toHaveTextContent('');
+    expect(container).toBeEmptyDOMElement();
   });
 });
