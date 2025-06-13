@@ -1,12 +1,8 @@
 import { Meta, StoryObj } from '@storybook/nextjs';
 
-import List from './List';
+import { listItemsRich, listItemsSimple } from '@/data/mock/listItems';
 
-const items = [
-  'Виконує бойові завдання у складі підрозділу, веде вогонь по противнику',
-  'Забезпечує прикриття товаришів під час бою',
-  'Контролює безпеку визначеної території',
-];
+import List from './List';
 
 export default {
   component: List,
@@ -22,7 +18,7 @@ export default {
 
 export const Default: StoryObj = {
   args: {
-    items: items,
+    listItems: listItemsSimple,
     className: '',
   },
 };
@@ -30,7 +26,7 @@ export const Default: StoryObj = {
 export const CircleBullet: StoryObj = {
   args: {
     bulletType: 'circle',
-    items: items,
+    listItems: listItemsSimple,
     className: '',
   },
 };
@@ -38,7 +34,15 @@ export const CircleBullet: StoryObj = {
 export const GreenStarBullet: StoryObj = {
   args: {
     bulletType: 'star',
-    items: items,
+    listItems: listItemsSimple,
+    className: '',
+  },
+};
+
+export const GreenStarBulletWithColoredText: StoryObj = {
+  args: {
+    bulletType: 'star',
+    listItems: listItemsRich,
     className: '',
   },
 };
