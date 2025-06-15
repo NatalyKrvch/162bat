@@ -3,6 +3,7 @@ export const EXTERNAL_LINK_TEST_ID = 'external-link-test-id';
 export const DIVIDER_TEST_ID = 'divider-test-id';
 export const BASIC_CARD_TEST_ID = 'basic-card-test-id';
 export const CAROUSEL_TEST_ID = 'carousel-test-id';
+export const CONTAINER_TEST_ID = 'container-test-id';
 export const BUTTON_TEST_ID = 'button-test-id';
 export const ARROW_TEST_ID = 'arrow-test-id';
 export const STAGE_CARD_TEST_ID = 'stage-card-test-id';
