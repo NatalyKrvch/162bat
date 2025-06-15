@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container renders children correctly and matches snapshot 1`] = `
+<div>
+  <div
+    class="mx-auto max-w-screen-2xl px-4 md:px-8 xl:px-20"
+    data-testid="container-test-id"
+  >
+    <p>
+      Test content
+    </p>
+  </div>
+</div>
+`;
