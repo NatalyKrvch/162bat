@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/nextjs';
 
-import { listItemsRich, listItemsSimple } from '@/data/mock/listItems';
+import { listItems, listItemsFormatted } from '@/data/mock/listItems';
 
 import List from './List';
 
@@ -18,7 +18,7 @@ export default {
 
 export const Default: StoryObj = {
   args: {
-    listItems: listItemsSimple,
+    listItems: listItems,
     className: '',
   },
 };
@@ -26,7 +26,7 @@ export const Default: StoryObj = {
 export const CircleBullet: StoryObj = {
   args: {
     bulletType: 'circle',
-    listItems: listItemsSimple,
+    listItems: listItems,
     className: '',
   },
 };
@@ -34,7 +34,7 @@ export const CircleBullet: StoryObj = {
 export const GreenStarBullet: StoryObj = {
   args: {
     bulletType: 'star',
-    listItems: listItemsSimple,
+    listItems: listItems,
     className: '',
   },
 };
@@ -42,7 +42,7 @@ export const GreenStarBullet: StoryObj = {
 export const GreenStarBulletWithColoredText: StoryObj = {
   args: {
     bulletType: 'star',
-    listItems: listItemsRich,
+    listItems: listItemsFormatted,
     className: '',
   },
 };
