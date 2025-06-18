@@ -1,0 +1,107 @@
+import { ListItem } from '@/components/List/types';
+
+export const listItemsFormatted: ListItem[] = [
+  {
+    id: 'formatted-content-1',
+    children: [
+      {
+        id: 'fc1-1',
+        text: 'Щомісячне грошове забезпечення',
+        color: 'white',
+        fontWeight: 'bold',
+      },
+      { id: 'fc1-2', text: ' — від ', color: 'white', fontWeight: 'normal' },
+      {
+        id: 'fc1-3',
+        text: '20 000 ',
+        color: 'green',
+        fontWeight: 'bold',
+        variant: 'number',
+      },
+      {
+        id: 'fc1-4',
+        text: 'грн для військових у тилу, до ',
+        color: 'white',
+        fontWeight: 'normal',
+      },
+      {
+        id: 'fc1-5',
+        text: '120 000 ',
+        color: 'green',
+        fontWeight: 'bold',
+        variant: 'number',
+      },
+      {
+        id: 'fc1-6',
+        text: 'грн для тих, хто виконує завдання на передовій.',
+        color: 'white',
+        fontWeight: 'normal',
+      },
+    ],
+  },
+  {
+    id: 'formatted-content-2',
+    children: [
+      {
+        id: 'fc2-1',
+        text: 'Додаткові надбавки ',
+        color: 'white',
+        fontWeight: 'bold',
+      },
+      {
+        id: 'fc2-2',
+        text: 'за особливі умови служби, звання та спеціальність.',
+        color: 'white',
+        fontWeight: 'normal',
+      },
+    ],
+  },
+  {
+    id: 'formatted-content-3',
+    children: [
+      {
+        id: 'fc3-1',
+        text: 'Право на пенсійне забезпечення ',
+        color: 'white',
+        fontWeight: 'bold',
+      },
+      { id: 'fc3-2', text: 'після ', color: 'white', fontWeight: 'normal' },
+      {
+        id: 'fc3-3',
+        text: '25 ',
+        color: 'green',
+        fontWeight: 'bold',
+        variant: 'number',
+      },
+      {
+        id: 'fc3-4',
+        text: 'років ',
+        color: 'green',
+        fontWeight: 'bold',
+        variant: 'text',
+      },
+      {
+        id: 'fc3-5',
+        text: 'служби або за вислугою років.',
+        color: 'white',
+        fontWeight: 'normal',
+      },
+    ],
+  },
+];
+
+export const listItems = [
+  {
+    id: 'simple-1',
+    children:
+      'Виконує бойові завдання у складі підрозділу, веде вогонь по противнику',
+  },
+  {
+    id: 'simple-2',
+    children: 'Забезпечує прикриття товаришів під час бою',
+  },
+  {
+    id: 'simple-3',
+    children: 'Контролює безпеку визначеної території',
+  },
+];

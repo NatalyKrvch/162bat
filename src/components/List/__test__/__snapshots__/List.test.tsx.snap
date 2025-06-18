@@ -159,32 +159,32 @@ exports[`List should render correctly with star bullet and richText 1`] = `
       />
       <span>
         <span
-          class="text-white font-bold"
+          class="text-text-white font-bold"
         >
           Щомісячне грошове забезпечення
         </span>
         <span
-          class="text-white font-normal"
+          class="text-text-white font-normal"
         >
            — від 
         </span>
         <span
-          class="text-[#6A994E] font-bold text-[0.8em]"
+          class="text-text-green font-bold text-sm sm:text-xl"
         >
           20 000 
         </span>
         <span
-          class="text-white font-normal"
+          class="text-text-white font-normal"
         >
           грн для військових у тилу, до 
         </span>
         <span
-          class="text-[#6A994E] font-bold text-[0.8em]"
+          class="text-text-green font-bold text-sm sm:text-xl"
         >
           120 000 
         </span>
         <span
-          class="text-white font-normal"
+          class="text-text-white font-normal"
         >
           грн для тих, хто виконує завдання на передовій.
         </span>
@@ -207,14 +207,57 @@ exports[`List should render correctly with star bullet and richText 1`] = `
       />
       <span>
         <span
-          class="text-white font-bold"
+          class="text-text-white font-bold"
         >
           Додаткові надбавки 
         </span>
         <span
-          class="text-white font-normal"
+          class="text-text-white font-normal"
         >
           за особливі умови служби, звання та спеціальність.
+        </span>
+      </span>
+    </li>
+    <li
+      class="flex items-center gap-4 lining-nums tabular-nums"
+    >
+      <img
+        alt="star icon"
+        class="h-4 w-4 min-w-4 sm:h-6 sm:w-6 sm:min-w-6"
+        data-nimg="1"
+        data-testid="star-icon"
+        decoding="async"
+        height="24"
+        loading="lazy"
+        src="/icons/star.svg"
+        style="color: transparent;"
+        width="24"
+      />
+      <span>
+        <span
+          class="text-text-white font-bold"
+        >
+          Право на пенсійне забезпечення 
+        </span>
+        <span
+          class="text-text-white font-normal"
+        >
+          після 
+        </span>
+        <span
+          class="text-text-green font-bold text-sm sm:text-xl"
+        >
+          25 
+        </span>
+        <span
+          class="text-text-green font-bold"
+        >
+          років 
+        </span>
+        <span
+          class="text-text-white font-normal"
+        >
+          служби або за вислугою років.
         </span>
       </span>
     </li>
