@@ -1,14 +1,19 @@
 export type BulletType = 'circle' | 'star';
 
-export type SimpleListItem = string;
+export type TextVariant = 'number' | 'text';
 
-export type RichListItem = {
+export type FormattedTextNode = {
+  id: string;
   color?: string;
-  fontWeight?: string;
-  text?: string;
+  fontWeight: string;
+  text: string;
+  variant?: TextVariant;
 };
 
-export type ListItem = SimpleListItem | RichListItem[];
+export type ListItem = {
+  id: string;
+  children: string | FormattedTextNode[];
+};
 
 export interface ListProps {
   className?: string;

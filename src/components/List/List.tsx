@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 
-import { useItemsWithId } from '@/hooks/useItemsWithId';
 import { LIST_TEST_ID } from '@/lib/testIds';
 
-import { renderRichText } from './helpers/renderRichText';
+import { getFormattedText } from '../../utils/getFormattedText';
 import { ListProps } from './types';
 
 const List = ({
@@ -12,8 +11,6 @@ const List = ({
   bulletType = 'circle',
   listItems,
 }: ListProps) => {
-  const itemsWithId = useItemsWithId(listItems);
-
   if (!listItems || listItems.length === 0) return null;
 
   const isGreenStar = bulletType === 'star';
@@ -39,7 +36,7 @@ const List = ({
         className,
       )}
     >
-      {itemsWithId.map(item => (
+      {listItems.map(item => (
         <li
           key={item.id}
           className={
@@ -51,7 +48,7 @@ const List = ({
           {isGreenStar && greenStarSvg}
           {typeof item.children === 'string'
             ? item.children
-            : renderRichText(item.children)}
+            : getFormattedText(item.children)}
         </li>
       ))}
     </ul>
