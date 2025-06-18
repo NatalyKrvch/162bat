@@ -1,21 +1,19 @@
 import { render, within } from '@testing-library/react';
 
-import { listItemsRich, listItemsSimple } from '@/data/mock/listItems';
+import { listItems, listItemsFormatted } from '@/data/mock/listItems';
 import { LIST_TEST_ID } from '@/lib/testIds';
 
 import List from '../List';
 
 describe('List', () => {
   it('should render correctly with default props', () => {
-    const { container, getByTestId } = render(
-      <List listItems={listItemsSimple} />,
-    );
+    const { container, getByTestId } = render(<List listItems={listItems} />);
 
     const list = getByTestId(LIST_TEST_ID);
     expect(list).toBeInTheDocument();
 
-    listItemsSimple.forEach(item => {
-      expect(list).toHaveTextContent(item);
+    listItems.forEach(item => {
+      expect(list).toHaveTextContent(item.children);
     });
 
     expect(list).toHaveClass('list-disc');
@@ -24,14 +22,14 @@ describe('List', () => {
 
   it('should render correctly with circle bullet', () => {
     const { container, getByTestId } = render(
-      <List listItems={listItemsSimple} bulletType="circle" />,
+      <List listItems={listItems} bulletType="circle" />,
     );
 
     const list = getByTestId(LIST_TEST_ID);
     expect(list).toBeInTheDocument();
 
-    listItemsSimple.forEach(item => {
-      expect(list).toHaveTextContent(item);
+    listItems.forEach(item => {
+      expect(list).toHaveTextContent(item.children);
     });
 
     expect(list).toHaveClass('list-disc');
@@ -40,20 +38,20 @@ describe('List', () => {
 
   it('should render correctly with star bullet', () => {
     const { container, getByTestId } = render(
-      <List listItems={listItemsSimple} bulletType="star" />,
+      <List listItems={listItems} bulletType="star" />,
     );
 
     const list = getByTestId(LIST_TEST_ID);
     expect(list).toBeInTheDocument();
 
-    listItemsSimple.forEach(item => {
-      expect(list).toHaveTextContent(item);
+    listItems.forEach(item => {
+      expect(list).toHaveTextContent(item.children);
     });
 
     expect(list).not.toHaveClass('list-disc');
 
-    const listItems = list.querySelectorAll('li');
-    listItems.forEach(item => {
+    const listItemsElements = list.querySelectorAll('li');
+    listItemsElements.forEach(item => {
       expect(item).toHaveClass('flex items-center gap-4');
       expect(within(item).getByTestId('star-icon')).toBeInTheDocument();
     });
@@ -63,24 +61,24 @@ describe('List', () => {
 
   it('should render correctly with star bullet and richText', () => {
     const { container, getByTestId } = render(
-      <List listItems={listItemsRich} bulletType="star" />,
-    );
-
-    const plaintTexsts = listItemsRich.map(item =>
-      item.map(i => i.text).join(''),
+      <List listItems={listItemsFormatted} bulletType="star" />,
     );
 
     const list = getByTestId(LIST_TEST_ID);
     expect(list).toBeInTheDocument();
 
-    plaintTexsts.forEach(item => {
-      expect(list).toHaveTextContent(item);
+    listItemsFormatted.forEach(item => {
+      if (typeof item.children !== 'string') {
+        item.children.forEach(child => {
+          expect(list).toHaveTextContent(child.text);
+        });
+      }
     });
 
     expect(list).not.toHaveClass('list-disc');
 
-    const listItems = list.querySelectorAll('li');
-    listItems.forEach(item => {
+    const listItemsElements = list.querySelectorAll('li');
+    listItemsElements.forEach(item => {
       expect(item).toHaveClass('flex items-center gap-4');
       expect(within(item).getByTestId('star-icon')).toBeInTheDocument();
     });
@@ -90,7 +88,7 @@ describe('List', () => {
   it('should apply custom className', () => {
     const customClass = 'custom-class';
     const { container, getByTestId } = render(
-      <List listItems={listItemsSimple} className={customClass} />,
+      <List listItems={listItems} className={customClass} />,
     );
 
     const list = getByTestId(LIST_TEST_ID);
