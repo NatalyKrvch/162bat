@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GuaranteesSection renders correctly and matches snapshot 1`] = `
+<div>
+  <div
+    class="mx-auto max-w-screen-2xl px-4 md:px-8 xl:px-20"
+    data-testid="container-test-id"
+  >
+    <section
+      class="flex flex-col items-center gap-10"
+      data-testid="guarantees-section-test-id"
+    >
+      <div
+        class="flex flex-col gap-8"
+      >
+        <h2
+          class="w-full text-2xl/7 font-bold uppercase sm:text-5xl/13 md:text-6xl/16 text-left"
+          data-testid="section-title-test-id"
+        >
+          Пільги та соціальні гарантії для військовослужбовців
+        </h2>
+        <h3
+          class="md:text-lg"
+        >
+          Що ви отримаєте, долучившись до батальйону?
+        </h3>
+      </div>
+      <article
+        class="rounded-default h-full w-full"
+        data-testid="basic-card-test-id"
+      >
+        <div
+          class="border-grey rounded-inner-card h-full w-full p-8 bg-guarantees-section h-guarantees-section flex flex-col items-center justify-center gap-6 px-4 sm:gap-8 md:px-8 lg:gap-10 lg:px-20"
+        >
+          <p
+            class="max-w-4xl text-center text-xl sm:text-2xl"
+          >
+            <span
+              class="font-bold uppercase"
+            >
+              Служба в Збройних Силах України —
+            </span>
+             це не тільки захист своєї країни, а й стабільне соціальне забезпечення, гідна заробітна плата та ряд пільг, що гарантують безпеку вам та вашій родині.
+          </p>
+          <a
+            data-testid="internal-link-test-id"
+            href="/guarantees"
+          >
+            <button
+              class="rounded-default w-full px-6 py-4 transition-colors sm:px-8 sm:py-5 sm:text-xl/5 md:text-2xl/7 border-2 border-btn-bg text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary font-bold"
+              data-testid="button-test-id"
+            >
+              Дізнатись детально
+            </button>
+          </a>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+`;
