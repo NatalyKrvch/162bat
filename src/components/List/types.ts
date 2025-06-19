@@ -4,9 +4,9 @@ export type TextVariant = 'number' | 'text';
 
 export type FormattedTextNode = {
   id: string;
-  color?: string;
   fontWeight: string;
   text: string;
+  color?: string;
   variant?: TextVariant;
 };
 
@@ -16,7 +16,7 @@ export type ListItem = {
 };
 
 export interface ListProps {
-  className?: string;
-  bulletType?: BulletType;
   listItems: ListItem[];
+  bulletType?: BulletType;
+  className?: string;
 }
