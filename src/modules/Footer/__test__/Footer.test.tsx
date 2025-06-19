@@ -1,14 +1,14 @@
 import { FOOTER_TEST_ID } from '@lib/testIds';
 import { fireEvent, render } from '@testing-library/react';
 
-import { mockFooterData } from '../constants/mockFooterData';
+import { data } from '@/data/footer';
+
 import Footer from '../Footer';
 
 const mockOnClick = jest.fn();
 
-const { image, menu, contactUs, button, legal } = mockFooterData;
-const renderFooter = () =>
-  render(<Footer data={mockFooterData} onClick={mockOnClick} />);
+const { image, menu, contactUs, button, legal } = data;
+const renderFooter = () => render(<Footer data={data} onClick={mockOnClick} />);
 
 describe('Footer', () => {
   it('renders correctly and matches snapshot', () => {
