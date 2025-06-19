@@ -11,3 +11,4 @@ export const FOOTER_TEST_ID = 'footer-test-id';
 export const SECTION_TITLE_TEST_ID = 'section-title-test-id';
 export const GUARANTEES_SECTION_TEST_ID = 'guarantees-section-test-id';
 export const LIST_TEST_ID = 'list-test-id';
+export const STAR_ICON_TEST_ID = 'star-icon-test-id';

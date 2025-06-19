@@ -1,7 +1,7 @@
 import { render, within } from '@testing-library/react';
 
 import { listItems, listItemsFormatted } from '@/data/mock/listItems';
-import { LIST_TEST_ID } from '@/lib/testIds';
+import { LIST_TEST_ID, STAR_ICON_TEST_ID } from '@/lib/testIds';
 
 import List from '../List';
 
@@ -53,7 +53,7 @@ describe('List', () => {
     const listItemsElements = list.querySelectorAll('li');
     listItemsElements.forEach(item => {
       expect(item).toHaveClass('flex items-center gap-4');
-      expect(within(item).getByTestId('star-icon')).toBeInTheDocument();
+      expect(within(item).getByTestId(STAR_ICON_TEST_ID)).toBeInTheDocument();
     });
 
     expect(container).toMatchSnapshot();
@@ -80,7 +80,7 @@ describe('List', () => {
     const listItemsElements = list.querySelectorAll('li');
     listItemsElements.forEach(item => {
       expect(item).toHaveClass('flex items-center gap-4');
-      expect(within(item).getByTestId('star-icon')).toBeInTheDocument();
+      expect(within(item).getByTestId(STAR_ICON_TEST_ID)).toBeInTheDocument();
     });
     expect(container).toMatchSnapshot();
   });
