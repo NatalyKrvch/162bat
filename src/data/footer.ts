@@ -1,4 +1,4 @@
-export const mockFooterData = {
+export const data = {
   image: {
     src: '/logo.svg',
     alt: 'Логотип батальйону',
