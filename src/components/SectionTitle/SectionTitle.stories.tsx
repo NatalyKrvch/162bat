@@ -12,6 +12,11 @@ export default {
         type: 'text',
       },
     },
+    className: {
+      control: {
+        type: 'text',
+      },
+    },
   },
 } as Meta;
 
