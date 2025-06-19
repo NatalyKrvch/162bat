@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 
 import { LIST_TEST_ID, STAR_ICON_TEST_ID } from '@/lib/testIds';
-import { getFormattedText } from '@/utils/getFormattedText';
+import { getFormattedText } from '@/utils';
 
 import { ListProps } from './types';
 
