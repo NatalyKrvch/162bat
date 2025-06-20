@@ -12,7 +12,7 @@ const STAR_ICON = (
     alt="star icon"
     width={24}
     height={24}
-    className="h-4 w-4 min-w-4 sm:h-6 sm:w-6 sm:min-w-6"
+    className="h-5 w-5 min-w-5 sm:h-6 sm:w-6 sm:min-w-6"
     data-testid={STAR_ICON_TEST_ID}
   />
 );
@@ -27,9 +27,7 @@ const List = ({
   const isGreenStar = bulletType === 'star';
 
   const listStyle = twMerge(
-    isGreenStar
-      ? 'flex flex-col gap-4 text-base sm:text-2xl'
-      : 'list-disc pl-4 text-base sm:text-xl',
+    isGreenStar ? 'flex flex-col gap-4' : 'list-disc pl-4',
     className,
   );
 
