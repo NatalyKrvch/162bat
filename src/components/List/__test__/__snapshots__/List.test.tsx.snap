@@ -3,7 +3,7 @@
 exports[`List should apply custom className 1`] = `
 <div>
   <ul
-    class="list-disc pl-4 text-base sm:text-xl custom-class"
+    class="list-disc pl-4 custom-class"
     data-testid="list-test-id"
   >
     <li
@@ -28,7 +28,7 @@ exports[`List should apply custom className 1`] = `
 exports[`List should render correctly with circle bullet 1`] = `
 <div>
   <ul
-    class="list-disc pl-4 text-base sm:text-xl"
+    class="list-disc pl-4"
     data-testid="list-test-id"
   >
     <li
@@ -53,7 +53,7 @@ exports[`List should render correctly with circle bullet 1`] = `
 exports[`List should render correctly with default props 1`] = `
 <div>
   <ul
-    class="list-disc pl-4 text-base sm:text-xl"
+    class="list-disc pl-4"
     data-testid="list-test-id"
   >
     <li
@@ -78,7 +78,7 @@ exports[`List should render correctly with default props 1`] = `
 exports[`List should render correctly with star bullet 1`] = `
 <div>
   <ul
-    class="flex flex-col gap-4 text-base sm:text-2xl"
+    class="flex flex-col gap-4"
     data-testid="list-test-id"
   >
     <li
@@ -86,7 +86,7 @@ exports[`List should render correctly with star bullet 1`] = `
     >
       <img
         alt="star icon"
-        class="h-4 w-4 min-w-4 sm:h-6 sm:w-6 sm:min-w-6"
+        class="h-5 w-5 min-w-5 sm:h-6 sm:w-6 sm:min-w-6"
         data-nimg="1"
         data-testid="star-icon-test-id"
         decoding="async"
@@ -103,7 +103,7 @@ exports[`List should render correctly with star bullet 1`] = `
     >
       <img
         alt="star icon"
-        class="h-4 w-4 min-w-4 sm:h-6 sm:w-6 sm:min-w-6"
+        class="h-5 w-5 min-w-5 sm:h-6 sm:w-6 sm:min-w-6"
         data-nimg="1"
         data-testid="star-icon-test-id"
         decoding="async"
@@ -120,7 +120,7 @@ exports[`List should render correctly with star bullet 1`] = `
     >
       <img
         alt="star icon"
-        class="h-4 w-4 min-w-4 sm:h-6 sm:w-6 sm:min-w-6"
+        class="h-5 w-5 min-w-5 sm:h-6 sm:w-6 sm:min-w-6"
         data-nimg="1"
         data-testid="star-icon-test-id"
         decoding="async"
@@ -139,7 +139,7 @@ exports[`List should render correctly with star bullet 1`] = `
 exports[`List should render correctly with star bullet and richText 1`] = `
 <div>
   <ul
-    class="flex flex-col gap-4 text-base sm:text-2xl"
+    class="flex flex-col gap-4"
     data-testid="list-test-id"
   >
     <li
@@ -147,7 +147,7 @@ exports[`List should render correctly with star bullet and richText 1`] = `
     >
       <img
         alt="star icon"
-        class="h-4 w-4 min-w-4 sm:h-6 sm:w-6 sm:min-w-6"
+        class="h-5 w-5 min-w-5 sm:h-6 sm:w-6 sm:min-w-6"
         data-nimg="1"
         data-testid="star-icon-test-id"
         decoding="async"
@@ -195,7 +195,7 @@ exports[`List should render correctly with star bullet and richText 1`] = `
     >
       <img
         alt="star icon"
-        class="h-4 w-4 min-w-4 sm:h-6 sm:w-6 sm:min-w-6"
+        class="h-5 w-5 min-w-5 sm:h-6 sm:w-6 sm:min-w-6"
         data-nimg="1"
         data-testid="star-icon-test-id"
         decoding="async"
@@ -223,7 +223,7 @@ exports[`List should render correctly with star bullet and richText 1`] = `
     >
       <img
         alt="star icon"
-        class="h-4 w-4 min-w-4 sm:h-6 sm:w-6 sm:min-w-6"
+        class="h-5 w-5 min-w-5 sm:h-6 sm:w-6 sm:min-w-6"
         data-nimg="1"
         data-testid="star-icon-test-id"
         decoding="async"
