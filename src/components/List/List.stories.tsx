@@ -19,7 +19,6 @@ export default {
 export const Default: StoryObj = {
   args: {
     listItems: listItems,
-    className: '',
   },
 };
 
@@ -27,7 +26,7 @@ export const CircleBullet: StoryObj = {
   args: {
     bulletType: 'circle',
     listItems: listItems,
-    className: '',
+    className: 'sm:text-xl',
   },
 };
 
@@ -35,7 +34,7 @@ export const GreenStarBullet: StoryObj = {
   args: {
     bulletType: 'star',
     listItems: listItems,
-    className: '',
+    className: 'sm:text-2xl',
   },
 };
 
@@ -43,6 +42,6 @@ export const GreenStarBulletWithColoredText: StoryObj = {
   args: {
     bulletType: 'star',
     listItems: listItemsFormatted,
-    className: '',
+    className: 'sm:text-2xl',
   },
 };
