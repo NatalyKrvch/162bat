@@ -8,3 +8,4 @@ export { ExternalLink } from './ExternalLink';
 export { InternalLink } from './InternalLink';
 export { List } from './List';
 export { SectionTitle } from './SectionTitle';
+export { TitledCard } from './TitledCard';
