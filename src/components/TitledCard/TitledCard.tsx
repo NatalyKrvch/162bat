@@ -16,7 +16,7 @@ const TitledCard = ({
   );
 
   return (
-    <section
+    <article
       data-testid={TITLED_CARD_TEST_ID}
       className={twMerge('flex flex-col gap-4', className)}
     >
@@ -25,14 +25,10 @@ const TitledCard = ({
         {typeof description === 'string' ? (
           <p>{description}</p>
         ) : (
-          description.map(item => (
-            <p key={item.id} className="">
-              {item.text}
-            </p>
-          ))
+          description.map(item => <p key={item.id}>{item.text}</p>)
         )}
       </div>
-    </section>
+    </article>
   );
 };
 
