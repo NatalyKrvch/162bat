@@ -2,7 +2,7 @@
 
 exports[`TitledCard should render correctly with default props 1`] = `
 <div>
-  <section
+  <article
     class="flex flex-col gap-4"
     data-testid="titled-card-test-id"
   >
@@ -18,13 +18,13 @@ exports[`TitledCard should render correctly with default props 1`] = `
         This is a titled card component.
       </p>
     </div>
-  </section>
+  </article>
 </div>
 `;
 
 exports[`TitledCard should render correctly with green title 1`] = `
 <div>
-  <section
+  <article
     class="flex flex-col gap-4"
     data-testid="titled-card-test-id"
   >
@@ -40,13 +40,13 @@ exports[`TitledCard should render correctly with green title 1`] = `
         This is a titled card component.
       </p>
     </div>
-  </section>
+  </article>
 </div>
 `;
 
 exports[`TitledCard should render multiple paragraphs correctly 1`] = `
 <div>
-  <section
+  <article
     class="flex flex-col gap-4"
     data-testid="titled-card-test-id"
   >
@@ -58,17 +58,13 @@ exports[`TitledCard should render multiple paragraphs correctly 1`] = `
     <div
       class="flex flex-col gap-3"
     >
-      <p
-        class=""
-      >
+      <p>
         29 березня 2018 року батальйон був створений у складі 119-ї бригади, яка об’єднала 43 загони територіальної оборони Чернігівщини.
       </p>
-      <p
-        class=""
-      >
+      <p>
         Ще в мирний час ми проводили регулярні навчання, щоб бути готовими до будь-яких викликів. В 2018 році проводились тактичні навчання “Північна фортеця - 2018”, які були організовані з використанням досвіду застосування військових частин територіальної оборони країн Балтії та скандинавських держав. У 2021 році понад 2 000 резервістів бригади, включно з нашими бійцями, взяли участь у масштабних навчаннях, готуючись до оборони регіону.
       </p>
     </div>
-  </section>
+  </article>
 </div>
 `;
