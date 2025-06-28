@@ -1,7 +1,9 @@
+export { Accordion } from './Accordion';
 export { Arrow } from './Arrow';
 export { BasicCard } from './BasicCard';
 export { Button } from './Button';
 export { Carousel } from './Carousel';
+export { Chevron } from './Chevron';
 export { Container } from './Container';
 export { Divider } from './Divider';
 export { ExternalLink } from './ExternalLink';
