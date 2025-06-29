@@ -66,6 +66,7 @@
   /*Animation*/
   --animate-accordion-down: accordion-down 300ms ease-out;
   --animate-accordion-up: accordion-up 300ms ease-out;
+
 }
 
 
@@ -170,6 +171,14 @@ body {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
+}
+
+.min-h-screen-minus-header {
+  min-height: calc(100vh - var(--height-header));
+
+  @media (max-width: 768px) {
+    min-height: calc(100vh - var(--height-header-mobile));
+  }
 }
 
 @keyframes accordion-down {
