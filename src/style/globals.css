@@ -57,6 +57,8 @@
 
   /*Heights*/
   --height-guarantees-section: 550px;
+  --height-header: 124px;
+  --height-header-mobile: 100px;
 
   /*Widths*/
   --width-max-container: 1440px;
@@ -128,6 +130,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.bg-hero-section {
+  background-image: url('/hero-section-bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .rotated {
   transform: rotate(180deg);
   writing-mode: vertical-lr;
@@ -147,4 +156,12 @@ body {
 @keyframes accordion-up {
   from { height: var(--radix-accordion-content-height); opacity: 1; }
   to { height: 0px; opacity: 0;  }
+}
+
+.min-h-screen-minus-header {
+  min-height: calc(100vh - var(--height-header));
+
+  @media (max-width: 768px) {
+    min-height: calc(100vh - var(--height-header-mobile));
+  }
 }
