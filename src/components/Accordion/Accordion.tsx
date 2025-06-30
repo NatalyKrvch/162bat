@@ -23,7 +23,7 @@ const Accordion = ({ accordionItems }: AccordionProps) => {
             <AccordionRadix.Header>
               <AccordionRadix.Trigger className="group-data-[state=open]:text-main flex w-full cursor-pointer items-center justify-between p-6 text-lg font-bold sm:p-8 sm:text-2xl md:py-10">
                 {title}
-                <Chevron className="group-data-[state=open]:stroke-main transition-transform duration-300 group-data-[state=open]:rotate-180" />
+                <Chevron className="group-data-[state=open]:stroke-main group-data-[state=open]:rotate-180" />
               </AccordionRadix.Trigger>
             </AccordionRadix.Header>
             <AccordionRadix.Content
