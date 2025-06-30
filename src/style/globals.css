@@ -165,3 +165,13 @@ body {
     min-height: calc(100vh - var(--height-header-mobile));
   }
 }
+
+@keyframes accordion-down {
+  from { height: 0px; opacity: 0; }
+  to { height: var(--radix-accordion-content-height); opacity: 1; }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); opacity: 1; }
+  to { height: 0px; opacity: 0;  }
+}
