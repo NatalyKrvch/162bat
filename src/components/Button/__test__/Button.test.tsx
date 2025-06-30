@@ -5,7 +5,7 @@ import { BUTTON_TEST_ID } from '@/lib/testIds';
 
 import Button from '../Button';
 import { BUTTON_VARIANT_CLASSES } from '../constants/constants';
-import { ButtonVariant } from '../types';
+import type { ButtonVariant } from '../types';
 
 const variants: ButtonVariant[] = ['primary', 'secondary', 'link', 'icon'];
 const disabledStates = [true, false];

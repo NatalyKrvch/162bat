@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { STAGE_CARD_TEST_ID } from '@/lib/testIds';
 
 import StageCard from '../StageCard';
-import { StageCardProps } from '../types';
+import type { StageCardProps } from '../types';
 
 const mockData: StageCardProps = {
   step: 'КРОК 1',

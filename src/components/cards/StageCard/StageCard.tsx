@@ -1,6 +1,6 @@
 import { STAGE_CARD_TEST_ID } from '@/lib/testIds';
 
-import { StageCardProps } from './types';
+import type { StageCardProps } from './types';
 
 const StageCard = ({ step, title, description }: StageCardProps) => {
   return (

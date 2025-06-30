@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { INTERNAL_LINK_TEST_ID } from '@/lib/testIds';
 
 import InternalLink from '../InternalLink';
-import { InternalLinkProps } from '../types';
+import type { InternalLinkProps } from '../types';
 
 jest.mock('next/link', () => {
   const MockLink = ({

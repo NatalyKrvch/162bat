@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { EXTERNAL_LINK_TEST_ID } from '@/lib/testIds';
 
 import ExternalLink from '../ExternalLink';
-import { ExternalLinkProps } from '../types';
+import type { ExternalLinkProps } from '../types';
 
 describe('ExternalLink Component', () => {
   const defaultProps: ExternalLinkProps = {

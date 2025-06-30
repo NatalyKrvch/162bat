@@ -7,7 +7,7 @@ import {
 } from '@/components';
 import { GUARANTEES_SECTION_TEST_ID } from '@/lib/testIds';
 
-import { GuaranteesSectionProps } from './types';
+import type { GuaranteesSectionProps } from './types';
 
 const GuaranteesSection = ({ data }: GuaranteesSectionProps) => {
   const { title, subtitle, description, button } = data;
