@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge';
 import { BUTTON_TEST_ID } from '@/lib/testIds';
 
 import useButtonClasses from './hooks/useButtonClasses';
-import { ButtonProps } from './types';
+import type { ButtonProps } from './types';
 
 const Button = ({
   disabled,

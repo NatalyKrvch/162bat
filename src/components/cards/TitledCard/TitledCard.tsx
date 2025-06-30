@@ -2,7 +2,7 @@ import { twMerge } from 'tailwind-merge';
 
 import { TITLED_CARD_TEST_ID } from '@/lib/testIds';
 
-import { TitledCardProps } from './types';
+import type { TitledCardProps } from './types';
 
 const TitledCard = ({
   title,

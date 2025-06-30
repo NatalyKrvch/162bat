@@ -4,7 +4,7 @@ import { Button, Divider, InternalLink } from '@/components';
 import { FOOTER_TEST_ID } from '@/lib/testIds';
 
 import useCurrentYear from './hooks/useCurrentYear';
-import { FooterProps } from './types';
+import type { FooterProps } from './types';
 
 const Footer = ({ data, onClick }: FooterProps) => {
   const currentYear = useCurrentYear();

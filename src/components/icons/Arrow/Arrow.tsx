@@ -1,6 +1,6 @@
 import { ARROW_TEST_ID } from '@/lib/testIds';
 
-import { ArrowProps } from './types';
+import type { ArrowProps } from './types';
 
 const Arrow = ({ direction }: ArrowProps) => {
   const isLeftDirection = direction === 'left';

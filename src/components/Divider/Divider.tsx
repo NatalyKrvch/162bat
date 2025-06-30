@@ -1,6 +1,6 @@
 import { DIVIDER_TEST_ID } from '@/lib/testIds';
 
-import { DividerProps } from './types';
+import type { DividerProps } from './types';
 
 const Divider = ({ variant = 'gradient' }: DividerProps) => {
   const isGreyVariant = variant === 'grey';

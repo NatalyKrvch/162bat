@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge';
 
 import { SECTION_TITLE_TEST_ID } from '@/lib/testIds';
 
-import { SectionTitleProps } from './types';
+import type { SectionTitleProps } from './types';
 
 const SectionTitle = ({
   className = '',

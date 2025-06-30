@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge';
 
 import { BASIC_CARD_TEST_ID } from '@/lib/testIds';
 
-import { BasicCardProps } from './types';
+import type { BasicCardProps } from './types';
 
 const BasicCard = ({
   hasBorder = true,

@@ -3,7 +3,7 @@ import { type PropsWithChildren } from 'react';
 
 import { INTERNAL_LINK_TEST_ID } from '@/lib/testIds';
 
-import { InternalLinkProps } from './types';
+import type { InternalLinkProps } from './types';
 
 const InternalLink = ({
   href,
