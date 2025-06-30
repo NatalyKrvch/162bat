@@ -5,8 +5,8 @@ import { Children, isValidElement, type PropsWithChildren } from 'react';
 
 import { CAROUSEL_TEST_ID } from '@/lib/testIds';
 
-import { Arrow } from '../Arrow';
 import { Button } from '../Button';
+import { Arrow } from '../icons/Arrow';
 import {
   NEXT_SLIDE_ARIA_LABEL,
   PREVIOUS_SLIDE_ARIA_LABEL,

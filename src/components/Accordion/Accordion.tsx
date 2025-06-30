@@ -2,9 +2,9 @@ import * as AccordionRadix from '@radix-ui/react-accordion';
 
 import { ACCORDION_TEST_ID } from '@/lib/testIds';
 
-import { BasicCard } from '../BasicCard';
-import { Chevron } from '../Chevron';
+import { BasicCard } from '../cards/BasicCard';
 import { Divider } from '../Divider';
+import { Chevron } from '../icons/Chevron';
 import type { AccordionProps } from './types';
 
 const Accordion = ({ accordionItems }: AccordionProps) => {
