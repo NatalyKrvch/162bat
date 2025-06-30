@@ -2,7 +2,7 @@
 
 exports[`Chevron  should render correctly by defoult 1`] = `
 <svg
-  class="h-6 w-6 stroke-white sm:h-8 sm:w-8"
+  class="h-6 w-6 stroke-white transition-transform duration-300 sm:h-8 sm:w-8"
   data-testid="chevron-test-id"
   fill="none"
   viewBox="0 0 32 32"
@@ -19,7 +19,7 @@ exports[`Chevron  should render correctly by defoult 1`] = `
 
 exports[`Chevron renders correctly with className prop 1`] = `
 <svg
-  class="h-6 w-6 sm:h-8 sm:w-8 stroke-main"
+  class="h-6 w-6 transition-transform duration-300 sm:h-8 sm:w-8 stroke-main"
   data-testid="chevron-test-id"
   fill="none"
   viewBox="0 0 32 32"

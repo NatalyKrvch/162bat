@@ -35,7 +35,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
             >
               Title 1
               <svg
-                class="h-6 w-6 stroke-white sm:h-8 sm:w-8 group-data-[state=open]:stroke-main transition-transform duration-300 group-data-[state=open]:rotate-180"
+                class="h-6 w-6 stroke-white transition-transform duration-300 sm:h-8 sm:w-8 group-data-[state=open]:stroke-main group-data-[state=open]:rotate-180"
                 data-testid="chevron-test-id"
                 fill="none"
                 viewBox="0 0 32 32"
@@ -92,7 +92,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
             >
               Title 2
               <svg
-                class="h-6 w-6 stroke-white sm:h-8 sm:w-8 group-data-[state=open]:stroke-main transition-transform duration-300 group-data-[state=open]:rotate-180"
+                class="h-6 w-6 stroke-white transition-transform duration-300 sm:h-8 sm:w-8 group-data-[state=open]:stroke-main group-data-[state=open]:rotate-180"
                 data-testid="chevron-test-id"
                 fill="none"
                 viewBox="0 0 32 32"
@@ -149,7 +149,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
             >
               Title 3
               <svg
-                class="h-6 w-6 stroke-white sm:h-8 sm:w-8 group-data-[state=open]:stroke-main transition-transform duration-300 group-data-[state=open]:rotate-180"
+                class="h-6 w-6 stroke-white transition-transform duration-300 sm:h-8 sm:w-8 group-data-[state=open]:stroke-main group-data-[state=open]:rotate-180"
                 data-testid="chevron-test-id"
                 fill="none"
                 viewBox="0 0 32 32"
@@ -206,7 +206,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
             >
               Title 4
               <svg
-                class="h-6 w-6 stroke-white sm:h-8 sm:w-8 group-data-[state=open]:stroke-main transition-transform duration-300 group-data-[state=open]:rotate-180"
+                class="h-6 w-6 stroke-white transition-transform duration-300 sm:h-8 sm:w-8 group-data-[state=open]:stroke-main group-data-[state=open]:rotate-180"
                 data-testid="chevron-test-id"
                 fill="none"
                 viewBox="0 0 32 32"
