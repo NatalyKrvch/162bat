@@ -8,7 +8,7 @@ import Accordion from '../Accordion';
 describe('Accordion', () => {
   it('should render accordion items correctly', () => {
     const { container, getByTestId } = render(
-      <Accordion accordionItems={accordionItems} />,
+      <Accordion items={accordionItems} />,
     );
 
     const accordion = getByTestId(ACCORDION_TEST_ID);
@@ -22,9 +22,7 @@ describe('Accordion', () => {
   });
 
   it('should open the correct item on click and close others', () => {
-    const { getByTestId } = render(
-      <Accordion accordionItems={accordionItems} />,
-    );
+    const { getByTestId } = render(<Accordion items={accordionItems} />);
 
     for (const accordionItem of accordionItems) {
       const trigger = screen.getByText(accordionItem.title);

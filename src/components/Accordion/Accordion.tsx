@@ -2,13 +2,13 @@ import * as AccordionRadix from '@radix-ui/react-accordion';
 
 import { ACCORDION_TEST_ID } from '@/lib/testIds';
 
-import { BasicCard } from '../cards/BasicCard';
+import { BasicCard } from '../Cards/BasicCard';
 import { Divider } from '../Divider';
-import { Chevron } from '../icons/Chevron';
+import { Chevron } from '../Icons/Chevron';
 import type { AccordionProps } from './types';
 
-const Accordion = ({ accordionItems }: AccordionProps) => {
-  if (accordionItems.length === 0) return null;
+const Accordion = ({ items }: AccordionProps) => {
+  if (items.length === 0) return null;
 
   return (
     <AccordionRadix.Root
@@ -17,7 +17,7 @@ const Accordion = ({ accordionItems }: AccordionProps) => {
       className="flex flex-col gap-4"
       data-testid={ACCORDION_TEST_ID}
     >
-      {accordionItems.map(({ id, title, content }) => (
+      {items.map(({ id, title, content }) => (
         <AccordionRadix.Item value={id} key={id} className="group">
           <BasicCard gradientPosition="left" className="p-0">
             <AccordionRadix.Header>
@@ -28,10 +28,12 @@ const Accordion = ({ accordionItems }: AccordionProps) => {
             </AccordionRadix.Header>
             <AccordionRadix.Content
               data-testid={`accordion-content-${id}`}
-              className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down flex flex-col gap-6 p-6 pt-0 sm:gap-8 sm:p-8 sm:pt-0 md:gap-10 md:pt-0 md:pb-10"
+              className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
             >
-              <Divider />
-              {content}
+              <div className="flex flex-col gap-6 p-6 pt-0 sm:gap-8 sm:p-8 sm:pt-0 md:gap-10 md:pt-0 md:pb-10">
+                <Divider />
+                {content}
+              </div>
             </AccordionRadix.Content>
           </BasicCard>
         </AccordionRadix.Item>

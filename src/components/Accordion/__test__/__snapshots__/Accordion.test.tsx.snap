@@ -52,7 +52,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
           </h3>
           <div
             aria-labelledby="radix-«r0»"
-            class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down flex flex-col gap-6 p-6 pt-0 sm:gap-8 sm:p-8 sm:pt-0 md:gap-10 md:pt-0 md:pb-10"
+            class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
             data-orientation="vertical"
             data-state="closed"
             data-testid="accordion-content-accordion-item-1"
@@ -109,7 +109,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
           </h3>
           <div
             aria-labelledby="radix-«r2»"
-            class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down flex flex-col gap-6 p-6 pt-0 sm:gap-8 sm:p-8 sm:pt-0 md:gap-10 md:pt-0 md:pb-10"
+            class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
             data-orientation="vertical"
             data-state="closed"
             data-testid="accordion-content-accordion-item-2"
@@ -166,7 +166,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
           </h3>
           <div
             aria-labelledby="radix-«r4»"
-            class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down flex flex-col gap-6 p-6 pt-0 sm:gap-8 sm:p-8 sm:pt-0 md:gap-10 md:pt-0 md:pb-10"
+            class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
             data-orientation="vertical"
             data-state="closed"
             data-testid="accordion-content-accordion-item-3"
@@ -223,7 +223,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
           </h3>
           <div
             aria-labelledby="radix-«r6»"
-            class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down flex flex-col gap-6 p-6 pt-0 sm:gap-8 sm:p-8 sm:pt-0 md:gap-10 md:pt-0 md:pb-10"
+            class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
             data-orientation="vertical"
             data-state="closed"
             data-testid="accordion-content-accordion-item-4"

@@ -59,7 +59,7 @@
 
   /*Animation*/
   --animate-accordion-down: accordion-down 300ms ease-out;
-  --animate-accordion-up: accordion-up 300ms ease-in;
+  --animate-accordion-up: accordion-up 300ms ease-out;
 }
 
 body {

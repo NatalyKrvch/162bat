@@ -7,5 +7,5 @@ export type AccordionItem = {
 };
 
 export interface AccordionProps {
-  accordionItems: AccordionItem[];
+  items: AccordionItem[];
 }
