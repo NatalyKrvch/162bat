@@ -131,7 +131,7 @@ body {
 }
 
 .bg-hero-section {
-  background-image: url('/hero-section-bg.svg');
+  background-image: url('/hero-section-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
