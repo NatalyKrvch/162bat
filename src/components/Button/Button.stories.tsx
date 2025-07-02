@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/nextjs';
 
-import { Arrow } from '../icons/Arrow';
+import { Arrow } from '../Icons/Arrow';
 import Button from './Button';
 
 export default {

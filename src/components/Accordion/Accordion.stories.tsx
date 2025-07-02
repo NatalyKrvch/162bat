@@ -12,6 +12,6 @@ export default {
 
 export const Default: StoryObj = {
   args: {
-    accordionItems: accordionItems,
+    items: accordionItems,
   },
 };
