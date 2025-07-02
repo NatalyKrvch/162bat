@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/nextjs';
 
-import { BasicCard } from '@/components/Cards/BasicCard';
+import { BasicCard } from '@/components/CardsFolder/BasicCard';
 
 import Carousel from './Carousel';
 
