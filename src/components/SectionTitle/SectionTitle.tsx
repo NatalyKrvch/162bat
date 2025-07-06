@@ -6,16 +6,13 @@ import { SECTION_TITLE_TEST_ID } from '@/lib/testIds';
 import type { SectionTitleProps } from './types';
 
 const SectionTitle = ({
-  className = '',
   children,
+  className = '',
 }: PropsWithChildren<SectionTitleProps>) => {
   return (
     <h2
       data-testid={SECTION_TITLE_TEST_ID}
-      className={twMerge(
-        'w-full text-center text-2xl/7 font-bold uppercase sm:text-5xl/13 md:text-6xl/16',
-        className,
-      )}
+      className={twMerge('w-full font-bold uppercase', className)}
     >
       {children}
     </h2>
