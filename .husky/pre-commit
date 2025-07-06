@@ -1,2 +1,11 @@
-yarn lint || { echo "ESLint errors detected. Aborting commit."; exit 1; }
-yarn format || { echo "Prettier errors detected. Aborting commit."; exit 1; }
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🛡️ Running pre-commit checks..."
+
+yarn lint-staged || {
+  echo "❌ Lint or format issues found. Commit aborted.";
+  exit 1;
+}
+
+echo "✅ All staged files passed checks. Proceeding with commit."
