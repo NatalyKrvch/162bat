@@ -33,7 +33,6 @@ const HistorySection = ({ data }: HistorySectionProps) => {
             </Button>
           </InternalLink>
         </div>
-
         <p className="mb-10 max-w-240 text-base leading-[150%] lg:mb-8 lg:text-lg xl:mb-10">
           {introText}
         </p>
