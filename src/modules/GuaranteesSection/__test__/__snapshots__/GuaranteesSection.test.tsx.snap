@@ -17,12 +17,12 @@ exports[`GuaranteesSection renders correctly and matches snapshot 1`] = `
           class="w-full font-bold uppercase text-left"
           data-testid="section-title-test-id"
         >
-          Пільги та соціальні гарантії для військовослужбовців
+          Guarantees Title
         </h2>
         <h3
           class="md:text-lg"
         >
-          Що ви отримаєте, долучившись до батальйону?
+          Your safety is our priority
         </h3>
       </div>
       <div
@@ -38,9 +38,9 @@ exports[`GuaranteesSection renders correctly and matches snapshot 1`] = `
             <span
               class="font-bold uppercase"
             >
-              Служба в Збройних Силах України —
+              100% secure
             </span>
-             це не тільки захист своєї країни, а й стабільне соціальне забезпечення, гідна заробітна плата та ряд пільг, що гарантують безпеку вам та вашій родині.
+              money-back guarantee within 30 days.
           </p>
           <a
             data-testid="internal-link-test-id"
@@ -50,7 +50,7 @@ exports[`GuaranteesSection renders correctly and matches snapshot 1`] = `
               class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl border-2 border-btn-bg px-6 py-4 sm:px-8 sm:py-5 text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary font-bold"
               data-testid="button-test-id"
             >
-              Дізнатись детально
+              Learn More
             </button>
           </a>
         </div>
