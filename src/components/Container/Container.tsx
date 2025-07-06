@@ -6,7 +6,7 @@ const Container = ({ children }: PropsWithChildren) => {
   return (
     <div
       data-testid={CONTAINER_TEST_ID}
-      className="mx-auto max-w-screen-2xl px-4 md:px-8 xl:px-20"
+      className="container-width px-4 md:px-8 xl:px-20"
     >
       {children}
     </div>

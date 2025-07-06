@@ -17,13 +17,7 @@ describe('Container', () => {
 
     expect(content).toBeInTheDocument();
     expect(containerComponent).toBeInTheDocument();
-    expect(containerComponent).toHaveClass(
-      'mx-auto',
-      'max-w-screen-2xl',
-      'px-4',
-      'md:px-8',
-      'xl:px-20',
-    );
+    expect(containerComponent).toHaveClass('px-4', 'md:px-8', 'xl:px-20');
     expect(container).toMatchSnapshot();
   });
 });
