@@ -7,7 +7,7 @@ exports[`TitledCard should render correctly with default props 1`] = `
     data-testid="titled-card-test-id"
   >
     <h3
-      class="text-2xl/7 font-bold"
+      class="text-xl leading-[150%] font-bold lg:text-2xl lg:leading-[120%]"
     >
       Title
     </h3>
@@ -29,7 +29,7 @@ exports[`TitledCard should render correctly with green title 1`] = `
     data-testid="titled-card-test-id"
   >
     <h3
-      class="text-2xl/7 font-bold text-text-green"
+      class="text-xl leading-[150%] font-bold lg:text-2xl lg:leading-[120%] text-text-green"
     >
       Title
     </h3>
@@ -51,7 +51,7 @@ exports[`TitledCard should render multiple paragraphs correctly 1`] = `
     data-testid="titled-card-test-id"
   >
     <h3
-      class="text-2xl/7 font-bold text-text-green"
+      class="text-xl leading-[150%] font-bold lg:text-2xl lg:leading-[120%] text-text-green"
     >
       Title
     </h3>
