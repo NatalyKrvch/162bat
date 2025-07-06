@@ -102,7 +102,7 @@ exports[`Footer renders correctly and matches snapshot 1`] = `
           </div>
           <button
             aria-label="Заповнити анкету"
-            class="rounded-default w-full transition-colors sm:text-xl/5 md:text-2xl/7 bg-btn-bg text-text-white hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled flex items-center p-3 whitespace-nowrap sm:w-fit sm:px-8 sm:py-5 lg:h-15"
+            class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl bg-btn-bg text-text-white hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled flex items-center p-3 whitespace-nowrap sm:w-fit sm:px-8 sm:py-5 lg:h-15"
             data-testid="button-test-id"
             title="Заповнити анкету"
           >

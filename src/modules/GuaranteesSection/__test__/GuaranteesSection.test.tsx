@@ -1,6 +1,6 @@
+import guaranteesSectionData from '@data/guaranteesSectionData.json';
 import { render } from '@testing-library/react';
 
-import { data } from '@/data/guaranteesSection';
 import {
   GUARANTEES_SECTION_TEST_ID,
   INTERNAL_LINK_TEST_ID,
@@ -9,11 +9,11 @@ import {
 import GuaranteesSection from '../GuaranteesSection';
 
 describe('GuaranteesSection', () => {
-  const { title, subtitle, description, button } = data;
+  const { title, subtitle, description, button } = guaranteesSectionData;
 
   it('renders correctly and matches snapshot', () => {
     const { container, getByText, getByTestId } = render(
-      <GuaranteesSection data={data} />,
+      <GuaranteesSection data={guaranteesSectionData} />,
     );
 
     expect(getByTestId(GUARANTEES_SECTION_TEST_ID)).toBeInTheDocument();
