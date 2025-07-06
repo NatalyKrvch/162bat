@@ -40,6 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# swc cache
+.swc/
+
 *storybook.log
 
 .vscode
+storybook-static
