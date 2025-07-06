@@ -12,7 +12,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
       data-orientation="vertical"
       data-state="closed"
     >
-      <article
+      <div
         class="rounded-default h-full w-full bg-card-gradient-left pl-px"
         data-testid="basic-card-test-id"
       >
@@ -62,14 +62,14 @@ exports[`Accordion should render accordion items correctly 1`] = `
             style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
           />
         </div>
-      </article>
+      </div>
     </div>
     <div
       class="group"
       data-orientation="vertical"
       data-state="closed"
     >
-      <article
+      <div
         class="rounded-default h-full w-full bg-card-gradient-left pl-px"
         data-testid="basic-card-test-id"
       >
@@ -119,14 +119,14 @@ exports[`Accordion should render accordion items correctly 1`] = `
             style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
           />
         </div>
-      </article>
+      </div>
     </div>
     <div
       class="group"
       data-orientation="vertical"
       data-state="closed"
     >
-      <article
+      <div
         class="rounded-default h-full w-full bg-card-gradient-left pl-px"
         data-testid="basic-card-test-id"
       >
@@ -176,14 +176,14 @@ exports[`Accordion should render accordion items correctly 1`] = `
             style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
           />
         </div>
-      </article>
+      </div>
     </div>
     <div
       class="group"
       data-orientation="vertical"
       data-state="closed"
     >
-      <article
+      <div
         class="rounded-default h-full w-full bg-card-gradient-left pl-px"
         data-testid="basic-card-test-id"
       >
@@ -233,7 +233,7 @@ exports[`Accordion should render accordion items correctly 1`] = `
             style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
           />
         </div>
-      </article>
+      </div>
     </div>
   </div>
 </div>
