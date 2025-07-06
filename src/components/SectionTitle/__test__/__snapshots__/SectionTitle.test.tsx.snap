@@ -3,7 +3,7 @@
 exports[`SectionTitle matches snapshot 1`] = `
 <div>
   <h2
-    class="w-full text-center text-2xl/7 font-bold uppercase sm:text-5xl/13 md:text-6xl/16"
+    class="w-full font-bold uppercase"
     data-testid="section-title-test-id"
   >
     Історія Батальйону
