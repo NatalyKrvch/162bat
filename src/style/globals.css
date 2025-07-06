@@ -166,6 +166,12 @@ body {
   }
 }
 
+.underline-thick {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
 @keyframes accordion-down {
   from { height: 0px; opacity: 0; }
   to { height: var(--radix-accordion-content-height); opacity: 1; }

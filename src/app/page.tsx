@@ -12,6 +12,7 @@ const Home = () => {
       <GuaranteesSection data={guaranteesSectionData} />
     </div>
   );
-};
+
+}
 
 export default Home;
