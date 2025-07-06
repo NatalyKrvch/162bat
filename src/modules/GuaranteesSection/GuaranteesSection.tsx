@@ -10,11 +10,11 @@ import { GUARANTEES_SECTION_TEST_ID } from '@/lib/testIds';
 import type { GuaranteesSectionProps } from './types';
 
 const GuaranteesSection = ({ data }: GuaranteesSectionProps) => {
-  const { title, subtitle, description, button } = data;
-
   if (!data) {
     return null;
   }
+
+  const { title, subtitle, description, button } = data;
 
   return (
     <Container>
