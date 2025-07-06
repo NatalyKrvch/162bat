@@ -1,4 +1,4 @@
-import { BUTTON_VARIANT_CLASSES } from '../constants/constants';
+import { BUTTON_VARIANT_CLASSES } from '../constants/buttonVariantClasses';
 import type { ButtonVariant } from '../types';
 
 const useButtonClasses = () => {
