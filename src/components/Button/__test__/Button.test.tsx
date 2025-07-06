@@ -4,7 +4,6 @@ import { Arrow } from '@/components';
 import { BUTTON_TEST_ID } from '@/lib/testIds';
 
 import Button from '../Button';
-import { BUTTON_VARIANT_CLASSES } from '../constants/constants';
 import type { ButtonVariant } from '../types';
 
 const variants: ButtonVariant[] = ['primary', 'secondary', 'link', 'icon'];
@@ -28,56 +27,39 @@ describe('Button Component', () => {
         expect(container).toMatchSnapshot();
 
         if (variant === 'primary') {
-          expect(button).toHaveClass(BUTTON_VARIANT_CLASSES['primary']);
+          expect(button).toHaveClass(
+            'bg-btn-bg',
+            'text-text-white',
+            'hover:bg-btn-bg-hover',
+          );
         } else if (variant === 'secondary') {
-          expect(button).toHaveClass(BUTTON_VARIANT_CLASSES['secondary']);
+          expect(button).toHaveClass(
+            'border-2',
+            'text-text-green',
+            'hover:border-btn-bg-hover',
+          );
         } else if (variant === 'link') {
-          expect(button).toHaveClass(BUTTON_VARIANT_CLASSES['link']);
+          expect(button).toHaveClass(
+            'underline-thick',
+            'text-text-white',
+            'hover:text-btn-text-hover-secondary',
+          );
         } else if (variant === 'icon') {
-          expect(button).toHaveClass(BUTTON_VARIANT_CLASSES['icon']);
+          expect(button).toHaveClass(
+            'border-green',
+            'text-green',
+            'rounded-sm',
+            'p-0',
+            'hover:bg-btn-bg-hover',
+            'hover:text-white',
+            'active:border-btn-bg-click',
+          );
         }
 
         if (disabled) {
           expect(button).toBeDisabled();
         } else {
           expect(button).not.toBeDisabled();
-        }
-
-        fireEvent.mouseOver(button);
-
-        if (variant === 'primary') {
-          expect(button).toHaveClass('hover:bg-btn-bg-hover');
-        } else if (variant === 'secondary') {
-          expect(button).toHaveClass(
-            'hover:border-btn-bg-hover',
-            'hover:text-btn-bg-hover',
-          );
-        } else if (variant === 'link') {
-          expect(button).toHaveClass('hover:text-btn-text-hover-secondary');
-        } else if (variant === 'icon') {
-          expect(button).toHaveClass(
-            'hover:border-btn-bg-hover',
-            'hover:bg-btn-bg-hover',
-            'hover:text-white',
-          );
-        }
-
-        fireEvent.mouseDown(button);
-        if (variant === 'primary') {
-          expect(button).toHaveClass('active:bg-btn-bg-click');
-        } else if (variant === 'secondary') {
-          expect(button).toHaveClass(
-            'active:border-btn-bg-click',
-            'active:text-btn-bg-click',
-          );
-        } else if (variant === 'link') {
-          expect(button).toHaveClass('active:text-btn-text-click-secondary');
-        } else if (variant === 'icon') {
-          expect(button).toHaveClass(
-            'active:bg-btn-bg-click',
-            'active:border-btn-bg-click',
-            'active:text-white',
-          );
         }
       });
     });

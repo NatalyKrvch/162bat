@@ -22,7 +22,7 @@ const Button = ({
       onClick={onClick}
       disabled={disabled}
       className={twMerge(
-        'rounded-default w-full px-6 py-4 transition-colors sm:px-8 sm:py-5 sm:text-xl/5 md:text-2xl/7',
+        'rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl',
         getVariantClasses(variant),
         className,
       )}
