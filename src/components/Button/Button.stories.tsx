@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/nextjs';
+import type { Meta, StoryObj } from '@storybook/react';
 
 import { Arrow } from '../Icons/Arrow';
 import Button from './Button';

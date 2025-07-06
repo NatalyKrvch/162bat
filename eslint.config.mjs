@@ -18,6 +18,8 @@ const eslintConfig = [
     rules: {
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
+      'storybook/no-renderer-packages': 'off',
+      'eol-last': ['error', 'always'],
     },
     settings: {
       'import/resolver': {
