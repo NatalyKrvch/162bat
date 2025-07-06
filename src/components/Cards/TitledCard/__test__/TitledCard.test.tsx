@@ -40,7 +40,7 @@ describe('TitledCard', () => {
     expect(titledCard).toBeInTheDocument();
 
     const titleElement = screen.getByRole('heading', { level: 3 });
-    expect(titleElement).toHaveClass('text-2xl/7 font-bold text-text-green');
+    expect(titleElement).toHaveClass('font-bold text-text-green');
     expect(titleElement).toHaveTextContent('Title');
 
     expect(container).toMatchSnapshot();
@@ -60,7 +60,7 @@ describe('TitledCard', () => {
     expect(titledCard).toHaveTextContent('Title');
 
     const titleElement = titledCard.querySelector('h3');
-    expect(titleElement).toHaveClass('text-2xl/7 font-bold text-text-green');
+    expect(titleElement).toHaveClass('font-bold text-text-green');
 
     titledCardText.forEach(item => {
       expect(titledCard).toHaveTextContent(item.text);

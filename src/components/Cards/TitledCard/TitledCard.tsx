@@ -7,11 +7,11 @@ import type { TitledCardProps } from './types';
 const TitledCard = ({
   title,
   description,
-  titleColor = 'default',
   className = '',
+  titleColor = 'default',
 }: TitledCardProps) => {
   const titleClasses = twMerge(
-    'text-2xl/7 font-bold',
+    'text-xl leading-[150%] font-bold lg:text-2xl lg:leading-[120%]',
     titleColor === 'green' && 'text-text-green',
   );
 
