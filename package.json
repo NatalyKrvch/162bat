@@ -21,6 +21,14 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{ts,tsx,json}": [
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
     "@babel/helpers": "^7.27.4",
     "@eslint/eslintrc": "^3",
@@ -49,6 +57,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "keen-slider": "^6.8.6",
+    "lint-staged": "^16.1.2",
     "playwright": "^1.53.2",
     "plop": "^4.0.1",
     "postcss": "^8.5.6",
