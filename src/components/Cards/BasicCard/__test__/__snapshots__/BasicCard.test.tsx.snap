@@ -2,12 +2,12 @@
 
 exports[`BasicCard should apply custom className and render custom content 1`] = `
 <div>
-  <article
+  <div
     class="rounded-default h-full w-full bg-card-gradient-top pt-px"
     data-testid="basic-card-test-id"
   >
     <div
-      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8 border-1 border-t-0 text-accent font-bold"
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 border-t-0 text-accent font-bold"
     >
       <div>
         <h3>
@@ -18,51 +18,51 @@ exports[`BasicCard should apply custom className and render custom content 1`] =
         </p>
       </div>
     </div>
-  </article>
+  </div>
 </div>
 `;
 
 exports[`BasicCard should render correctly with the top gradient by default 1`] = `
 <div>
-  <article
+  <div
     class="rounded-default h-full w-full bg-card-gradient-top pt-px"
     data-testid="basic-card-test-id"
   >
     <div
-      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8 border-1 border-t-0"
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 border-t-0"
     >
       Top gradient content
     </div>
-  </article>
+  </div>
 </div>
 `;
 
 exports[`BasicCard should render correctly without gradient and border 1`] = `
 <div>
-  <article
+  <div
     class="rounded-default h-full w-full"
     data-testid="basic-card-test-id"
   >
     <div
-      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8"
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full"
     >
       Does not have any border
     </div>
-  </article>
+  </div>
 </div>
 `;
 
 exports[`BasicCard should render with the left gradient 1`] = `
 <div>
-  <article
+  <div
     class="rounded-default h-full w-full bg-card-gradient-left pl-px"
     data-testid="basic-card-test-id"
   >
     <div
-      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8 border-1 border-l-0"
+      class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 border-l-0"
     >
       Left gradient content
     </div>
-  </article>
+  </div>
 </div>
 `;

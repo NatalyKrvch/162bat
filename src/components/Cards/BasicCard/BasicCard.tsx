@@ -7,14 +7,15 @@ import type { BasicCardProps } from './types';
 
 const BasicCard = ({
   hasBorder = true,
-  gradientPosition = 'top',
-  className = '',
   children,
+  className = '',
+  borderClassName = '',
+  gradientPosition = 'top',
 }: PropsWithChildren<BasicCardProps>) => {
   const isTopGradient = gradientPosition === 'top';
 
   return (
-    <article
+    <div
       data-testid={BASIC_CARD_TEST_ID}
       className={twMerge(
         'rounded-default h-full w-full',
@@ -22,11 +23,12 @@ const BasicCard = ({
           (isTopGradient
             ? 'bg-card-gradient-top pt-px'
             : 'bg-card-gradient-left pl-px'),
+        borderClassName,
       )}
     >
       <div
         className={twMerge(
-          'bg-bg-secondary border-grey rounded-inner-card h-full w-full p-8',
+          'bg-bg-secondary border-grey rounded-inner-card h-full w-full',
           hasBorder &&
             `border-1 ${isTopGradient ? 'border-t-0' : 'border-l-0'}`,
           className,
@@ -34,7 +36,7 @@ const BasicCard = ({
       >
         {children}
       </div>
-    </article>
+    </div>
   );
 };
 
