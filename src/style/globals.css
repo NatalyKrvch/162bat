@@ -1,4 +1,5 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
 
 @theme {
   /*Colors */
@@ -57,15 +58,24 @@
   /*Heights*/
   --height-guarantees-section: 550px;
 
+  /*Widths*/
+  --width-max-container: 1440px;
+
   /*Animation*/
   --animate-accordion-down: accordion-down 300ms ease-out;
   --animate-accordion-up: accordion-up 300ms ease-out;
 }
 
+
 body {
   font-family: var(--font-sans), sans-serif;
   background-color: var(--color-bg-primary);
   color: var(--color-text-white);
+}
+
+.container-width {
+  max-width: var(--width-max-container);
+  margin: 0 auto;
 }
 
 .bg-divider-gradient {
@@ -121,6 +131,12 @@ body {
 .rotated {
   transform: rotate(180deg);
   writing-mode: vertical-lr;
+}
+
+.underline-thick {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 
 @keyframes accordion-down {
