@@ -13,13 +13,13 @@ exports[`Footer renders correctly and matches snapshot 1`] = `
         class="flex h-25 w-21 flex-shrink-0"
       >
         <img
-          alt="Логотип батальйону"
+          alt="Mock Logo"
           class="h-auto w-full object-cover"
           data-nimg="1"
           decoding="async"
           height="100"
           loading="lazy"
-          src="/logo.svg"
+          src="/mock-logo.svg"
           style="color: transparent;"
           width="84"
         />
@@ -34,50 +34,20 @@ exports[`Footer renders correctly and matches snapshot 1`] = `
             <a
               class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
               data-testid="internal-link-test-id"
-              href="/"
-              title="Головна"
+              href="/mock-1"
+              title="Mock Link 1"
             >
-              Головна
+              Mock Link 1
             </a>
           </li>
           <li>
             <a
               class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
               data-testid="internal-link-test-id"
-              href="/about"
-              title="Про батальйон"
+              href="/mock-2"
+              title="Mock Link 2"
             >
-              Про батальйон
-            </a>
-          </li>
-          <li>
-            <a
-              class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
-              data-testid="internal-link-test-id"
-              href="/vacancies"
-              title="Вакансії"
-            >
-              Вакансії
-            </a>
-          </li>
-          <li>
-            <a
-              class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
-              data-testid="internal-link-test-id"
-              href="/faq"
-              title="FAQ"
-            >
-              FAQ
-            </a>
-          </li>
-          <li>
-            <a
-              class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
-              data-testid="internal-link-test-id"
-              href="/contacts"
-              title="Контакти"
-            >
-              Контакти
+              Mock Link 2
             </a>
           </li>
         </ul>
@@ -90,23 +60,23 @@ exports[`Footer renders correctly and matches snapshot 1`] = `
             <p
               class="text-base/6 whitespace-nowrap sm:text-xl/5"
             >
-              Зв'язатись з нами:
+              Call us:
             </p>
             <a
               class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base/4 font-bold sm:text-xl/5"
               data-testid="internal-link-test-id"
-              href="tel:+38093 000 00 00"
+              href="tel:+380991234567"
             >
-              +38093 000 00 00
+              +380991234567
             </a>
           </div>
           <button
-            aria-label="Заповнити анкету"
+            aria-label="Contact Us"
             class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl bg-btn-bg text-text-white hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled flex items-center p-3 whitespace-nowrap sm:w-fit sm:px-8 sm:py-5 lg:h-15"
             data-testid="button-test-id"
-            title="Заповнити анкету"
+            title="Contact Us"
           >
-            Заповнити анкету
+            Contact Us
           </button>
         </div>
       </div>
@@ -123,7 +93,7 @@ exports[`Footer renders correctly and matches snapshot 1`] = `
     <div
       class="flex items-center"
     >
-      2025 162 bat TRO
+      2025 Mock Company
     </div>
   </footer>
 </div>

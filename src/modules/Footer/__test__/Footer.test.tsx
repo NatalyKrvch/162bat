@@ -1,11 +1,28 @@
 import { FOOTER_TEST_ID } from '@lib/testIds';
 import { fireEvent, render } from '@testing-library/react';
 
-import footerSectionData from '@/data/footerSectionData.json';
-
 import Footer from '../Footer';
 
 const mockOnClick = jest.fn();
+
+const footerSectionData = {
+  image: {
+    src: '/mock-logo.svg',
+    alt: 'Mock Logo',
+  },
+  menu: [
+    { title: 'Mock Link 1', href: '/mock-1' },
+    { title: 'Mock Link 2', href: '/mock-2' },
+  ],
+  contactUs: {
+    title: 'Call us:',
+    number: '+380991234567',
+  },
+  button: {
+    title: 'Contact Us',
+  },
+  legal: 'Mock Company',
+};
 
 const { image, menu, contactUs, button, legal } = footerSectionData;
 const renderFooter = () =>
