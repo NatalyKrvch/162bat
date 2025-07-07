@@ -31,7 +31,7 @@ exports[`HistorySection renders correctly and matches snapshot 1`] = `
         </a>
       </div>
       <p
-        class="mb-10 max-w-240 text-base leading-[150%] lg:mb-8 lg:text-lg"
+        class="mb-10 max-w-240 text-base leading-[150%] lg:mb-8 lg:text-lg xl:mb-10"
       >
         Intro paragraph about our history.
       </p>
