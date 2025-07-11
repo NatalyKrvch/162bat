@@ -15,3 +15,4 @@ export const STAR_ICON_TEST_ID = 'star-icon-test-id';
 export const TITLED_CARD_TEST_ID = 'titled-card-test-id';
 export const CHEVRON_TEST_ID = 'chevron-test-id';
 export const ACCORDION_TEST_ID = 'accordion-test-id';
+export const QR_CARD_TEST_ID = 'qr-card-test-id';
