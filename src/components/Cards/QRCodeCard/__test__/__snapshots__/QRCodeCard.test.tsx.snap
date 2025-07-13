@@ -17,14 +17,15 @@ exports[`QRcard should render QRcomponent correctly 1`] = `
           class="mx-auto flex h-full w-full max-w-[328px] flex-col items-center justify-center gap-10"
         >
           <div
-            class="rounded-default relative hidden aspect-square max-h-[340px] w-full border-[1px] border-[#3D3D3D] bg-white md:block"
+            class="rounded-default relative hidden aspect-square max-h-[340px] w-full border border-(--color-grey) bg-white md:block"
           >
             <img
-              alt="QR code"
+              alt="QR-код для пожертви на підтримку батальйону через Button Text"
               class="object-contain"
               data-nimg="1"
               decoding="async"
               height="328"
+              loading="lazy"
               src="/_next/image?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd0%2FQR_code_for_mobile_English_Wikipedia.svg%2F500px-QR_code_for_mobile_English_Wikipedia.svg.png&w=750&q=75"
               srcset="/_next/image?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd0%2FQR_code_for_mobile_English_Wikipedia.svg%2F500px-QR_code_for_mobile_English_Wikipedia.svg.png&w=384&q=75 1x, /_next/image?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd0%2FQR_code_for_mobile_English_Wikipedia.svg%2F500px-QR_code_for_mobile_English_Wikipedia.svg.png&w=750&q=75 2x"
               style="color: transparent;"
@@ -33,7 +34,10 @@ exports[`QRcard should render QRcomponent correctly 1`] = `
           </div>
           <a
             class="w-full"
+            data-testid="external-link-test-id"
             href="https://www.google.com"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <button
               class="rounded-default w-full px-6 py-4 transition-colors sm:px-8 sm:py-5 sm:text-xl/5 md:text-2xl/7 border-2 border-btn-bg text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary"

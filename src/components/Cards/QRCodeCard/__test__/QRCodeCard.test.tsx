@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 
 import { QR_CARD_TEST_ID } from '@/lib/testIds';
 
-import QRcard from '../QRcard';
+import QRcard from '../QRCodeCard';
 
 const mockData = {
   imageUrl:
@@ -13,19 +13,21 @@ const mockData = {
 
 describe('QRcard', () => {
   it('should render QRcomponent correctly', () => {
-    const { container, getByTestId } = render(<QRcard {...mockData} />);
+    const { container, getByTestId, getByAltText, getByRole } = render(
+      <QRcard {...mockData} />,
+    );
 
     const qrCard = getByTestId(QR_CARD_TEST_ID);
     expect(qrCard).toBeInTheDocument();
     expect(qrCard).toHaveClass('max-w-[628px] max-h-[560px] mx-auto');
 
-    const image = qrCard.querySelector('img');
+    const expectedAltText = `QR-код для пожертви на підтримку батальйону через ${mockData.buttonText}`;
+    const image = getByAltText(expectedAltText);
     expect(image?.getAttribute('src')).toContain(
       encodeURIComponent(mockData.imageUrl),
     );
-    expect(image).toHaveAttribute('alt', 'QR code');
 
-    const button = qrCard.querySelector('button');
+    const button = getByRole('button');
     expect(button).toBeInTheDocument();
     expect(button).toHaveTextContent(mockData.buttonText);
     expect(container).toMatchSnapshot();
