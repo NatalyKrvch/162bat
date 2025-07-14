@@ -3,43 +3,46 @@
 exports[`HeroSection renders correctly and matches snapshot 1`] = `
 <div>
   <div
-    class="w-screen px-4 md:px-8 xl:px-20 bg-hero-section min-h-screen-minus-header"
+    class="w-screen px-4 md:px-8 xl:px-20 min-h-screen-minus-header relative overflow-hidden"
     data-testid="container-test-id"
   >
+    <div
+      class="bg-hero-section absolute inset-0 opacity-70"
+    />
     <section
-      class="min-h-screen-minus-header flex flex-col items-center justify-center gap-10"
+      class="min-h-screen-minus-header relative z-10 flex flex-col items-center justify-center gap-10"
       data-testid="hero-section-test-id"
     >
       <h1
-        class="max-w-3xl text-center text-4xl sm:text-6xl"
+        class="text-4xl-40 max-w-3xl cursor-default text-center leading-none font-bold tracking-normal md:text-6xl lg:text-[64px]"
       >
         <span>
           <span
             class="text-text-white font-bold"
           >
-            Захищай
-          </span>
-          <span
-            class="text-text-green font-bold"
-          >
-             свою країну 
+            text1
           </span>
           <span
             class="text-text-white font-bold"
           >
-            разом з нами
+            text2 
+          </span>
+          <span
+            class="text-text-white font-bold"
+          >
+            text3
           </span>
         </span>
       </h1>
       <a
         data-testid="internal-link-test-id"
-        href="/#application"
+        href="buttonURL"
       >
         <button
-          class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled"
+          class="rounded-default w-full cursor-pointer transition-colors bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled text-xl leading-none font-bold tracking-normal md:text-2xl lg:text-2xl xl:text-2xl"
           data-testid="button-test-id"
         >
-          Заповнити анкету 
+          buttonTitle
         </button>
       </a>
     </section>
