@@ -1,5 +1,5 @@
 {
-  "title": [
+  "sectionTitle": [
     {
       "id": "1",
       "text": "Захищай",
@@ -9,7 +9,7 @@
     {
       "id": "2",
       "text": " свою країну ",
-      "color": "green",
+      "color": "white",
       "fontWeight": "bold"
     },
     {
@@ -19,8 +19,6 @@
       "fontWeight": "bold"
     }
   ],
-  "button": {
-    "title": "Заповнити анкету ",
-    "url": "/#application"
-  }
+  "buttonTitle": "Заповнити анкету ",
+  "buttonURL": "/#application"
 }

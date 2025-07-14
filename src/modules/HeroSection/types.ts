@@ -2,10 +2,8 @@ import { FormattedTextNode } from '@/components/List/types';
 
 export interface HeroSectionProps {
   data: {
-    title: FormattedTextNode[];
-    button: {
-      title: string;
-      url: string;
-    };
+    sectionTitle: FormattedTextNode[];
+    buttonTitle: string;
+    buttonURL: string;
   };
 }
