@@ -166,27 +166,3 @@ body {
     min-height: calc(100vh - var(--height-header-mobile));
   }
 }
-
-.underline-thick {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
-}
-
-.min-h-screen-minus-header {
-  min-height: calc(100vh - var(--height-header));
-
-  @media (max-width: 768px) {
-    min-height: calc(100vh - var(--height-header-mobile));
-  }
-}
-
-@keyframes accordion-down {
-  from { height: 0px; opacity: 0; }
-  to { height: var(--radix-accordion-content-height); opacity: 1; }
-}
-
-@keyframes accordion-up {
-  from { height: var(--radix-accordion-content-height); opacity: 1; }
-  to { height: 0px; opacity: 0;  }
-}
