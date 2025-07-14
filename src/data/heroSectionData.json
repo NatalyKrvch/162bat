@@ -1,0 +1,26 @@
+{
+  "title": [
+    {
+      "id": "1",
+      "text": "Захищай",
+      "color": "white",
+      "fontWeight": "bold"
+    },
+    {
+      "id": "2",
+      "text": " свою країну ",
+      "color": "green",
+      "fontWeight": "bold"
+    },
+    {
+      "id": "3",
+      "text": "разом з нами",
+      "color": "white",
+      "fontWeight": "bold"
+    }
+  ],
+  "button": {
+    "title": "Заповнити анкету ",
+    "url": "/#application"
+  }
+}
