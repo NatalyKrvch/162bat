@@ -23,7 +23,9 @@ const GuaranteesSection = ({ data }: GuaranteesSectionProps) => {
         className="flex flex-col items-center gap-10"
       >
         <div className="flex flex-col gap-8">
-          <SectionTitle className="text-left">{title}</SectionTitle>
+          <SectionTitle className="text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
+            {title}
+          </SectionTitle>
           <h3 className="md:text-lg">{subtitle}</h3>
         </div>
         <BasicCard
