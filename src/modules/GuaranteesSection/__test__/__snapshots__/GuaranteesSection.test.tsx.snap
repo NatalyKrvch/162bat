@@ -14,7 +14,7 @@ exports[`GuaranteesSection renders correctly and matches snapshot 1`] = `
         class="flex flex-col gap-8"
       >
         <h2
-          class="w-full font-bold uppercase text-left"
+          class="w-full font-bold uppercase text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]"
           data-testid="section-title-test-id"
         >
           Guarantees Title
