@@ -1,8 +1,8 @@
-
+import { heroSectionData } from '@/data';
+import guaranteesSectionData from '@/data/guaranteesSectionData.json';
 import historySectionData from '@/data/historySectionData.json';
-import HistorySection from '@/modules/HistorySection/HistorySection';
-import { guaranteesSectionData, heroSectionData } from '@/data';
 import { GuaranteesSection, HeroSection } from '@/modules';
+import HistorySection from '@/modules/HistorySection/HistorySection';
 
 const Home = () => {
   return (

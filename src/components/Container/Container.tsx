@@ -6,9 +6,9 @@ import { CONTAINER_TEST_ID } from '@/lib/testIds';
 import type { ContainerProps } from './types';
 
 const Container = ({
-  fullWidth = false,
-  className = '',
   children,
+  className='',
+  fullWidth = false,
 }: PropsWithChildren<ContainerProps>) => {
   return (
     <div
@@ -21,7 +21,7 @@ const Container = ({
     >
       {children}
     </div>
-  )
+  );
 };
 
 export default Container;
