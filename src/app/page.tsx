@@ -1,5 +1,5 @@
-import { heroSectionData } from '@/data';
 import guaranteesSectionData from '@/data/guaranteesSectionData.json';
+import heroSectionData from '@/data/heroSectionData.json';
 import historySectionData from '@/data/historySectionData.json';
 import { GuaranteesSection, HeroSection } from '@/modules';
 import HistorySection from '@/modules/HistorySection/HistorySection';
@@ -12,7 +12,6 @@ const Home = () => {
       <GuaranteesSection data={guaranteesSectionData} />
     </div>
   );
-
-}
+};
 
 export default Home;
