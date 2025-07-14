@@ -1,5 +1,4 @@
-@import "tailwindcss";
-
+@import 'tailwindcss';
 
 @theme {
   /*Colors */
@@ -66,9 +65,7 @@
   /*Animation*/
   --animate-accordion-down: accordion-down 300ms ease-out;
   --animate-accordion-up: accordion-up 300ms ease-out;
-
 }
-
 
 body {
   font-family: var(--font-sans), sans-serif;
@@ -132,9 +129,9 @@ body {
 }
 
 .bg-hero-section {
-  background-image: url('/hero-section-bg.png');
+  background-image: url('/images/hero-bg-image.webp');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
@@ -158,11 +155,23 @@ body {
 }
 
 @keyframes accordion-down {
-  from { height: 0px; opacity: 0; }
-  to { height: var(--radix-accordion-content-height); opacity: 1; }
+  from {
+    height: 0px;
+    opacity: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
 }
 
 @keyframes accordion-up {
-  from { height: var(--radix-accordion-content-height); opacity: 1; }
-  to { height: 0px; opacity: 0;  }
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+  to {
+    height: 0px;
+    opacity: 0;
+  }
 }
