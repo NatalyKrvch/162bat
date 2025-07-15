@@ -2,15 +2,15 @@ import Image from 'next/image';
 
 import { Button, Divider, InternalLink } from '@/components';
 import { FOOTER_TEST_ID } from '@/lib/testIds';
+import { getCurrentYear } from '@/utils';
 
-import useCurrentYear from './hooks/useCurrentYear';
 import type { FooterProps } from './types';
 
 const FooterSection = ({ data, onClick }: FooterProps) => {
-  const currentYear = useCurrentYear();
-
   if (!data) return null;
+
   const { image, menu, contactUs, button, legal } = data;
+  const currentYear = getCurrentYear();
 
   return (
     <footer
