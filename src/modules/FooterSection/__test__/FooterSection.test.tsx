@@ -1,7 +1,7 @@
 import { FOOTER_TEST_ID } from '@lib/testIds';
 import { fireEvent, render } from '@testing-library/react';
 
-import Footer from '../Footer';
+import FooterSection from '../FooterSection';
 
 const mockOnClick = jest.fn();
 
@@ -26,7 +26,7 @@ const footerSectionData = {
 
 const { image, menu, contactUs, button, legal } = footerSectionData;
 const renderFooter = () =>
-  render(<Footer data={footerSectionData} onClick={mockOnClick} />);
+  render(<FooterSection data={footerSectionData} onClick={mockOnClick} />);
 
 describe('Footer', () => {
   it('renders correctly and matches snapshot', () => {
