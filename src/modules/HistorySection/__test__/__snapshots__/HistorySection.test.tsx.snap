@@ -23,7 +23,7 @@ exports[`HistorySection renders correctly and matches snapshot 1`] = `
           href="/history"
         >
           <button
-            class="rounded-default w-full cursor-pointer disabled:cursor-default transition-colors underline-thick px-0 text-text-white py-4 xl:py-5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary text-lg leading-none font-bold tracking-normal uppercase lg:text-xl lg:leading-5"
+            class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default underline-thick px-0 text-text-white py-4 xl:py-5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary text-lg leading-none font-bold tracking-normal uppercase lg:text-xl lg:leading-5"
             data-testid="button-test-id"
             type="button"
           >

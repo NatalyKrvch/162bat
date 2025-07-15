@@ -40,7 +40,7 @@ exports[`QRcard should render QRcomponent correctly 1`] = `
             target="_blank"
           >
             <button
-              class="rounded-default w-full cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-2 border-btn-bg px-6 py-4 sm:px-8 sm:py-5 text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary"
+              class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors disabled:cursor-default lg:text-xl border-2 border-btn-bg px-6 py-4 sm:px-8 sm:py-5 text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary"
               data-testid="button-test-id"
               type="button"
             >
