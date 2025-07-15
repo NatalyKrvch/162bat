@@ -6,7 +6,7 @@ import { FOOTER_TEST_ID } from '@/lib/testIds';
 import useCurrentYear from './hooks/useCurrentYear';
 import type { FooterProps } from './types';
 
-const Footer = ({ data, onClick }: FooterProps) => {
+const FooterSection = ({ data, onClick }: FooterProps) => {
   const currentYear = useCurrentYear();
 
   if (!data) return null;
@@ -70,4 +70,4 @@ const Footer = ({ data, onClick }: FooterProps) => {
   );
 };
 
-export default Footer;
+export default FooterSection;
