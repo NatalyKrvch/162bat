@@ -1,9 +1,19 @@
 import { render, screen } from '@testing-library/react';
 
-import { titledCardText } from '@/data/mock/titledCardText';
 import { TITLED_CARD_TEST_ID } from '@/lib/testIds';
 
 import TitledCard from '../TitledCard';
+
+const mockTitledCardText = [
+  {
+    id: 'tc-1',
+    text: '29 березня 2018 року батальйон був створений у складі 119-ї бригади, яка об’єднала 43 загони територіальної оборони Чернігівщини.',
+  },
+  {
+    id: 'tc-2',
+    text: 'Ще в мирний час ми проводили регулярні навчання, щоб бути готовими до будь-яких викликів. В 2018 році проводились тактичні навчання “Північна фортеця - 2018”, які були організовані з використанням досвіду застосування військових частин територіальної оборони країн Балтії та скандинавських держав. У 2021 році понад 2 000 резервістів бригади, включно з нашими бійцями, взяли участь у масштабних навчаннях, готуючись до оборони регіону.',
+  },
+];
 
 describe('TitledCard', () => {
   it('should render correctly with default props', () => {
@@ -51,7 +61,7 @@ describe('TitledCard', () => {
       <TitledCard
         title="Title"
         titleColor="green"
-        description={titledCardText}
+        description={mockTitledCardText}
       />,
     );
 
@@ -62,7 +72,7 @@ describe('TitledCard', () => {
     const titleElement = titledCard.querySelector('h3');
     expect(titleElement).toHaveClass('font-bold text-text-green');
 
-    titledCardText.forEach(item => {
+    mockTitledCardText.forEach(item => {
       expect(titledCard).toHaveTextContent(item.text);
     });
 

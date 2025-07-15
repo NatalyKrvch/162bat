@@ -1,30 +1,46 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import { accordionItems } from '@/data/mock/accordionItems';
 import { ACCORDION_TEST_ID } from '@/lib/testIds';
 
 import Accordion from '../Accordion';
 
+const mockAccordionItems = [
+  {
+    id: 'accordion-item-1',
+    title: 'Mock Title 1',
+    content: 'Mock content for item 1.',
+  },
+  {
+    id: 'accordion-item-2',
+    title: 'Mock Title 2',
+    content: 'Mock content for item 2.',
+  },
+  {
+    id: 'accordion-item-3',
+    title: 'Mock Title 3',
+    content: 'Mock content for item 3.',
+  },
+];
+
 describe('Accordion', () => {
   it('should render accordion items correctly', () => {
     const { container, getByTestId } = render(
-      <Accordion items={accordionItems} />,
+      <Accordion items={mockAccordionItems} />,
     );
 
     const accordion = getByTestId(ACCORDION_TEST_ID);
     expect(accordion).toBeInTheDocument();
 
-    accordionItems.forEach(item => {
+    mockAccordionItems.forEach(item => {
       expect(accordion).toHaveTextContent(item.title);
     });
-
     expect(container).toMatchSnapshot();
   });
 
   it('should open the correct item on click and close others', () => {
-    const { getByTestId } = render(<Accordion items={accordionItems} />);
+    const { getByTestId } = render(<Accordion items={mockAccordionItems} />);
 
-    for (const accordionItem of accordionItems) {
+    for (const accordionItem of mockAccordionItems) {
       const trigger = screen.getByText(accordionItem.title);
 
       fireEvent.click(trigger);
