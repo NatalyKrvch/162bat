@@ -13,11 +13,20 @@ jest.mock('next/link', () => {
   }: {
     children: React.ReactNode;
     href: string;
-  } & React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
-    <a href={href} data-testid="mocked-next-link" {...props}>
-      {children}
-    </a>
-  );
+    prefetch?: boolean;
+  } & React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+      prefetch?: boolean;
+    }) => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { prefetch, ...rest } = props;
+
+    return (
+      <a href={href} data-testid="mocked-next-link" {...rest}>
+        {children}
+      </a>
+    );
+  };
+
   MockLink.displayName = 'MockNextLink';
 
   return MockLink;
