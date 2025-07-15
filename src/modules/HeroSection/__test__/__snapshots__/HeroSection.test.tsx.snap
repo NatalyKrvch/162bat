@@ -39,8 +39,9 @@ exports[`HeroSection renders correctly and matches snapshot 1`] = `
         href="buttonURL"
       >
         <button
-          class="rounded-default w-full cursor-pointer transition-colors bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled text-xl leading-none font-bold tracking-normal md:text-2xl lg:text-2xl xl:text-2xl"
+          class="rounded-default w-full cursor-pointer disabled:cursor-default transition-colors bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled text-xl leading-none font-bold tracking-normal md:text-2xl lg:text-2xl xl:text-2xl"
           data-testid="button-test-id"
+          type="button"
         >
           buttonTitle
         </button>
