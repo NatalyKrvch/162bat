@@ -3,60 +3,54 @@
 exports[`GuaranteesSection renders correctly and matches snapshot 1`] = `
 <div>
   <div
-    class="container-width px-4 md:px-8 xl:px-20"
-    data-testid="container-test-id"
+    data-testid="guarantees-section-test-id"
   >
-    <section
-      class="flex flex-col items-center gap-10"
-      data-testid="guarantees-section-test-id"
+    <div
+      class="flex flex-col gap-8"
+    >
+      <h2
+        class="w-full font-bold uppercase text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]"
+        data-testid="section-title-test-id"
+      >
+        Guarantees Title
+      </h2>
+      <h3
+        class="md:text-lg"
+      >
+        Your safety is our priority
+      </h3>
+    </div>
+    <div
+      class="rounded-default h-full w-full"
+      data-testid="basic-card-test-id"
     >
       <div
-        class="flex flex-col gap-8"
+        class="border-grey rounded-inner-card h-full w-full bg-guarantees-section h-guarantees-section flex flex-col items-center justify-center gap-6 px-4 sm:gap-8 md:px-8 lg:gap-10 lg:px-20"
       >
-        <h2
-          class="w-full font-bold uppercase text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]"
-          data-testid="section-title-test-id"
+        <p
+          class="max-w-4xl text-center text-xl sm:text-2xl"
         >
-          Guarantees Title
-        </h2>
-        <h3
-          class="md:text-lg"
-        >
-          Your safety is our priority
-        </h3>
-      </div>
-      <div
-        class="rounded-default h-full w-full"
-        data-testid="basic-card-test-id"
-      >
-        <div
-          class="border-grey rounded-inner-card h-full w-full bg-guarantees-section h-guarantees-section flex flex-col items-center justify-center gap-6 px-4 sm:gap-8 md:px-8 lg:gap-10 lg:px-20"
-        >
-          <p
-            class="max-w-4xl text-center text-xl sm:text-2xl"
+          <span
+            class="font-bold uppercase"
           >
-            <span
-              class="font-bold uppercase"
-            >
-              100% secure
-            </span>
-              money-back guarantee within 30 days.
-          </p>
-          <a
-            data-testid="internal-link-test-id"
-            href="/guarantees"
+            100% secure
+          </span>
+            money-back guarantee within 30 days.
+        </p>
+        <a
+          data-testid="internal-link-test-id"
+          href="/guarantees"
+        >
+          <button
+            class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors disabled:cursor-default lg:text-xl border-2 border-btn-bg px-6 py-4 sm:px-8 sm:py-5 text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary font-bold"
+            data-testid="button-test-id"
+            type="button"
           >
-            <button
-              class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors disabled:cursor-default lg:text-xl border-2 border-btn-bg px-6 py-4 sm:px-8 sm:py-5 text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary font-bold"
-              data-testid="button-test-id"
-              type="button"
-            >
-              Learn More
-            </button>
-          </a>
-        </div>
+            Learn More
+          </button>
+        </a>
       </div>
-    </section>
+    </div>
   </div>
 </div>
 `;

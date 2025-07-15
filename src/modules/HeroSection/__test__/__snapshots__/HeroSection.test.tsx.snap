@@ -3,50 +3,45 @@
 exports[`HeroSection renders correctly and matches snapshot 1`] = `
 <div>
   <div
-    class="w-screen px-4 md:px-8 xl:px-20 min-h-screen-minus-header relative overflow-hidden"
-    data-testid="container-test-id"
+    class="bg-hero-section absolute inset-0 opacity-70"
+  />
+  <div
+    class="min-h-screen-minus-header relative z-10 flex flex-col items-center justify-center gap-10"
+    data-testid="hero-section-test-id"
   >
-    <div
-      class="bg-hero-section absolute inset-0 opacity-70"
-    />
-    <section
-      class="min-h-screen-minus-header relative z-10 flex flex-col items-center justify-center gap-10"
-      data-testid="hero-section-test-id"
+    <h1
+      class="text-4xl-40 max-w-3xl cursor-default text-center leading-none font-bold tracking-normal md:text-6xl lg:text-[64px]"
     >
-      <h1
-        class="text-4xl-40 max-w-3xl cursor-default text-center leading-none font-bold tracking-normal md:text-6xl lg:text-[64px]"
-      >
-        <span>
-          <span
-            class="text-text-white font-bold"
-          >
-            text1
-          </span>
-          <span
-            class="text-text-white font-bold"
-          >
-            text2 
-          </span>
-          <span
-            class="text-text-white font-bold"
-          >
-            text3
-          </span>
-        </span>
-      </h1>
-      <a
-        data-testid="internal-link-test-id"
-        href="buttonURL"
-      >
-        <button
-          class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled text-xl leading-none font-bold tracking-normal md:text-2xl lg:text-2xl xl:text-2xl"
-          data-testid="button-test-id"
-          type="button"
+      <span>
+        <span
+          class="text-text-white font-bold"
         >
-          buttonTitle
-        </button>
-      </a>
-    </section>
+          text1
+        </span>
+        <span
+          class="text-text-white font-bold"
+        >
+          text2 
+        </span>
+        <span
+          class="text-text-white font-bold"
+        >
+          text3
+        </span>
+      </span>
+    </h1>
+    <a
+      data-testid="internal-link-test-id"
+      href="buttonURL"
+    >
+      <button
+        class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled text-xl leading-none font-bold tracking-normal md:text-2xl lg:text-2xl xl:text-2xl"
+        data-testid="button-test-id"
+        type="button"
+      >
+        buttonTitle
+      </button>
+    </a>
   </div>
 </div>
 `;

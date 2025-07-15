@@ -3,73 +3,64 @@
 exports[`HistorySection renders correctly and matches snapshot 1`] = `
 <div>
   <div
-    class="container-width px-4 md:px-8 xl:px-20"
-    data-testid="container-test-id"
+    class="flex flex-col items-start lg:mb-6 lg:flex-row lg:items-center lg:justify-between xl:mb-8"
   >
-    <section
-      class="flex flex-col"
+    <h2
+      class="font-bold uppercase xl:text-14 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]"
+      data-testid="section-title-test-id"
+    >
+      Our History
+    </h2>
+    <a
+      data-testid="internal-link-test-id"
+      href="/history"
+    >
+      <button
+        class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default underline-thick px-0 text-text-white py-4 xl:py-5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary text-lg leading-none font-bold tracking-normal uppercase lg:text-xl lg:leading-5"
+        data-testid="button-test-id"
+        type="button"
+      >
+        Read More
+      </button>
+    </a>
+  </div>
+  <p
+    class="mb-10 max-w-240 text-base leading-[150%] lg:mb-8 lg:text-lg xl:mb-10"
+  >
+    Intro paragraph about our history.
+  </p>
+  <div
+    class="mx-auto max-w-[840px]"
+  >
+    <div
+      class="rounded-default h-full w-full bg-card-gradient-top pt-px"
+      data-testid="basic-card-test-id"
     >
       <div
-        class="flex flex-col items-start lg:mb-6 lg:flex-row lg:items-center lg:justify-between xl:mb-8"
+        class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 border-t-0 p-5.5 lg:px-8 lg:py-10"
       >
-        <h2
-          class="font-bold uppercase xl:text-14 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]"
-          data-testid="section-title-test-id"
+        <article
+          class="flex flex-col gap-4 leading-[140%] font-normal tracking-normal lg:text-lg"
+          data-testid="titled-card-test-id"
         >
-          Our History
-        </h2>
-        <a
-          data-testid="internal-link-test-id"
-          href="/history"
-        >
-          <button
-            class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default underline-thick px-0 text-text-white py-4 xl:py-5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary text-lg leading-none font-bold tracking-normal uppercase lg:text-xl lg:leading-5"
-            data-testid="button-test-id"
-            type="button"
+          <h3
+            class="text-xl leading-[150%] font-bold lg:text-2xl lg:leading-[120%] text-text-green"
           >
-            Read More
-          </button>
-        </a>
-      </div>
-      <p
-        class="mb-10 max-w-240 text-base leading-[150%] lg:mb-8 lg:text-lg xl:mb-10"
-      >
-        Intro paragraph about our history.
-      </p>
-      <div
-        class="mx-auto max-w-[840px]"
-      >
-        <div
-          class="rounded-default h-full w-full bg-card-gradient-top pt-px"
-          data-testid="basic-card-test-id"
-        >
+            Early Days
+          </h3>
           <div
-            class="bg-bg-secondary border-grey rounded-inner-card h-full w-full border-1 border-t-0 p-5.5 lg:px-8 lg:py-10"
+            class="flex flex-col gap-3"
           >
-            <article
-              class="flex flex-col gap-4 leading-[140%] font-normal tracking-normal lg:text-lg"
-              data-testid="titled-card-test-id"
-            >
-              <h3
-                class="text-xl leading-[150%] font-bold lg:text-2xl lg:leading-[120%] text-text-green"
-              >
-                Early Days
-              </h3>
-              <div
-                class="flex flex-col gap-3"
-              >
-                <p>
-                  Founded in 1990.
-                </p>
-                <p>
-                  Started with a small team.
-                </p>
-              </div>
-            </article>
+            <p>
+              Founded in 1990.
+            </p>
+            <p>
+              Started with a small team.
+            </p>
           </div>
-        </div>
+        </article>
       </div>
-    </section>
+    </div>
   </div>
 </div>
 `;

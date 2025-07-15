@@ -1,4 +1,4 @@
-import { Button, Container, InternalLink } from '@/components';
+import { Button, InternalLink } from '@/components';
 import { HERO_SECTION_TEST_ID } from '@/lib/testIds';
 import { getFormattedText } from '@/utils';
 
@@ -12,12 +12,9 @@ const HeroSection = ({ data }: HeroSectionProps) => {
   const { sectionTitle, buttonTitle, buttonURL } = data;
 
   return (
-    <Container
-      fullWidth
-      className="min-h-screen-minus-header relative overflow-hidden"
-    >
+    <>
       <div className="bg-hero-section absolute inset-0 opacity-70"></div>
-      <section
+      <div
         data-testid={HERO_SECTION_TEST_ID}
         className="min-h-screen-minus-header relative z-10 flex flex-col items-center justify-center gap-10"
       >
@@ -29,8 +26,8 @@ const HeroSection = ({ data }: HeroSectionProps) => {
             {buttonTitle}
           </Button>
         </InternalLink>
-      </section>
-    </Container>
+      </div>
+    </>
   );
 };
 

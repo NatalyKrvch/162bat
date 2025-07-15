@@ -21,5 +21,5 @@ export interface FooterProps {
     };
     legal: string;
   };
-  onClick: () => void;
+  onClick?: () => void;
 }
