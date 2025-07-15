@@ -30,8 +30,9 @@ exports[`Carousel calls navigation handlers when buttons are clicked 1`] = `
     >
       <button
         aria-label="Попередній слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
+        type="button"
       >
         <svg
           class="rotate-180"
@@ -49,8 +50,9 @@ exports[`Carousel calls navigation handlers when buttons are clicked 1`] = `
       </button>
       <button
         aria-label="Наступний слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
+        type="button"
       >
         <svg
           class=""
@@ -101,8 +103,9 @@ exports[`Carousel disables next button when on last slide 1`] = `
     >
       <button
         aria-label="Попередній слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
+        type="button"
       >
         <svg
           class="rotate-180"
@@ -120,9 +123,10 @@ exports[`Carousel disables next button when on last slide 1`] = `
       </button>
       <button
         aria-label="Наступний слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
         disabled=""
+        type="button"
       >
         <svg
           class=""
@@ -173,9 +177,10 @@ exports[`Carousel disables previous button when on first slide 1`] = `
     >
       <button
         aria-label="Попередній слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
         disabled=""
+        type="button"
       >
         <svg
           class="rotate-180"
@@ -193,8 +198,9 @@ exports[`Carousel disables previous button when on first slide 1`] = `
       </button>
       <button
         aria-label="Наступний слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
+        type="button"
       >
         <svg
           class=""
@@ -245,8 +251,9 @@ exports[`Carousel renders correctly and matches snapshot 1`] = `
     >
       <button
         aria-label="Попередній слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
+        type="button"
       >
         <svg
           class="rotate-180"
@@ -264,8 +271,9 @@ exports[`Carousel renders correctly and matches snapshot 1`] = `
       </button>
       <button
         aria-label="Наступний слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
+        type="button"
       >
         <svg
           class=""
@@ -316,8 +324,9 @@ exports[`Carousel responds to ArrowLeft and ArrowRight keys 1`] = `
     >
       <button
         aria-label="Попередній слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
+        type="button"
       >
         <svg
           class="rotate-180"
@@ -335,8 +344,9 @@ exports[`Carousel responds to ArrowLeft and ArrowRight keys 1`] = `
       </button>
       <button
         aria-label="Наступний слайд"
-        class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+        class="rounded-default cursor-pointer disabled:cursor-default text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
         data-testid="button-test-id"
+        type="button"
       >
         <svg
           class=""

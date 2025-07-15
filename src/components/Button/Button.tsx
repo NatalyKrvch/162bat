@@ -19,8 +19,9 @@ const Button = ({
       data-testid={BUTTON_TEST_ID}
       onClick={onClick}
       disabled={disabled}
+      type="button"
       className={twMerge(
-        'rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl',
+        'rounded-default w-full cursor-pointer text-lg leading-none transition-colors disabled:cursor-default lg:text-xl',
         getButtonVariantClasses(variant),
         className,
       )}
