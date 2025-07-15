@@ -12,4 +12,5 @@ export { Chevron } from './Icons/Chevron';
 export { ExternalLink } from './Links/ExternalLink';
 export { InternalLink } from './Links/InternalLink';
 export { List } from './List';
+export { Section } from './Section';
 export { SectionTitle } from './SectionTitle';

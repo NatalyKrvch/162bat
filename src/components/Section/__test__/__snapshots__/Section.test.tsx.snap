@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section applies custom className to Container 1`] = `
+<div>
+  <section
+    data-testid="section-test-id"
+  >
+    <div
+      class="container-width px-4 md:px-8 xl:px-20 custom-container"
+      data-testid="container-test-id"
+    >
+      Content
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Section renders children inside Container 1`] = `
+<div>
+  <section
+    data-testid="section-test-id"
+  >
+    <div
+      class="container-width px-4 md:px-8 xl:px-20"
+      data-testid="container-test-id"
+    >
+      <p>
+        Test content
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Section renders section with provided className 1`] = `
+<div>
+  <section
+    class="custom-section"
+    data-testid="section-test-id"
+  >
+    <div
+      class="container-width px-4 md:px-8 xl:px-20"
+      data-testid="container-test-id"
+    >
+      Content
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Section sets fullWidth class on Container when fullWidth is true 1`] = `
+<div>
+  <section
+    data-testid="section-test-id"
+  >
+    <div
+      class="w-screen px-4 md:px-8 xl:px-20"
+      data-testid="container-test-id"
+    >
+      Content
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Section uses default container-width when fullWidth is false 1`] = `
+<div>
+  <section
+    data-testid="section-test-id"
+  >
+    <div
+      class="container-width px-4 md:px-8 xl:px-20"
+      data-testid="container-test-id"
+    >
+      Content
+    </div>
+  </section>
+</div>
+`;
