@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon should render component correctly 1`] = `
+<div>
+  <button
+    class="cursor-pointer w-11.5 h-11.5 flex justify-center items-center rounded-[5px] bg-transparent hover:bg-(--color-green) active:bg-transparent active:text-(--color-btn-text-click-secondary) transition-colors duration-200"
+    data-testid="icon-test-id"
+    type="button"
+  >
+    <svg
+      data-testid="dummy-icon"
+    />
+  </button>
+</div>
+`;
