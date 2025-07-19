@@ -35,7 +35,7 @@ const HistorySection = ({ data }: HistorySectionProps) => {
         {introText}
       </p>
 
-      <div className="mx-auto max-w-[840px]">
+      <div className="mx-auto w-full md:px-16 lg:px-20 xl:px-52">
         <BasicCard className="p-5.5 lg:px-8 lg:py-10">
           <TitledCard
             title={card.title}
