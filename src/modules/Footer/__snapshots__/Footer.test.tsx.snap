@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders correctly and matches snapshot 1`] = `
+<div>
+  <footer
+    class="bg-(--color-bg-secondary)"
+    data-testid="footer-test-id"
+  >
+    <div
+      class="container-width px-4 md:px-8 xl:px-20 py-4 lg:py-10"
+      data-testid="container-test-id"
+    >
+      <div
+        class="mb-6 flex items-start justify-between lg:mb-8 xl:mb-10"
+      >
+        <img
+          alt="Company logo"
+          data-nimg="1"
+          decoding="async"
+          height="100"
+          loading="lazy"
+          src="/_next/image?url=%2Flogo.png&w=256&q=75"
+          srcset="/_next/image?url=%2Flogo.png&w=96&q=75 1x, /_next/image?url=%2Flogo.png&w=256&q=75 2x"
+          style="color: transparent;"
+          width="83"
+        />
+        <div>
+          <nav
+            aria-label="Footer menu"
+          >
+            <ul
+              class="mb-10 flex flex-col gap-2 sm:flex-row md:gap-x-11"
+            >
+              <li>
+                <a
+                  class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
+                  data-testid="internal-link-test-id"
+                  href="/about"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
+                  data-testid="internal-link-test-id"
+                  href="/contact"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div
+            class="flex flex-col items-center gap-4 md:flex-row lg:gap-20"
+          >
+            <p
+              class="flex flex-col gap-0.5 md:flex-row md:gap-4 lg:text-xl"
+            >
+              <span
+                class="whitespace-nowrap"
+              >
+                Call us:
+              </span>
+              <a
+                aria-label="Call +1234567890"
+                class="font-bold whitespace-nowrap"
+                href="tel:+1234567890"
+              >
+                +1234567890
+              </a>
+            </p>
+            <button
+              class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled text-base leading-1.5 font-bold tracking-normal lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
+              data-testid="button-test-id"
+              type="button"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mb-5 xl:mb-7"
+      >
+        <div
+          class="relative h-0.5 w-full bg-grey"
+          data-testid="divider-test-id"
+          role="separator"
+        >
+          <span
+            class="absolute inset-0 h-full w-full divider-stripes-4"
+          />
+        </div>
+      </div>
+      <small
+        class="text-base xl:text-lg"
+      >
+        2025
+         © 
+        Company Name
+      </small>
+    </div>
+  </footer>
+</div>
+`;
