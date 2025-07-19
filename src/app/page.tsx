@@ -15,7 +15,7 @@ const Home = () => {
         <HeroSection data={heroSectionData} />
       </Section>
 
-      <Section className="flex flex-col">
+      <Section>
         <HistorySection data={historySectionData} />
       </Section>
 

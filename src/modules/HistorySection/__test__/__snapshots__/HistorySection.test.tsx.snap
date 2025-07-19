@@ -30,7 +30,7 @@ exports[`HistorySection renders correctly and matches snapshot 1`] = `
     Intro paragraph about our history.
   </p>
   <div
-    class="mx-auto max-w-[840px]"
+    class="mx-auto w-full md:px-16 lg:px-20 xl:px-52"
   >
     <div
       class="rounded-default h-full w-full bg-card-gradient-top pt-px"
