@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component calls the onClick function when clicked 1`] = `
+<div>
+  <button
+    class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled"
+    data-testid="button-test-id"
+  >
+    click me
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a icon button with disabled=false 1`] = `
+<div>
+  <button
+    class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+    data-testid="button-test-id"
+  >
+    <svg
+      class=""
+      data-testid="arrow-test-id"
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 37 16"
+      width="37"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a icon button with disabled=true 1`] = `
+<div>
+  <button
+    class="rounded-default cursor-pointer text-lg leading-none transition-colors lg:text-xl border-green text-green active:border-btn-bg-click hover:bg-btn-bg-hover active:bg-btn-bg-click hover:border-btn-bg-hover flex h-10 w-21 items-center justify-center rounded-sm border-2 bg-transparent p-0 hover:text-white active:text-white sm:p-0 disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary disabled:pointer-events-none"
+    data-testid="button-test-id"
+    disabled=""
+  >
+    <svg
+      class=""
+      data-testid="arrow-test-id"
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 37 16"
+      width="37"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M36.707 8.707a1 1 0 0 0 0-1.414L30.343.929a1 1 0 1 0-1.414 1.414L34.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414zM36 7H0v2h36z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a link button with disabled=false 1`] = `
+<div>
+  <button
+    class="rounded-default w-full cursor-pointer transition-colors lg:text-xl underline-thick px-0 text-text-white py-4 xl:py-5 text-base/4 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary"
+    data-testid="button-test-id"
+  >
+    link Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a link button with disabled=true 1`] = `
+<div>
+  <button
+    class="rounded-default w-full cursor-pointer transition-colors lg:text-xl underline-thick px-0 text-text-white py-4 xl:py-5 text-base/4 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary"
+    data-testid="button-test-id"
+    disabled=""
+  >
+    link Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a primary button with disabled=false 1`] = `
+<div>
+  <button
+    class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled"
+    data-testid="button-test-id"
+  >
+    primary Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a primary button with disabled=true 1`] = `
+<div>
+  <button
+    class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled"
+    data-testid="button-test-id"
+    disabled=""
+  >
+    primary Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a secondary button with disabled=false 1`] = `
+<div>
+  <button
+    class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl border-2 border-btn-bg px-6 py-4 sm:px-8 sm:py-5 text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary"
+    data-testid="button-test-id"
+  >
+    secondary Button
+  </button>
+</div>
+`;
+
+exports[`Button Component renders a secondary button with disabled=true 1`] = `
+<div>
+  <button
+    class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl border-2 border-btn-bg px-6 py-4 sm:px-8 sm:py-5 text-text-green hover:border-btn-bg-hover active:border-btn-bg-click hover:text-btn-bg-hover active:text-btn-bg-click disabled:text-btn-text-disabled-secondary disabled:border-btn-text-disabled-secondary"
+    data-testid="button-test-id"
+    disabled=""
+  >
+    secondary Button
+  </button>
+</div>
+`;
