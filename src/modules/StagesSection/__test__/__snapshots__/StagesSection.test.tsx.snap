@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StagesSection renders correctly and matches snapshot 1`] = `
+<div>
+  <h2
+    class="w-full font-bold uppercase mb-4 text-2xl leading-[110%] tracking-normal lg:mb-6 lg:text-5xl xl:mb-8 xl:text-[56px]"
+    data-testid="section-title-test-id"
+  >
+    Process Overview
+  </h2>
+  <div
+    class="mb-6 flex flex-col gap-3 lg:mb-8 lg:gap-4 xl:mb-10 xl:gap-5"
+  >
+    <p
+      class="text-base leading-[150%] font-normal tracking-normal lg:text-lg"
+    >
+      First step description.
+    </p>
+    <p
+      class="text-base leading-[150%] font-normal tracking-normal lg:text-lg"
+    >
+      Second step description.
+    </p>
+  </div>
+  <div
+    class="flex flex-col items-center"
+  >
+    <div
+      class="columns-1 gap-4 lg:mb-1.5 xl:mb-2.5 xl:columns-2 xl:gap-6"
+    >
+      <div
+        class="mb-4 break-inside-avoid"
+      >
+        <article
+          class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-5.5 lg:px-8 xl:items-start"
+          data-testid="stage-card-test-id"
+        >
+          <p
+            class="rotated text-description text-4xl-40 leading-[140%] font-bold tracking-normal"
+          >
+            1
+          </p>
+          <div
+            class="flex flex-col gap-3"
+          >
+            <h3
+              class="text-2xl leading-[120%] font-bold tracking-normal"
+            >
+              Step One
+            </h3>
+            <p
+              class="text-base leading-[140%] tracking-normal lg:text-lg"
+            >
+              Details of step one.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        class="mb-4 break-inside-avoid"
+      >
+        <article
+          class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-5.5 lg:px-8 xl:items-start"
+          data-testid="stage-card-test-id"
+        >
+          <p
+            class="rotated text-description text-4xl-40 leading-[140%] font-bold tracking-normal"
+          >
+            2
+          </p>
+          <div
+            class="flex flex-col gap-3"
+          >
+            <h3
+              class="text-2xl leading-[120%] font-bold tracking-normal"
+            >
+              Step Two
+            </h3>
+            <p
+              class="text-base leading-[140%] tracking-normal lg:text-lg"
+            >
+              Details of step two.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center lg:max-w-[960px]"
+    >
+      <p
+        class="lg:text-4xl-40 mb-8 text-center text-[32px] leading-[110%] font-bold tracking-normal text-(--color-main) uppercase"
+      >
+        All done!
+      </p>
+      <p
+        class="text-center text-base leading-[130%] tracking-normal lg:text-2xl lg:leading-[120%]"
+      >
+        You have completed all the steps.
+      </p>
+      <p
+        class="text-center text-base leading-[130%] font-bold tracking-normal lg:text-2xl lg:leading-[120%]"
+      >
+        Get Started
+      </p>
+    </div>
+  </div>
+</div>
+`;
