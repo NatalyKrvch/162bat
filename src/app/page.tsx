@@ -10,17 +10,22 @@ const Home = () => {
   return (
     <main className="mb-20 flex flex-col items-center gap-20">
       <Section
+        id="hero"
         fullWidth
         containerClassName="min-h-screen-minus-header relative overflow-hidden"
       >
         <HeroSection data={heroSectionData} />
       </Section>
 
-      <Section>
+      <Section id="history">
         <HistorySection data={historySectionData} />
       </Section>
 
-      <Section className="flex flex-col items-center gap-10">
+      <Section id="stages" className="flex flex-col items-center gap-10">
+        <StagesSection data={stagesSectionData} />
+      </Section>
+
+      <Section id="guarantees" className="flex flex-col items-center gap-10">
         <GuaranteesSection data={guaranteesSectionData} />
       </Section>
     </main>

@@ -1,4 +1,4 @@
-import { Container, SectionTitle, StageCard } from '@/components';
+import { SectionTitle, StageCard } from '@/components';
 
 import type { StagesSectionProps } from './types';
 
@@ -8,7 +8,7 @@ const StagesSection = ({ data }: StagesSectionProps) => {
   const { title, subtitle, steps, finalMessage } = data;
 
   return (
-    <Container>
+    <>
       <SectionTitle className="mb-4 text-2xl leading-[110%] tracking-normal lg:mb-6 lg:text-5xl xl:mb-8 xl:text-[56px]">
         {title}
       </SectionTitle>
@@ -47,7 +47,7 @@ const StagesSection = ({ data }: StagesSectionProps) => {
           </p>
         </div>
       </div>
-    </Container>
+    </>
   );
 };
 
