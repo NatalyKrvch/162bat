@@ -6,6 +6,7 @@ import { SECTION_TEST_ID } from '@/lib/testIds';
 import type { SectionProps } from './types';
 
 const Section = ({
+  id,
   children,
   className,
   containerClassName,
@@ -13,7 +14,12 @@ const Section = ({
   ...props
 }: PropsWithChildren<SectionProps>) => {
   return (
-    <section className={className} data-testid={SECTION_TEST_ID} {...props}>
+    <section
+      id={id}
+      className={className}
+      data-testid={SECTION_TEST_ID}
+      {...props}
+    >
       <Container fullWidth={fullWidth} className={containerClassName}>
         {children}
       </Container>
