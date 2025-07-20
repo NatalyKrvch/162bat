@@ -7,7 +7,7 @@ import Section from '../Section';
 describe('Section', () => {
   it('renders children inside Container', () => {
     const { container } = render(
-      <Section>
+      <Section id="test-section">
         <p>Test content</p>
       </Section>,
     );
@@ -20,7 +20,9 @@ describe('Section', () => {
 
   it('renders section with provided className', () => {
     const { container } = render(
-      <Section className="custom-section">Content</Section>,
+      <Section id="test-section" className="custom-section">
+        Content
+      </Section>,
     );
 
     const section = screen.getByTestId(SECTION_TEST_ID);
@@ -30,7 +32,9 @@ describe('Section', () => {
 
   it('applies custom className to Container', () => {
     const { container } = render(
-      <Section containerClassName="custom-container">Content</Section>,
+      <Section id="test-section" containerClassName="custom-container">
+        Content
+      </Section>,
     );
 
     const containerElement = screen.getByTestId(CONTAINER_TEST_ID);
@@ -39,7 +43,11 @@ describe('Section', () => {
   });
 
   it('sets fullWidth class on Container when fullWidth is true', () => {
-    const { container } = render(<Section fullWidth>Content</Section>);
+    const { container } = render(
+      <Section id="test-section" fullWidth>
+        Content
+      </Section>,
+    );
 
     const containerElement = screen.getByTestId(CONTAINER_TEST_ID);
     expect(containerElement.className).toContain('w-screen');
@@ -47,7 +55,7 @@ describe('Section', () => {
   });
 
   it('uses default container-width when fullWidth is false', () => {
-    const { container } = render(<Section>Content</Section>);
+    const { container } = render(<Section id="test-section">Content</Section>);
 
     const containerElement = screen.getByTestId(CONTAINER_TEST_ID);
     expect(containerElement.className).toContain('container-width');

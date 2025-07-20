@@ -4,6 +4,7 @@ exports[`Section applies custom className to Container 1`] = `
 <div>
   <section
     data-testid="section-test-id"
+    id="test-section"
   >
     <div
       class="container-width px-4 md:px-8 xl:px-20 custom-container"
@@ -19,6 +20,7 @@ exports[`Section renders children inside Container 1`] = `
 <div>
   <section
     data-testid="section-test-id"
+    id="test-section"
   >
     <div
       class="container-width px-4 md:px-8 xl:px-20"
@@ -37,6 +39,7 @@ exports[`Section renders section with provided className 1`] = `
   <section
     class="custom-section"
     data-testid="section-test-id"
+    id="test-section"
   >
     <div
       class="container-width px-4 md:px-8 xl:px-20"
@@ -52,6 +55,7 @@ exports[`Section sets fullWidth class on Container when fullWidth is true 1`] = 
 <div>
   <section
     data-testid="section-test-id"
+    id="test-section"
   >
     <div
       class="w-screen px-4 md:px-8 xl:px-20"
@@ -67,6 +71,7 @@ exports[`Section uses default container-width when fullWidth is false 1`] = `
 <div>
   <section
     data-testid="section-test-id"
+    id="test-section"
   >
     <div
       class="container-width px-4 md:px-8 xl:px-20"
