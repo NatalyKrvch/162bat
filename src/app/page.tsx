@@ -2,7 +2,8 @@ import { Section } from '@/components';
 import guaranteesSectionData from '@/data/guaranteesSectionData.json';
 import heroSectionData from '@/data/heroSectionData.json';
 import historySectionData from '@/data/historySectionData.json';
-import { GuaranteesSection, HeroSection } from '@/modules';
+import stagesSectionData from '@/data/stagesSectionData.json';
+import { GuaranteesSection, HeroSection, StagesSection } from '@/modules';
 import HistorySection from '@/modules/HistorySection/HistorySection';
 
 const Home = () => {
