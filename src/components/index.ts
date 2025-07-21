@@ -1,5 +1,7 @@
 export { Accordion } from './Accordion';
-export { Button } from './Button';
+export { Button } from './Buttons/Button';
+export { IconButton } from './Buttons/IconButton';
+export { IconWithTextButton } from './Buttons/IconWithTextButton';
 export { BasicCard } from './Cards/BasicCard';
 export { QRcard } from './Cards/QRCodeCard';
 export { StageCard } from './Cards/StageCard';
