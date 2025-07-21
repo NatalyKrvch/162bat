@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge';
 
 import { BUTTON_TEST_ID } from '@/lib/testIds';
 
-import useButtonClasses from './hooks/useButtonClasses';
+import { getButtonVariantClasses } from './helpers/getButtonVariantClasses';
 import type { ButtonProps } from './types';
 
 const Button = ({
@@ -14,16 +14,15 @@ const Button = ({
   className = '',
   ...rest
 }: PropsWithChildren<ButtonProps>) => {
-  const getVariantClasses = useButtonClasses();
-
   return (
     <button
       data-testid={BUTTON_TEST_ID}
       onClick={onClick}
       disabled={disabled}
+      type="button"
       className={twMerge(
-        'rounded-default w-full cursor-pointer text-lg leading-none transition-colors lg:text-xl',
-        getVariantClasses(variant),
+        'rounded-default w-full cursor-pointer text-lg leading-none transition-colors disabled:cursor-default lg:text-xl',
+        getButtonVariantClasses(variant),
         className,
       )}
       {...rest}
