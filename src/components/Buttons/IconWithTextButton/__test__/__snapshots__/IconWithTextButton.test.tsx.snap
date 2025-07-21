@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconWithText should render component correctly 1`] = `
+<div>
+  <button
+    class="flex cursor-pointer items-center text-(--color-text-white) transition-colors duration-300 hover:text-(--color-text-green) active:text-(--color-text-validation)"
+    data-testid="icon-with-text-test-id"
+  >
+    <svg
+      data-testid="dummy-icon"
+    />
+    <span
+      class="ml-1.75 hidden text-2xl leading-[120%] font-bold lg:block"
+    >
+      test
+    </span>
+  </button>
+</div>
+`;
