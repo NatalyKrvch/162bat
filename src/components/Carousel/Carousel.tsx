@@ -5,7 +5,7 @@ import { Children, isValidElement, type PropsWithChildren } from 'react';
 
 import { CAROUSEL_TEST_ID } from '@/lib/testIds';
 
-import { Button } from '../Button';
+import { Button } from '../Buttons/Button';
 import { Arrow } from '../Icons/Arrow';
 import {
   NEXT_SLIDE_ARIA_LABEL,

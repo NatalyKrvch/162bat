@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 
-import { Button } from '@/components/Button';
+import { Button } from '@/components/Buttons/Button';
 import { ExternalLink } from '@/components/Links/ExternalLink';
 import { QR_CARD_TEST_ID } from '@/lib/testIds';
 
