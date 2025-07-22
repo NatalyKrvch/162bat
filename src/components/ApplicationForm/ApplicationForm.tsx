@@ -5,8 +5,14 @@ import { isFullNameValid, isValidDate } from '@/utils';
 import { Button } from '../Button';
 import { InputField, MaskedField, TextareaField } from '../Fields';
 import { useApplicationForm } from './hooks';
+import type { ApplicationFormProps } from './types';
 
-const ApplicationForm = () => {
+const ApplicationForm = ({
+  placeholders,
+  errors: errorMessages,
+  masks,
+  button,
+}: ApplicationFormProps) => {
   const {
     control,
     register,
@@ -25,10 +31,11 @@ const ApplicationForm = () => {
     >
       <InputField
         inputProps={register('fullName', {
-          required: 'Це поле обовʼязкове',
-          validate: isFullNameValid,
+          required: errorMessages.required,
+          validate: value =>
+            isFullNameValid(value) || errorMessages.invalidFullName,
         })}
-        placeholder="ПІБ *"
+        placeholder={placeholders.fullName}
         inputClassName={getFieldClasses('fullName')}
         error={errors.fullName?.message?.toString()}
       />
@@ -37,11 +44,11 @@ const ApplicationForm = () => {
         name="birthDate"
         control={control}
         rules={{
-          required: 'Це поле обовʼязкове',
-          validate: isValidDate,
+          required: errorMessages.required,
+          validate: value => isValidDate(value) || errorMessages.invalidDate,
         }}
-        placeholder="Дата народження чч.мм.рр *"
-        mask="00.00.0000"
+        placeholder={placeholders.birthDate}
+        mask={masks.birthDate}
         className={getFieldClasses('birthDate')}
         error={errors.birthDate?.message?.toString()}
       />
@@ -50,12 +57,23 @@ const ApplicationForm = () => {
         name="phone"
         control={control}
         rules={{
-          required: 'Це поле обовʼязкове',
-          validate: value =>
-            value?.includes('_') ? 'Введіть повний номер' : true,
+          validate: value => {
+            const rawValue = value ?? '';
+            const cleaned = rawValue.replace(/\D/g, '');
+
+            if (!cleaned) {
+              return errorMessages.required;
+            }
+
+            if (cleaned.length !== 12) {
+              return errorMessages.invalidPhone;
+            }
+
+            return true;
+          },
         }}
-        placeholder="+38 (___) ___-__-__ *"
-        mask="+38 (000) 000-00-00"
+        placeholder={placeholders.phone}
+        mask={masks.phone}
         className={getFieldClasses('phone')}
         error={errors.phone?.message?.toString()}
         lazy={!isPhoneFocused}
@@ -65,18 +83,18 @@ const ApplicationForm = () => {
 
       <InputField
         inputProps={register('placeOfLiving', {
-          required: 'Це поле обовʼязкове',
+          required: errorMessages.required,
         })}
-        placeholder="Поточне місце перебування *"
+        placeholder={placeholders.placeOfLiving}
         inputClassName={getFieldClasses('placeOfLiving')}
         error={errors.placeOfLiving?.message?.toString()}
       />
 
       <InputField
         inputProps={register('position', {
-          required: 'Це поле обовʼязкове',
+          required: errorMessages.required,
         })}
-        placeholder="Яку посаду розглядаєте? *"
+        placeholder={placeholders.position}
         inputClassName={getFieldClasses('position')}
         error={errors.position?.message?.toString()}
       />
@@ -84,13 +102,13 @@ const ApplicationForm = () => {
       <TextareaField
         textareaProps={register('reason')}
         className={getFieldClasses('reason')}
-        placeholder="Чому ви обираєте нас?"
+        placeholder={placeholders.reason}
         error={errors.reason?.message?.toString()}
       />
 
       <div className="flex justify-center">
         <Button type="submit" className="w-full md:w-[410px]">
-          Відправити заявку
+          {button.submit}
         </Button>
       </div>
     </form>

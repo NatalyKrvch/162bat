@@ -2,9 +2,33 @@ import { act, fireEvent, render, screen } from '@testing-library/react';
 
 import ApplicationForm from './ApplicationForm';
 
+const mockProps = {
+  placeholders: {
+    fullName: 'ПІБ *',
+    birthDate: 'Дата народження чч.мм.рр *',
+    phone: '+38 (___) ___-__-__ *',
+    placeOfLiving: 'Поточне місце перебування *',
+    position: 'Яку посаду розглядаєте? *',
+    reason: 'Чому ви обираєте нас?',
+  },
+  errors: {
+    required: 'Це поле обовʼязкове',
+    invalidFullName: 'Невірний формат ПІБ',
+    invalidDate: 'Невірна дата',
+    invalidPhone: 'Невірний номер телефону',
+  },
+  masks: {
+    birthDate: '00.00.0000',
+    phone: '+38 (000) 000-00-00',
+  },
+  button: {
+    submit: 'Відправити заявку',
+  },
+};
+
 describe('ApplicationForm', () => {
   it('renders all form fields', () => {
-    const { container } = render(<ApplicationForm />);
+    const { container } = render(<ApplicationForm {...mockProps} />);
 
     expect(screen.getByPlaceholderText('ПІБ *')).toBeInTheDocument();
     expect(
@@ -30,7 +54,7 @@ describe('ApplicationForm', () => {
   });
 
   it('displays required errors on submit', async () => {
-    const { container } = render(<ApplicationForm />);
+    const { container } = render(<ApplicationForm {...mockProps} />);
 
     await act(async () => {
       fireEvent.click(
@@ -44,7 +68,7 @@ describe('ApplicationForm', () => {
   });
 
   it('submits form with valid data (onSubmit flow)', async () => {
-    render(<ApplicationForm />);
+    render(<ApplicationForm {...mockProps} />);
 
     await act(async () => {
       fireEvent.input(screen.getByPlaceholderText('ПІБ *'), {

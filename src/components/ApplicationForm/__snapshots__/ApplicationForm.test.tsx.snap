@@ -24,7 +24,6 @@ exports[`ApplicationForm displays required errors on submit 1`] = `
     >
       <input
         class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8"
-        name="birthDate"
         placeholder="Дата народження чч.мм.рр *"
         value=""
       />
@@ -39,7 +38,6 @@ exports[`ApplicationForm displays required errors on submit 1`] = `
     >
       <input
         class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8"
-        name="phone"
         placeholder="+38 (___) ___-__-__ *"
         value=""
       />
@@ -120,7 +118,6 @@ exports[`ApplicationForm renders all form fields 1`] = `
     >
       <input
         class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8 border-(--color-grey)"
-        name="birthDate"
         placeholder="Дата народження чч.мм.рр *"
         value=""
       />
@@ -130,7 +127,6 @@ exports[`ApplicationForm renders all form fields 1`] = `
     >
       <input
         class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8 border-(--color-grey)"
-        name="phone"
         placeholder="+38 (___) ___-__-__ *"
         value=""
       />
