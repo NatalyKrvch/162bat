@@ -19,8 +19,17 @@ const MaskedField = <TFieldValues extends FieldValues>({
       name={name}
       control={control}
       rules={rules}
-      render={({ field }) => <IMaskInput {...inputMaskProps} {...field} />}
+      render={({ field: { onChange, onBlur, value, ref } }) => (
+        <IMaskInput
+          {...inputMaskProps}
+          value={value}
+          inputRef={ref}
+          onAccept={(val: string) => onChange(val)}
+          onBlur={onBlur}
+        />
+      )}
     />
+
     <ErrorMessage message={error} />
   </div>
 );

@@ -6,7 +6,6 @@ exports[`MaskedField renders error message if error is provided 1`] = `
     class="flex flex-col gap-1"
   >
     <input
-      name="phone"
       placeholder="Phone"
       value=""
     />
@@ -25,7 +24,6 @@ exports[`MaskedField renders masked input correctly 1`] = `
     class="flex flex-col gap-1"
   >
     <input
-      name="phone"
       placeholder="Phone"
       value=""
     />
