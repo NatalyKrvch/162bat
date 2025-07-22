@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage applies custom className if provided 1`] = `
+<div>
+  <p
+    class="text-(--color-text-error) custom-class"
+  >
+    Test error
+  </p>
+</div>
+`;
+
+exports[`ErrorMessage renders message when provided 1`] = `
+<div>
+  <p
+    class="text-(--color-text-error)"
+  >
+    Test error
+  </p>
+</div>
+`;
+
+exports[`ErrorMessage returns null when no message provided 1`] = `<div />`;
