@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MaskedField renders error message if error is provided 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <input
+      name="phone"
+      placeholder="Phone"
+      value=""
+    />
+    <p
+      class="text-(--color-text-error)"
+    >
+      Invalid phone
+    </p>
+  </div>
+</div>
+`;
+
+exports[`MaskedField renders masked input correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <input
+      name="phone"
+      placeholder="Phone"
+      value=""
+    />
+  </div>
+</div>
+`;

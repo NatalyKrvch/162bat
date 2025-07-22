@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextareaField applies custom class and default styles 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <textarea
+      class="extra-style resize-none overflow-hidden"
+      name="message"
+    />
+  </div>
+</div>
+`;
+
+exports[`TextareaField renders error message when error provided 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <textarea
+      class="resize-none overflow-hidden"
+      name="message"
+    />
+    <p
+      class="text-(--color-text-error)"
+    >
+      Required field
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TextareaField renders textarea with placeholder and no error 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <textarea
+      class="custom-class resize-none overflow-hidden"
+      name="message"
+      placeholder="Enter message"
+    />
+  </div>
+</div>
+`;

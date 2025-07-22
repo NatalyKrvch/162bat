@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField applies inputClassName 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <input
+      class="custom-input"
+      name="testField"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputField renders error message if error provided 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <input
+      class="input-class"
+      name="testField"
+    />
+    <p
+      class="text-(--color-text-error)"
+    >
+      Error message
+    </p>
+  </div>
+</div>
+`;
+
+exports[`InputField renders input with placeholder and no error 1`] = `
+<div>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <input
+      class="input-class"
+      name="testField"
+      placeholder="Enter text"
+    />
+  </div>
+</div>
+`;
