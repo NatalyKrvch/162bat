@@ -155,6 +155,15 @@ body {
   text-decoration-thickness: 1px;
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  box-shadow: 0 0 0 1000px var(--color-form-color) inset !important;
+  -webkit-text-fill-color: var(--color-text-white);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
 @keyframes accordion-down {
   from {
     height: 0px;

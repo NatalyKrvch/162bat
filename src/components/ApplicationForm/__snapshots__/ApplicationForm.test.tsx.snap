@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ApplicationForm displays required errors on submit 1`] = `
+<div>
+  <form
+    class="flex w-full flex-col gap-4 xl:gap-6"
+  >
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8"
+        name="fullName"
+        placeholder="ПІБ *"
+      />
+      <p
+        class="text-(--color-text-error)"
+      >
+        Це поле обовʼязкове
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8"
+        name="birthDate"
+        placeholder="Дата народження чч.мм.рр *"
+        value=""
+      />
+      <p
+        class="text-(--color-text-error)"
+      >
+        Це поле обовʼязкове
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8"
+        name="phone"
+        placeholder="+38 (___) ___-__-__ *"
+        value=""
+      />
+      <p
+        class="text-(--color-text-error)"
+      >
+        Це поле обовʼязкове
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8"
+        name="placeOfLiving"
+        placeholder="Поточне місце перебування *"
+      />
+      <p
+        class="text-(--color-text-error)"
+      >
+        Це поле обовʼязкове
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8"
+        name="position"
+        placeholder="Яку посаду розглядаєте? *"
+      />
+      <p
+        class="text-(--color-text-error)"
+      >
+        Це поле обовʼязкове
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <textarea
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8 border-(--color-grey) resize-none overflow-hidden"
+        name="reason"
+        placeholder="Чому ви обираєте нас?"
+      />
+    </div>
+    <div
+      class="flex justify-center"
+    >
+      <button
+        class="rounded-default cursor-pointer text-lg leading-none transition-colors disabled:cursor-default lg:text-xl bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled w-full md:w-[410px]"
+        data-testid="button-test-id"
+        type="submit"
+      >
+        Відправити заявку
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`ApplicationForm renders all form fields 1`] = `
+<div>
+  <form
+    class="flex w-full flex-col gap-4 xl:gap-6"
+  >
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8 border-(--color-grey)"
+        name="fullName"
+        placeholder="ПІБ *"
+      />
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8 border-(--color-grey)"
+        name="birthDate"
+        placeholder="Дата народження чч.мм.рр *"
+        value=""
+      />
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8 border-(--color-grey)"
+        name="phone"
+        placeholder="+38 (___) ___-__-__ *"
+        value=""
+      />
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8 border-(--color-grey)"
+        name="placeOfLiving"
+        placeholder="Поточне місце перебування *"
+      />
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <input
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8 border-(--color-grey)"
+        name="position"
+        placeholder="Яку посаду розглядаєте? *"
+      />
+    </div>
+    <div
+      class="flex flex-col gap-1"
+    >
+      <textarea
+        class="w-full h-[60px] appearance-none rounded-default border outline-none focus:outline-none bg-(--color-form-color) p-3 placeholder-(--color-description) transition-color-base focus:border-(--color-text-white) placeholder:text-base placeholder:leading-[140%] placeholder:tracking-normal px-8 border-(--color-grey) resize-none overflow-hidden"
+        name="reason"
+        placeholder="Чому ви обираєте нас?"
+      />
+    </div>
+    <div
+      class="flex justify-center"
+    >
+      <button
+        class="rounded-default cursor-pointer text-lg leading-none transition-colors disabled:cursor-default lg:text-xl bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled w-full md:w-[410px]"
+        data-testid="button-test-id"
+        type="submit"
+      >
+        Відправити заявку
+      </button>
+    </div>
+  </form>
+</div>
+`;
