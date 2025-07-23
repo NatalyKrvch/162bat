@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Arrow } from '../../Icons/Arrow';
+import { Arrow } from '@/components/Icons/Arrow';
+
 import Button from './Button';
 
 export default {
