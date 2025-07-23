@@ -5,7 +5,7 @@ import IconWithTextButton from './IconWithTextButton';
 
 export default {
   component: IconWithTextButton,
-  title: 'IconWithText',
+  title: 'IconWithTextButton',
   tags: ['autodocs'],
 } as Meta;
 
