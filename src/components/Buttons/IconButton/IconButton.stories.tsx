@@ -1,18 +1,7 @@
 import { Meta, StoryObj } from '@storybook/nextjs';
+import { IoClose } from 'react-icons/io5';
 
 import IconButton from './IconButton';
-
-const closeIcon = (
-  <svg
-    width="19.78"
-    height="19.78"
-    viewBox="0 0 20 20"
-    fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M19.4501 0.565078C18.8651 -0.0199215 17.9201 -0.0199215 17.3351 0.565078L10.0001 7.88508L2.66508 0.550078C2.08008 -0.0349219 1.13508 -0.0349219 0.550078 0.550078C-0.0349219 1.13508 -0.0349219 2.08008 0.550078 2.66508L7.88508 10.0001L0.550078 17.3351C-0.0349219 17.9201 -0.0349219 18.8651 0.550078 19.4501C1.13508 20.0351 2.08008 20.0351 2.66508 19.4501L10.0001 12.1151L17.3351 19.4501C17.9201 20.0351 18.8651 20.0351 19.4501 19.4501C20.0351 18.8651 20.0351 17.9201 19.4501 17.3351L12.1151 10.0001L19.4501 2.66508C20.0201 2.09508 20.0201 1.13508 19.4501 0.565078Z" />
-  </svg>
-);
 
 export default {
   component: IconButton,
@@ -21,5 +10,5 @@ export default {
 } as Meta;
 
 export const Default: StoryObj = {
-  render: () => <IconButton icon={closeIcon} />,
+  render: () => <IconButton icon={<IoClose className="h-9 w-9" />} />,
 };
