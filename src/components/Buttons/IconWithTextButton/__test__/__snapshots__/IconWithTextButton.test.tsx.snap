@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IconWithText should render component correctly 1`] = `
+exports[`IconWithTextButton should render component correctly 1`] = `
 <div>
   <button
     class="flex cursor-pointer items-center text-(--color-text-white) transition-colors duration-300 hover:text-(--color-text-green) active:text-(--color-text-validation)"
     data-testid="icon-with-text-test-id"
+    type="button"
   >
     <svg
       data-testid="dummy-icon"

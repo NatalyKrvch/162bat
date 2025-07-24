@@ -6,7 +6,7 @@ import IconButton from '../IconButton';
 
 const DummyIcon = <svg data-testid="dummy-icon" />;
 
-describe('Icon', () => {
+describe('IconButton', () => {
   it('should render component correctly', () => {
     const { container, getByTestId } = render(<IconButton icon={DummyIcon} />);
 

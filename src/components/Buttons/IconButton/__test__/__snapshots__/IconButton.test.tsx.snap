@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icon should render component correctly 1`] = `
+exports[`IconButton should render component correctly 1`] = `
 <div>
   <button
     class="flex h-11.5 w-11.5 cursor-pointer items-center justify-center rounded-[5px] bg-transparent transition-colors duration-300 hover:bg-(--color-green) active:bg-transparent active:text-(--color-btn-text-click-secondary)"

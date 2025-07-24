@@ -6,7 +6,7 @@ import IconWithTextButton from '../IconWithTextButton';
 
 const DummyIcon = <svg data-testid="dummy-icon" />;
 
-describe('IconWithText', () => {
+describe('IconWithTextButton', () => {
   it('should render component correctly', () => {
     const { container, getByTestId } = render(
       <IconWithTextButton icon={DummyIcon} text="test" />,
