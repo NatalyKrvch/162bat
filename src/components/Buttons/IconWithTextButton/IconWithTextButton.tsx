@@ -13,6 +13,7 @@ const IconWithTextButton = ({
   return (
     <button
       onClick={onClick}
+      type="button"
       className={twMerge(
         'flex cursor-pointer items-center text-(--color-text-white) transition-colors duration-300 hover:text-(--color-text-green) active:text-(--color-text-validation)',
         className,
