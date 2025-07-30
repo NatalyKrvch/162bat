@@ -20,4 +20,4 @@ export const QR_CARD_TEST_ID = 'qr-card-test-id';
 export const SECTION_TEST_ID = 'section-test-id';
 export const ICON_TEST_ID = 'icon-test-id';
 export const ICON_WITH_TEXT_TEST_ID = 'icon-with-text-test-id';
-
+export const HEADER_TEST_ID = 'header--test-id';

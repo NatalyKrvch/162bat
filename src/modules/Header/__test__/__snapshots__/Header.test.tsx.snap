@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should renders correctly and matches snapshot 1`] = `
+<div>
+  <header
+    class="fixed top-0 left-0 z-20 h-(--height-header-mobile) w-screen bg-(--color-bg-primary) lg:h-(--height-header)"
+    data-testid="header--test-id"
+  >
+    <div
+      class="container-width px-4 md:px-8 xl:px-20 relative flex h-full w-full items-center justify-between py-4 lg:py-8"
+      data-testid="container-test-id"
+    >
+      <div
+        class="z-10 flex items-center justify-center gap-4 xl:gap-15.5"
+      >
+        <button
+          class="flex cursor-pointer items-center text-(--color-text-white) transition-colors duration-300 hover:text-(--color-text-green) active:text-(--color-text-validation)"
+          data-testid="icon-with-text-test-id"
+          type="button"
+        >
+          <svg
+            class="h-9 w-9"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"
+            />
+          </svg>
+          <span
+            class="ml-1.75 hidden text-2xl leading-[120%] font-bold lg:block"
+          >
+            Call us:
+          </span>
+        </button>
+        <a
+          class="hidden text-2xl leading-[120%] font-bold lg:block"
+          data-testid="external-link-test-id"
+          href="tel:+38093 000 00 00"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          +38093 000 00 00
+        </a>
+      </div>
+      <div
+        class="absolute top-1/2 left-1/2 -translate-1/2"
+      >
+        <img
+          alt="Company logo"
+          class="h-20 w-auto"
+          data-nimg="1"
+          decoding="async"
+          height="80"
+          loading="lazy"
+          src="/_next/image?url=%2Flogo.png&w=256&q=75"
+          srcset="/_next/image?url=%2Flogo.png&w=96&q=75 1x, /_next/image?url=%2Flogo.png&w=256&q=75 2x"
+          style="color: transparent;"
+          width="67"
+        />
+      </div>
+      <div
+        class="hidden lg:block"
+      >
+        <button
+          class="rounded-default w-full cursor-pointer text-lg leading-none transition-colors disabled:cursor-default lg:text-xl bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled"
+          data-testid="button-test-id"
+          type="button"
+        >
+          Get Started
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+`;
