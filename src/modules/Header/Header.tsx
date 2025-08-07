@@ -44,7 +44,11 @@ const Header = ({ data, onClick }: HeaderProps) => {
           />
         </div>
         <div className="hidden lg:block">
-          <Button variant="primary" onClick={onClick}>
+          <Button
+            variant="primary"
+            onClick={onClick}
+            className="text-base font-bold"
+          >
             {button.title}
           </Button>
         </div>
