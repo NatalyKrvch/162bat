@@ -3,6 +3,11 @@ type Image = {
   alt: string;
 };
 
+type MenuItem = {
+  title: string;
+  href: string;
+};
+
 type IconButton = {
   title: string;
 };
@@ -14,6 +19,11 @@ export interface HeaderProps {
     number: string;
     button: {
       title: string;
+    };
+    menu: MenuItem[];
+    contacts: {
+      number: string;
+      email: string;
     };
   };
   onClick?: () => void;

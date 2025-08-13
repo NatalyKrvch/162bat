@@ -14,6 +14,20 @@ const mockData: HeaderProps['data'] = {
   button: {
     title: 'Get Started',
   },
+  menu: [
+    {
+      title: 'Головна',
+      href: '/',
+    },
+    {
+      title: 'Історія батальйону',
+      href: '/about',
+    },
+  ],
+  contacts: {
+    number: '+38093 000 00 00',
+    email: 'infomail@gmail.com',
+  },
 };
 
 describe('Header component', () => {
