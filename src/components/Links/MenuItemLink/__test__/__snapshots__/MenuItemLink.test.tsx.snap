@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItemLink should render component correctly 1`] = `
+<div>
+  <a
+    class="cursor-pointer text-white text-base leading-none tracking-normal w-full h-15 bg-transparent hover:bg-(--color-bg-secondary) active:bg-(--color-btn-text-hover-secondary) p-4 custom-class"
+    data-testid="internal-link-test-id"
+    href="/test"
+  >
+    Link
+  </a>
+</div>
+`;
+
+exports[`MenuItemLink should render correctly variant for footer 1`] = `
+<div>
+  <a
+    class="cursor-pointer text-white hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl custom-class"
+    data-testid="internal-link-test-id"
+    href="/test"
+  >
+    Link
+  </a>
+</div>
+`;
