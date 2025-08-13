@@ -9,5 +9,31 @@
   "number": "+38093 000 00 00",
   "button": {
     "title": "Заповнити анкету"
+  },
+  "menu": [
+    {
+      "title": "Головна",
+      "href": "/"
+    },
+    {
+      "title": "Історія батальйону",
+      "href": "/about"
+    },
+    {
+      "title": "Посади батальйону",
+      "href": "/vacancies"
+    },
+    {
+      "title": "FAQ",
+      "href": "/faq"
+    },
+    {
+      "title": "Пільги та соціальні гарантії",
+      "href": "/contacts"
+    }
+  ],
+  "contacts": {
+    "number": "+38093 000 00 00",
+    "email": "infomail@gmail.com"
   }
 }

@@ -1,12 +1,6 @@
 import Image from 'next/image';
-import { RiMenu2Fill } from 'react-icons/ri';
 
-import {
-  Button,
-  Container,
-  ExternalLink,
-  IconWithTextButton,
-} from '@/components';
+import { Button, Container, ExternalLink, Menu } from '@/components';
 import { HEADER_TEST_ID } from '@/lib/testIds';
 
 import type { HeaderProps } from './types';
@@ -14,7 +8,7 @@ import type { HeaderProps } from './types';
 const Header = ({ data, onClick }: HeaderProps) => {
   if (!data) return null;
 
-  const { image, number, button, iconButton } = data;
+  const { image, number, button, iconButton, menu, contacts } = data;
 
   return (
     <header
@@ -23,10 +17,7 @@ const Header = ({ data, onClick }: HeaderProps) => {
     >
       <Container className="relative flex h-full w-full items-center justify-between py-4 lg:py-8">
         <div className="z-10 flex items-center justify-center gap-4 xl:gap-15.5">
-          <IconWithTextButton
-            icon={<RiMenu2Fill className="h-9 w-9" />}
-            text={iconButton?.title}
-          />
+          <Menu buttonText={iconButton.title} menu={menu} contacts={contacts} />
           <ExternalLink
             href={`tel:${number}`}
             className="hidden text-2xl leading-[120%] font-bold lg:block"
