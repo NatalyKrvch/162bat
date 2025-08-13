@@ -16,6 +16,7 @@
   --color-text-validation: #386641;
   --color-text-error: #f93232;
   --color-text-success: #439f6e;
+  --color-text-light-green: #a7c957;
 
   --color-btn-bg: #6a994e;
   --color-btn-text: #ffffff;
@@ -65,6 +66,8 @@
   /*Animation*/
   --animate-accordion-down: accordion-down 300ms ease-out;
   --animate-accordion-up: accordion-up 300ms ease-out;
+  --animate-header-menu-in: slideIn 300ms ease-out;
+  --animate-header-menu-out: slideOut 300ms ease-out;
 }
 
 body {
@@ -173,6 +176,28 @@ body {
   }
   to {
     height: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
     opacity: 0;
   }
 }
