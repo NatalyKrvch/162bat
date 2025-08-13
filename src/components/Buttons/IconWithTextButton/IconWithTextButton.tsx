@@ -9,6 +9,7 @@ const IconWithTextButton = ({
   text,
   onClick,
   className = '',
+  textClassName = '',
 }: IconWithTextButtonProps) => {
   return (
     <button
@@ -21,7 +22,9 @@ const IconWithTextButton = ({
       data-testid={ICON_WITH_TEXT_TEST_ID}
     >
       {icon}
-      <span className="ml-1.75 hidden text-2xl leading-[120%] font-bold lg:block">
+      <span
+        className={twMerge('text-2xl leading-[120%] font-bold', textClassName)}
+      >
         {text}
       </span>
     </button>
