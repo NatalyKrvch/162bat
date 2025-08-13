@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Button, Container, Divider, InternalLink } from '@/components';
+import { Button, Container, Divider, MenuItemLink } from '@/components';
 import { FOOTER_TEST_ID } from '@/lib/testIds';
 import { getCurrentYear } from '@/utils';
 
@@ -23,12 +23,11 @@ const Footer = ({ data, onClick }: FooterProps) => {
               <ul className="mb-10 flex flex-col gap-2 sm:flex-row md:gap-x-11">
                 {menu.map(item => (
                   <li key={item.title}>
-                    <InternalLink
+                    <MenuItemLink
                       href={item.href}
-                      className="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
-                    >
-                      {item.title}
-                    </InternalLink>
+                      variant={'footerItem'}
+                      text={item.title}
+                    />
                   </li>
                 ))}
               </ul>
