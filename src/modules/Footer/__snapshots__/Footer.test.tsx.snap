@@ -33,7 +33,7 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             >
               <li>
                 <a
-                  class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
+                  class="cursor-pointer text-white hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
                   data-testid="internal-link-test-id"
                   href="/about"
                 >
@@ -42,7 +42,7 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
               </li>
               <li>
                 <a
-                  class="hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
+                  class="cursor-pointer text-white hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
                   data-testid="internal-link-test-id"
                   href="/contact"
                 >
