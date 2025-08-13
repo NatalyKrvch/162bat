@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should trigger button with provided text 1`] = `
+<div>
+  <button
+    class="flex cursor-pointer items-center text-(--color-text-white) transition-colors duration-300 hover:text-(--color-text-green) active:text-(--color-text-validation)"
+    data-testid="icon-with-text-test-id"
+    type="button"
+  >
+    <svg
+      class="h-9 w-9"
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"
+      />
+    </svg>
+    <span
+      class="text-2xl leading-[120%] font-bold hidden lg:block ml-1.75"
+    >
+      Menu
+    </span>
+  </button>
+</div>
+`;
