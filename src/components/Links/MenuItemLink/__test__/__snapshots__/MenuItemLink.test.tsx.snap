@@ -3,7 +3,7 @@
 exports[`MenuItemLink should render component correctly 1`] = `
 <div>
   <a
-    class="cursor-pointer text-white text-base leading-none tracking-normal w-full h-15 bg-transparent hover:bg-(--color-bg-secondary) active:bg-(--color-btn-text-hover-secondary) p-4 custom-class"
+    class="cursor-pointer text-base leading-none tracking-normal text-white w-full h-15 bg-transparent hover:bg-(--color-bg-secondary) active:bg-(--color-btn-text-hover-secondary) p-4 custom-class"
     data-testid="internal-link-test-id"
     href="/test"
   >
