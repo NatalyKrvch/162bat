@@ -2,7 +2,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { type PropsWithChildren } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import { MODAL_TRIGGER } from '@/lib/testIds';
+import { MODAL_TRIGGER_TEST_ID } from '@/lib/testIds';
 
 import type { ModalWrapperProps } from './types';
 
@@ -16,7 +16,7 @@ const ModalWrapper = ({
 
   return (
     <Dialog.Root>
-      <Dialog.Trigger data-testid={MODAL_TRIGGER} asChild>
+      <Dialog.Trigger data-testid={MODAL_TRIGGER_TEST_ID} asChild>
         {trigger}
       </Dialog.Trigger>
       <Dialog.Portal>

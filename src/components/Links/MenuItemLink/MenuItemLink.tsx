@@ -2,7 +2,7 @@ import { twMerge } from 'tailwind-merge';
 
 import { InternalLink } from '@/components/Links/InternalLink';
 
-import { MenuItemLinkProps } from './types';
+import type { MenuItemLinkProps } from './types';
 
 const ItemVariants = {
   headerItem:
