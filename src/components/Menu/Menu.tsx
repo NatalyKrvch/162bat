@@ -19,6 +19,7 @@ const Menu = ({ buttonText, menu, contacts }: MenuProps) => {
         />
       }
       className="flex h-screen w-screen flex-col lg:w-[660px]"
+      animationStyle="fixed data-[state=open]:animate-header-menu-in data-[state=closed]:animate-header-menu-out"
     >
       <Dialog.Title className="sr-only">Меню</Dialog.Title>
       <Dialog.Description className="sr-only">Пункти меню</Dialog.Description>
