@@ -6,7 +6,7 @@ import { IconWithTextButton } from '../Buttons/IconWithTextButton';
 import { ExternalLink } from '../Links/ExternalLink';
 import { MenuItemLink } from '../Links/MenuItemLink';
 import { ModalWrapper } from '../ModalWrapper';
-import { MenuProps } from './types';
+import type { MenuProps } from './types';
 
 const Menu = ({ buttonText, menu, contacts }: MenuProps) => {
   return (

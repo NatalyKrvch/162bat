@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { INTERNAL_LINK_TEST_ID } from '@/lib/testIds';
 
 import MenuItemLink from '../MenuItemLink';
-import { MenuItemLinkProps } from '../types';
+import type { MenuItemLinkProps } from '../types';
 
 const defaultProps: MenuItemLinkProps = {
   text: 'Link',
