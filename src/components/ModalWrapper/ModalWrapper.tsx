@@ -9,11 +9,9 @@ import type { ModalWrapperProps } from './types';
 const ModalWrapper = ({
   children,
   trigger,
+  animationStyle,
   className = '',
 }: PropsWithChildren<ModalWrapperProps>) => {
-  const animationStyle =
-    'fixed data-[state=open]:animate-header-menu-in data-[state=closed]:animate-header-menu-out';
-
   return (
     <Dialog.Root>
       <Dialog.Trigger data-testid={MODAL_TRIGGER_TEST_ID} asChild>
