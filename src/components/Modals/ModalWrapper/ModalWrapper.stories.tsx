@@ -1,7 +1,8 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import { Meta, StoryObj } from '@storybook/nextjs';
 
-import { Button } from '../Buttons/Button';
+import { Button } from '@/components/Buttons/Button';
+
 import ModalWrapper from './ModalWrapper';
 
 const children = (

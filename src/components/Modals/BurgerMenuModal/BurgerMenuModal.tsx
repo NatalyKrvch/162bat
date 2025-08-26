@@ -2,14 +2,18 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { IoClose } from 'react-icons/io5';
 import { RiMenu2Fill } from 'react-icons/ri';
 
-import { IconWithTextButton } from '../Buttons/IconWithTextButton';
-import { ExternalLink } from '../Links/ExternalLink';
-import { MenuItemLink } from '../Links/MenuItemLink';
+import { IconWithTextButton } from '../../Buttons/IconWithTextButton';
+import { ExternalLink } from '../../Links/ExternalLink';
+import { MenuItemLink } from '../../Links/MenuItemLink';
+import { Navigation } from '../../Navigation';
 import { ModalWrapper } from '../ModalWrapper';
-import { Navigation } from '../Navigation';
-import type { MenuItemsProps } from './types';
+import type { BurgerMenuModalProps } from './types';
 
-const MenuItems = ({ buttonText, menu, contacts }: MenuItemsProps) => {
+const BurgerMenuModal = ({
+  buttonText,
+  menu,
+  contacts,
+}: BurgerMenuModalProps) => {
   return (
     <ModalWrapper
       trigger={
@@ -62,4 +66,4 @@ const MenuItems = ({ buttonText, menu, contacts }: MenuItemsProps) => {
   );
 };
 
-export default MenuItems;
+export default BurgerMenuModal;

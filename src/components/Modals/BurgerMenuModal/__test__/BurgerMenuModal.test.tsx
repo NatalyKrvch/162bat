@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import MenuItems from '../MenuItems';
+import MenuItems from '../BurgerMenuModal';
 
 const mockMenu = [
   { title: 'Головна', href: '/' },

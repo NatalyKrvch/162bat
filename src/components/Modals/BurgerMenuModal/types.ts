@@ -3,7 +3,7 @@ type MenuItem = {
   href: string;
 };
 
-export interface MenuItemsProps {
+export interface BurgerMenuModalProps {
   buttonText: string;
   menu: MenuItem[];
   contacts: {
