@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Button, Container, ExternalLink, Menu } from '@/components';
+import { Button, Container, ExternalLink, MenuItems } from '@/components';
 import { HEADER_TEST_ID } from '@/lib/testIds';
 
 import type { HeaderProps } from './types';
@@ -17,7 +17,11 @@ const Header = ({ data, onClick }: HeaderProps) => {
     >
       <Container className="relative flex h-full w-full items-center justify-between py-4 lg:py-8">
         <div className="z-10 flex items-center justify-center gap-4 xl:gap-15.5">
-          <Menu buttonText={iconButton.title} menu={menu} contacts={contacts} />
+          <MenuItems
+            buttonText={iconButton.title}
+            menu={menu}
+            contacts={contacts}
+          />
           <ExternalLink
             href={`tel:${number}`}
             className="hidden text-2xl leading-[120%] font-bold lg:block"
