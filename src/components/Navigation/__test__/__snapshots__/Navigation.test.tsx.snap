@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation should renders without crashing 1`] = `
+<div>
+  <nav
+    aria-label="header menu"
+    class=""
+    data-testid="navigation-test-id"
+  >
+    <ul
+      class="flex flex-col gap-6.75 lg:gap-0"
+    >
+      <li>
+        Item 1
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

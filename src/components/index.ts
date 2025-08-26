@@ -17,5 +17,6 @@ export { MenuItemLink } from './Links/MenuItemLink';
 export { List } from './List';
 export { Menu } from './Menu';
 export { ModalWrapper } from './ModalWrapper';
+export { Navigation } from './Navigation';
 export { Section } from './Section';
 export { SectionTitle } from './SectionTitle';

@@ -6,6 +6,7 @@ import { IconWithTextButton } from '../Buttons/IconWithTextButton';
 import { ExternalLink } from '../Links/ExternalLink';
 import { MenuItemLink } from '../Links/MenuItemLink';
 import { ModalWrapper } from '../ModalWrapper';
+import { Navigation } from '../Navigation';
 import type { MenuProps } from './types';
 
 const Menu = ({ buttonText, menu, contacts }: MenuProps) => {
@@ -34,22 +35,19 @@ const Menu = ({ buttonText, menu, contacts }: MenuProps) => {
       </div>
 
       <div className="flex h-full flex-col justify-start gap-6.75 lg:justify-center lg:gap-0">
-        <nav aria-label="Header menu">
-          <ul className="flex flex-col gap-6.75 lg:gap-0">
-            {menu.map(item => (
-              <li key={item.title} className="w-full">
-                <Dialog.Close asChild>
-                  <MenuItemLink
-                    text={item.title}
-                    href={item.href}
-                    className="flex justify-center text-2xl text-white"
-                  />
-                </Dialog.Close>
-              </li>
-            ))}
-          </ul>
-        </nav>
-
+        <Navigation>
+          {menu.map(item => (
+            <li key={item.title} className="w-full">
+              <Dialog.Close asChild>
+                <MenuItemLink
+                  text={item.title}
+                  href={item.href}
+                  className="flex justify-center text-2xl text-white"
+                />
+              </Dialog.Close>
+            </li>
+          ))}
+        </Navigation>
         <address className="flex w-full flex-col items-center p-4 text-2xl font-bold not-italic">
           <p className="pb-3 text-(--color-text-light-green)">Контакти</p>
           <ExternalLink href={`tel:${contacts.number}`}>
