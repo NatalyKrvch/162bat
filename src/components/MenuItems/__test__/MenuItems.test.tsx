@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 
-import Menu from '../Menu';
+import MenuItems from '../MenuItems';
 
 const mockMenu = [
   { title: 'Головна', href: '/' },
@@ -15,14 +15,16 @@ const mockContacts = {
 describe('Menu', () => {
   it('should trigger button with provided text', () => {
     const { container } = render(
-      <Menu buttonText="Menu" menu={mockMenu} contacts={mockContacts} />,
+      <MenuItems buttonText="Menu" menu={mockMenu} contacts={mockContacts} />,
     );
     expect(screen.getByRole('button', { name: 'Menu' })).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 
   it('renders all menu items and contacts from props', () => {
-    render(<Menu buttonText="Menu" menu={mockMenu} contacts={mockContacts} />);
+    render(
+      <MenuItems buttonText="Menu" menu={mockMenu} contacts={mockContacts} />,
+    );
     const button = screen.getByRole('button', { name: 'Menu' });
     fireEvent.click(button);
 

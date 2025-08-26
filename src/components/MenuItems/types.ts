@@ -3,7 +3,7 @@ type MenuItem = {
   href: string;
 };
 
-export interface MenuProps {
+export interface MenuItemsProps {
   buttonText: string;
   menu: MenuItem[];
   contacts: {

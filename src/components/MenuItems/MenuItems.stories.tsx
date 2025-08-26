@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/nextjs';
 
-import Menu from './Menu';
+import MenuItems from './MenuItems';
 
 const buttonText = 'Меню';
 const menu = [
@@ -19,13 +19,13 @@ const contacts = {
 };
 
 export default {
-  component: Menu,
-  title: 'Menu',
+  component: MenuItems,
+  title: 'MenuItems',
   tags: ['autodocs'],
 } as Meta;
 
 export const Default: StoryObj = {
   render: () => (
-    <Menu buttonText={buttonText} menu={menu} contacts={contacts} />
+    <MenuItems buttonText={buttonText} menu={menu} contacts={contacts} />
   ),
 };

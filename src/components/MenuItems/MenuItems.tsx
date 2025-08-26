@@ -7,9 +7,9 @@ import { ExternalLink } from '../Links/ExternalLink';
 import { MenuItemLink } from '../Links/MenuItemLink';
 import { ModalWrapper } from '../ModalWrapper';
 import { Navigation } from '../Navigation';
-import type { MenuProps } from './types';
+import type { MenuItemsProps } from './types';
 
-const Menu = ({ buttonText, menu, contacts }: MenuProps) => {
+const MenuItems = ({ buttonText, menu, contacts }: MenuItemsProps) => {
   return (
     <ModalWrapper
       trigger={
@@ -62,4 +62,4 @@ const Menu = ({ buttonText, menu, contacts }: MenuProps) => {
   );
 };
 
-export default Menu;
+export default MenuItems;

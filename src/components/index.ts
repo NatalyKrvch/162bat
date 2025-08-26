@@ -15,7 +15,7 @@ export { ExternalLink } from './Links/ExternalLink';
 export { InternalLink } from './Links/InternalLink';
 export { MenuItemLink } from './Links/MenuItemLink';
 export { List } from './List';
-export { Menu } from './Menu';
+export { MenuItems } from './MenuItems';
 export { ModalWrapper } from './ModalWrapper';
 export { Navigation } from './Navigation';
 export { Section } from './Section';
