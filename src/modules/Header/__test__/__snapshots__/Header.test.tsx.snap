@@ -4,7 +4,7 @@ exports[`Header component should renders correctly and matches snapshot 1`] = `
 <div>
   <header
     class="sticky top-0 left-0 z-20 h-(--height-header-mobile) w-screen bg-(--color-bg-primary) lg:h-(--height-header)"
-    data-testid="header--test-id"
+    data-testid="header-test-id"
   >
     <div
       class="container-width px-4 md:px-8 xl:px-20 relative flex h-full w-full items-center justify-between py-4 lg:py-8"

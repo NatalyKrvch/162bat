@@ -1,6 +1,12 @@
 import Image from 'next/image';
 
-import { Button, Container, Divider, MenuItemLink } from '@/components';
+import {
+  Button,
+  Container,
+  Divider,
+  MenuItemLink,
+  Navigation,
+} from '@/components';
 import { FOOTER_TEST_ID } from '@/lib/testIds';
 import { getCurrentYear } from '@/utils';
 
@@ -17,22 +23,18 @@ const Footer = ({ data, onClick }: FooterProps) => {
       <Container className="py-4 lg:py-10">
         <div className="mb-6 flex items-start justify-between lg:mb-8 xl:mb-10">
           <Image src={image.src} alt={image.alt} width={83} height={100} />
-
           <div>
-            <nav aria-label="Footer menu">
-              <ul className="mb-10 flex flex-col gap-2 sm:flex-row md:gap-x-11">
-                {menu.map(item => (
-                  <li key={item.title}>
-                    <MenuItemLink
-                      href={item.href}
-                      variant={'footerItem'}
-                      text={item.title}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
+            <Navigation variant="footer">
+              {menu.map(item => (
+                <li key={item.title}>
+                  <MenuItemLink
+                    href={item.href}
+                    variant={'footerItem'}
+                    text={item.title}
+                  />
+                </li>
+              ))}
+            </Navigation>
             <div className="flex flex-col items-center gap-4 md:flex-row lg:gap-20">
               <p className="flex flex-col gap-0.5 md:flex-row md:gap-4 lg:text-xl">
                 <span className="whitespace-nowrap">{contactUs.title}</span>
