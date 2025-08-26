@@ -8,7 +8,7 @@ const IconWithTextButton = ({
   icon,
   text,
   onClick,
-  className = '',
+  buttonClassName = '',
   textClassName = '',
 }: IconWithTextButtonProps) => {
   return (
@@ -17,7 +17,7 @@ const IconWithTextButton = ({
       type="button"
       className={twMerge(
         'flex cursor-pointer items-center text-(--color-text-white) transition-colors duration-300 hover:text-(--color-text-green) active:text-(--color-text-validation)',
-        className,
+        buttonClassName,
       )}
       data-testid={ICON_WITH_TEXT_TEST_ID}
     >
