@@ -23,7 +23,7 @@ describe('IconWithTextButton', () => {
       <IconWithTextButton
         icon={DummyIcon}
         text="test"
-        className="custom-class"
+        buttonClassName="custom-class"
       />,
     );
 
