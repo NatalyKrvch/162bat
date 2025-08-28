@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/nextjs';
 
 import Navigation from './Navigation';
+import { NavigationVariant } from './Navigation.variants';
 
 const list = [
   <li key="1">Item 1</li>,
@@ -15,7 +16,7 @@ export default {
   argTypes: {
     variant: {
       control: { type: 'select' },
-      options: ['header', 'footer'],
+      options: Object.values(NavigationVariant),
     },
   },
 } as Meta;

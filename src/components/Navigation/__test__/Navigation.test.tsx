@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { NAVIGATION_TEST_ID } from '@/lib/testIds';
 
 import Navigation from '../Navigation';
+import { NavigationVariant } from '../Navigation.variants';
 
 describe('Navigation', () => {
   it('should renders without crashing', () => {
@@ -29,7 +30,7 @@ describe('Navigation', () => {
 
   it('should apply correct aria-label based on variant - footer', () => {
     render(
-      <Navigation variant="footer">
+      <Navigation variant={NavigationVariant.Footer}>
         <li>Footer Item</li>
       </Navigation>,
     );
@@ -39,7 +40,7 @@ describe('Navigation', () => {
 
   it('applies correct ul classes based on variant', () => {
     const { container, rerender } = render(
-      <Navigation variant="header">
+      <Navigation variant={NavigationVariant.Header}>
         <li>Header Item</li>
       </Navigation>,
     );
@@ -47,7 +48,7 @@ describe('Navigation', () => {
     expect(ul).toHaveClass('flex flex-col gap-6.75 lg:gap-0');
 
     rerender(
-      <Navigation variant="footer">
+      <Navigation variant={NavigationVariant.Footer}>
         <li>Footer Item</li>
       </Navigation>,
     );
