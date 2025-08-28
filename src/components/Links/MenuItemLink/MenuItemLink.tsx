@@ -2,19 +2,13 @@ import { twMerge } from 'tailwind-merge';
 
 import { InternalLink } from '@/components/Links/InternalLink';
 
+import { ItemVariants, MenuItemVariant } from './MenuItemLink.variants';
 import type { MenuItemLinkProps } from './types';
-
-const ItemVariants = {
-  headerItem:
-    'w-full h-15 bg-transparent hover:bg-(--color-bg-secondary) active:bg-(--color-btn-text-hover-secondary) p-4',
-  footerItem:
-    'hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl',
-};
 
 const MenuItemLink = ({
   text,
   href,
-  variant = 'headerItem',
+  variant = MenuItemVariant.HeaderItem,
   className = '',
 }: MenuItemLinkProps) => {
   return (

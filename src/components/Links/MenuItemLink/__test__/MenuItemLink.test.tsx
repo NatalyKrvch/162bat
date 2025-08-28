@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { INTERNAL_LINK_TEST_ID } from '@/lib/testIds';
 
 import MenuItemLink from '../MenuItemLink';
+import { MenuItemVariant } from '../MenuItemLink.variants';
 import type { MenuItemLinkProps } from '../types';
 
 const defaultProps: MenuItemLinkProps = {
@@ -23,7 +24,7 @@ describe('MenuItemLink', () => {
 
   it('should render correctly variant for footer', () => {
     const { container } = render(
-      <MenuItemLink {...defaultProps} variant="footerItem" />,
+      <MenuItemLink {...defaultProps} variant={MenuItemVariant.FooterItem} />,
     );
 
     const menuItemLink = screen.getByTestId(INTERNAL_LINK_TEST_ID);
