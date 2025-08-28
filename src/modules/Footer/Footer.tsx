@@ -7,6 +7,8 @@ import {
   MenuItemLink,
   Navigation,
 } from '@/components';
+import { MenuItemVariant } from '@/components/Links/MenuItemLink/MenuItemLink.variants';
+import { NavigationVariant } from '@/components/Navigation/Navigation.variants';
 import { FOOTER_TEST_ID } from '@/lib/testIds';
 import { getCurrentYear } from '@/utils';
 
@@ -24,12 +26,12 @@ const Footer = ({ data, onClick }: FooterProps) => {
         <div className="mb-6 flex items-start justify-between lg:mb-8 xl:mb-10">
           <Image src={image.src} alt={image.alt} width={83} height={100} />
           <div>
-            <Navigation variant="footer">
+            <Navigation variant={NavigationVariant.Footer}>
               {menu.map(item => (
                 <li key={item.title}>
                   <MenuItemLink
                     href={item.href}
-                    variant={'footerItem'}
+                    variant={MenuItemVariant.FooterItem}
                     text={item.title}
                   />
                 </li>

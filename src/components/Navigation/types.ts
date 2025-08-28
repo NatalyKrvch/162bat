@@ -1,4 +1,6 @@
+import { NavigationVariant } from './Navigation.variants';
+
 export interface NavigationProps {
-  variant?: 'header' | 'footer';
+  variant?: NavigationVariant;
   className?: string;
 }
