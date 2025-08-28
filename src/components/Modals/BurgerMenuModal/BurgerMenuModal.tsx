@@ -2,11 +2,12 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { IoClose } from 'react-icons/io5';
 import { RiMenu2Fill } from 'react-icons/ri';
 
-import { IconWithTextButton } from '../../Buttons/IconWithTextButton';
-import { ExternalLink } from '../../Links/ExternalLink';
-import { MenuItemLink } from '../../Links/MenuItemLink';
-import { Navigation } from '../../Navigation';
-import { ModalWrapper } from '../ModalWrapper';
+import { IconWithTextButton } from '@/components/Buttons/IconWithTextButton';
+import { ExternalLink } from '@/components/Links/ExternalLink';
+import { MenuItemLink } from '@/components/Links/MenuItemLink';
+import { ModalWrapper } from '@/components/Modals/ModalWrapper';
+import { Navigation } from '@/components/Navigation';
+
 import type { BurgerMenuModalProps } from './types';
 
 const BurgerMenuModal = ({
