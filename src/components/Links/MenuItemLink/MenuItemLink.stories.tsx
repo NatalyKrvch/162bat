@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/nextjs';
 
 import MenuItemLink from './MenuItemLink';
+import { MenuItemVariant } from './MenuItemLink.variants';
 
 export default {
   component: MenuItemLink,
@@ -9,7 +10,7 @@ export default {
   argTypes: {
     variant: {
       control: { type: 'select' },
-      options: ['headerItem', 'footerItem'],
+      options: Object.values(MenuItemVariant),
     },
   },
 } as Meta;
@@ -25,7 +26,7 @@ export const Default: StoryObj = {
 export const HeaderMenuItemLink: StoryObj = {
   args: {
     children: 'Header Menu Item',
-    variant: 'headerItem',
+    variant: MenuItemVariant.HeaderItem,
     text: 'Header Item',
     href: 'test',
   },
@@ -34,7 +35,7 @@ export const HeaderMenuItemLink: StoryObj = {
 export const FooterMenuItemLink: StoryObj = {
   args: {
     children: 'Footer Menu Item Button',
-    variant: 'footerItem',
+    variant: MenuItemVariant.FooterItem,
     text: 'Footer Item',
     href: 'test',
   },
