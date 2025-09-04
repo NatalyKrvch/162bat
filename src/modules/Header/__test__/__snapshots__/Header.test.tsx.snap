@@ -7,8 +7,7 @@ exports[`Header component should renders correctly and matches snapshot 1`] = `
     data-testid="header-test-id"
   >
     <div
-      class="container-width px-4 md:px-8 xl:px-20 relative flex h-full w-full items-center justify-between py-4 lg:py-8"
-      data-testid="container-test-id"
+      class="relative flex h-full w-full items-center justify-between px-4 py-4 lg:px-8 lg:py-8"
     >
       <div
         class="z-10 flex items-center justify-center gap-4 xl:gap-15.5"
@@ -49,23 +48,33 @@ exports[`Header component should renders correctly and matches snapshot 1`] = `
         </a>
       </div>
       <div
-        class="absolute top-1/2 left-1/2 h-20 -translate-1/2"
+        class="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-4"
       >
+        <span
+          class="max-w-[100px] text-center text-sm font-bold lg:text-lg"
+        >
+          1 батальйон
+        </span>
         <img
           alt="Company logo"
-          class="h-full object-cover"
+          class="object-cover"
           data-nimg="1"
           decoding="async"
-          height="80"
+          height="75"
           loading="lazy"
           src="/_next/image?url=%2Flogo.png&w=256&q=75"
           srcset="/_next/image?url=%2Flogo.png&w=96&q=75 1x, /_next/image?url=%2Flogo.png&w=256&q=75 2x"
           style="color: transparent;"
           width="67"
         />
+        <span
+          class="max-w-[100px] text-center text-sm font-bold lg:text-right lg:text-lg"
+        >
+          Територіальної оборони
+        </span>
       </div>
       <div
-        class="hidden lg:block"
+        class="mr-5 hidden lg:block"
       >
         <button
           class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default lg:text-xl bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled text-base font-bold"
