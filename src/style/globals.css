@@ -57,8 +57,8 @@
 
   /*Heights*/
   --height-guarantees-section: 550px;
-  --height-header: 124px;
-  --height-header-mobile: 100px;
+  --height-header: 100px;
+  --height-header-mobile: 85px;
 
   /*Widths*/
   --width-max-container: 1440px;
