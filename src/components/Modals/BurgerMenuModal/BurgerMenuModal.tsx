@@ -29,12 +29,12 @@ const BurgerMenuModal = ({
     >
       <Dialog.Title className="sr-only">Меню</Dialog.Title>
       <Dialog.Description className="sr-only">Пункти меню</Dialog.Description>
-      <div className="flex h-auto items-center justify-between px-20.5 py-5.5">
+      <div className="flex h-auto items-center justify-between px-28 py-11">
         <Dialog.Close asChild>
           <IconWithTextButton
             icon={<IoClose className="h-9 w-9" />}
             text="Закрити"
-            textClassName="ml-6"
+            textClassName="ml-2"
           />
         </Dialog.Close>
       </div>
