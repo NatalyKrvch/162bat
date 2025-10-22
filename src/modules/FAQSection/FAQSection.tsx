@@ -1,29 +1,22 @@
-import {
-  BasicCard,
-  Button,
-  InternalLink,
-  SectionTitle,
-  TitledCard,
-} from '@/components';
+import { Button, InternalLink, SectionTitle } from '@/components';
 import FAQCard from '@/components/Cards/FAQCard/FAQCard';
 import { FAQSectionProps } from './types';
-import { FAQCardProps } from '@/components/Cards/FAQCard/types';
 
 const FAQSection = ({ data }: FAQSectionProps) => {
   if (!data) {
     return null;
   }
 
-  const { title, readMoreText, readMoreLink, introText, items } = data;
+  const { title, readMoreText, readMoreLink, items } = data;
 
   const MAX_ITEMS_TO_SHOW_ON_HOMEPAGE = 3;
-  
+
   const faqItemsToShow = items.slice(0, MAX_ITEMS_TO_SHOW_ON_HOMEPAGE);
 
   return (
     <>
       <div className="flex flex-col items-start lg:mb-10 lg:flex-row lg:items-center lg:justify-between xl:mb-10">
-        <SectionTitle className="xl:text-14 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%] ">
+        <SectionTitle className="xl:text-14 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
           {title}
         </SectionTitle>
 
@@ -36,11 +29,9 @@ const FAQSection = ({ data }: FAQSectionProps) => {
           </Button>
         </InternalLink>
       </div>
-      <p className="mb-10 max-w-240   leading-[150%] lg:mb-8 lg:text-lg xl:mb-10 text-[24px]">
-        {introText}
-      </p>
+  
 
-      {faqItemsToShow.map((item, index) => (
+      {faqItemsToShow && faqItemsToShow.map((item, index) => (
         <FAQCard key={index} question={item.question} answer={item.answer} />
       ))}
     </>

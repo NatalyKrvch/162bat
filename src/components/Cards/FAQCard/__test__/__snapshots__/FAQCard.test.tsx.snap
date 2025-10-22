@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FAQCard should render with complete answer data 1`] = `
+<div>
+  <article
+    class="mt-8 flex flex-col"
+    data-testid="faq-card-test-id"
+  >
+    <div
+      class="flex flex-col items-start gap-4 lg:flex-row"
+    >
+      <h4
+        class="w-full shrink-0 text-base leading-[150%] font-bold whitespace-pre-line lg:w-[412px] lg:text-2xl lg:leading-[120%]"
+      >
+        How does it work?
+      </h4>
+      <div
+        class="flex flex-1 flex-col gap-3 lg:text-2xl"
+      >
+        <p>
+          Here is the explanation
+        </p>
+        <ul
+          class="flex flex-col gap-4"
+          data-testid="list-test-id"
+        >
+          <li
+            class="flex items-center gap-4 lining-nums tabular-nums"
+          >
+            <img
+              alt="star icon"
+              class="h-5 w-5 min-w-5 sm:h-6 sm:w-6 sm:min-w-6"
+              data-nimg="1"
+              data-testid="star-icon-test-id"
+              decoding="async"
+              height="24"
+              loading="lazy"
+              src="/icons/star.svg"
+              style="color: transparent;"
+              width="24"
+            />
+            Step 1
+          </li>
+          <li
+            class="flex items-center gap-4 lining-nums tabular-nums"
+          >
+            <img
+              alt="star icon"
+              class="h-5 w-5 min-w-5 sm:h-6 sm:w-6 sm:min-w-6"
+              data-nimg="1"
+              data-testid="star-icon-test-id"
+              decoding="async"
+              height="24"
+              loading="lazy"
+              src="/icons/star.svg"
+              style="color: transparent;"
+              width="24"
+            />
+            Step 2
+          </li>
+        </ul>
+        <p>
+          That is how it works
+        </p>
+      </div>
+    </div>
+    <div
+      class="mt-8 w-full relative h-0.5 w-full bg-divider-gradient"
+      data-testid="divider-test-id"
+      role="separator"
+    >
+      <span
+        class="absolute inset-0 h-full w-full divider-stripes-8"
+      />
+    </div>
+  </article>
+</div>
+`;
+
+exports[`FAQCard should render with question and answer text 1`] = `
+<div>
+  <article
+    class="mt-8 flex flex-col"
+    data-testid="faq-card-test-id"
+  >
+    <div
+      class="flex flex-col items-start gap-4 lg:flex-row"
+    >
+      <h4
+        class="w-full shrink-0 text-base leading-[150%] font-bold whitespace-pre-line lg:w-[412px] lg:text-2xl lg:leading-[120%]"
+      >
+        What is this FAQ about?
+      </h4>
+      <div
+        class="flex flex-1 flex-col gap-3 lg:text-2xl"
+      >
+        <p>
+          This is the answer
+        </p>
+      </div>
+    </div>
+    <div
+      class="mt-8 w-full relative h-0.5 w-full bg-divider-gradient"
+      data-testid="divider-test-id"
+      role="separator"
+    >
+      <span
+        class="absolute inset-0 h-full w-full divider-stripes-8"
+      />
+    </div>
+  </article>
+</div>
+`;
