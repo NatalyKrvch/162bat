@@ -14,12 +14,16 @@ const eslintConfig = [
       'plugin:import/recommended',
       'plugin:import/typescript',
     ],
-    plugins: ['simple-import-sort', 'import'],
+    plugins: ['simple-import-sort', 'import', '@typescript-eslint'],
     rules: {
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
       'storybook/no-renderer-packages': 'off',
       'eol-last': ['error', 'always'],
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        { prefer: 'type-imports', fixStyle: 'inline-type-imports' }
+      ],
     },
     settings: {
       'import/resolver': {

@@ -4,3 +4,4 @@ export { Header } from './Header';
 export { HeroSection } from './HeroSection';
 export { HistorySection } from './HistorySection';
 export { StagesSection } from './StagesSection';
+export { FAQSection } from './FAQSection';

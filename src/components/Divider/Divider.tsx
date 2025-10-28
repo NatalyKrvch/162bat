@@ -2,14 +2,14 @@ import { DIVIDER_TEST_ID } from '@/lib/testIds';
 
 import type { DividerProps } from './types';
 
-const Divider = ({ variant = 'gradient' }: DividerProps) => {
+const Divider = ({ variant = 'gradient', className = '' }: DividerProps) => {
   const isGreyVariant = variant === 'grey';
 
   return (
     <div
       role="separator"
       data-testid={DIVIDER_TEST_ID}
-      className={`relative h-0.5 w-full ${isGreyVariant ? 'bg-grey' : 'bg-divider-gradient'}`}
+      className={`${className} relative h-0.5 w-full ${isGreyVariant ? 'bg-grey' : 'bg-divider-gradient'}`}
     >
       <span
         className={`absolute inset-0 h-full w-full ${isGreyVariant ? 'divider-stripes-4' : 'divider-stripes-8'}`}
