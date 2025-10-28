@@ -1,9 +1,8 @@
 export interface FAQCardProps {
   question: string;
   answer: {
-      text: string;
-      list: string[];
-      conclusion: string;
-  } 
-  }
-  
+    text: string;
+    list?: string[];
+    conclusion?: string;
+  };
+}
