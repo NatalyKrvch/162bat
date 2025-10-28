@@ -4,7 +4,28 @@ import { FAQ_CARD_TEST_ID } from '@/lib/testIds';
 
 import type { FAQCardProps } from './types';
 import { Divider } from '@/components/Divider';
+import { List } from '@/components/List';
 const FAQCard = ({ question, answer }: FAQCardProps) => {
+ if (!question) {
+  return null;
+ }
+  if (
+    answer &&
+    !answer.text?.trim() &&
+    (answer.list?.length ?? 0) === 0 &&
+    !answer.conclusion?.trim()
+  ) {
+    return null;
+  }
+  
+  const hasText = !!answer?.text?.trim();
+  const hasList = (answer?.list?.length ?? 0) > 0;
+  const hasConclusion = !!answer?.conclusion?.trim();
+
+  const answerList = hasList
+    ? answer!.list!.map((item, index) => ({ id: index.toString(), children: item }))
+    : [];
+
   return (
     <article
       data-testid={FAQ_CARD_TEST_ID}
@@ -15,7 +36,9 @@ const FAQCard = ({ question, answer }: FAQCardProps) => {
           {question}
         </h4>
         <div className="flex flex-1 flex-col gap-3 lg:text-2xl">
-          <p>{answer && answer.text}</p>
+          {hasText && <p>{answer!.text!.trim()}</p>}
+          {hasList && <List listItems={answerList} bulletType='star' />}
+          {hasConclusion && <p>{answer!.conclusion!.trim()}</p>}
         </div>
       </div>
 

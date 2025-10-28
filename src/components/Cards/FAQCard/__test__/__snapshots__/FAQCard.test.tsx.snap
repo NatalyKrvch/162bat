@@ -97,6 +97,7 @@ exports[`FAQCard should render with question and answer text 1`] = `
         <p>
           This is the answer
         </p>
+        <p />
       </div>
     </div>
     <div
