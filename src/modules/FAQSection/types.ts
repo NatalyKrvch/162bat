@@ -1,10 +1,10 @@
-import { type FAQCardProps } from '@/components/Cards/FAQCard/types';
+import type { FAQCardProps } from '@/components/Cards/FAQCard/types';
 
 export interface FAQSectionProps {
   data: {
     title: string;
     readMoreText: string;
-    readMoreLink: string; 
+    readMoreLink: string;
     items: FAQCardProps[];
   };
 }
