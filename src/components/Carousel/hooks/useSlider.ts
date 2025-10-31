@@ -3,14 +3,14 @@ import { type KeyboardEvent, useState } from 'react';
 
 import { ARROW_LEFT_KEY, ARROW_RIGHT_KEY } from '../constants/constants';
 
-export const useSlider = () => {
+export const useSlider = (perView: number = 1) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     slideChanged(slider) {
       setCurrentSlide(slider.track?.details?.rel);
     },
     slides: {
-      perView: 1,
+      perView,
       spacing: 24,
     },
   });

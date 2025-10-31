@@ -13,7 +13,11 @@ import {
 } from './constants/constants';
 import { useSlider } from './hooks/useSlider';
 
-const Carousel = ({ children }: PropsWithChildren) => {
+type CarouselProps = PropsWithChildren<{
+  perView?: number;
+}>;
+
+const Carousel = ({ children, perView = 1 }: CarouselProps) => {
   const {
     sliderRef,
     handleClickNext,
@@ -21,7 +25,7 @@ const Carousel = ({ children }: PropsWithChildren) => {
     handleKeyDown,
     isFirstSlide,
     isLastSlide,
-  } = useSlider();
+  } = useSlider(perView);
 
   return (
     <div className="flex w-full flex-col items-center gap-3">

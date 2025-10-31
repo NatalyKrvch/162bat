@@ -24,3 +24,4 @@ export const HEADER_TEST_ID = 'header-test-id';
 export const MODAL_TRIGGER_TEST_ID = 'modal-trigger-test-id';
 export const NAVIGATION_TEST_ID = 'navigation-test-id';
 export const FAQ_CARD_TEST_ID = 'faq-card-test-id';
+export const ROLES_CARD_TEST_ID = 'roles-card-test-id';

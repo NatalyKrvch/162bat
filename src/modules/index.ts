@@ -5,3 +5,4 @@ export { HeroSection } from './HeroSection';
 export { HistorySection } from './HistorySection';
 export { StagesSection } from './StagesSection';
 export { FAQSection } from './FAQSection';
+export { RolesSection } from './RolesSection';
