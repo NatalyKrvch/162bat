@@ -1,0 +1,318 @@
+{
+  "title": "Пільги та соціальні гарантії для військовослужбовців",
+  "intro": {
+    "subtitle": "Що ви отримаєте, долучившись до батальйону?",
+    "description": "Служба в Збройних Силах України — це не тільки захист своєї країни, а й стабільне соціальне забезпечення, гідна заробітна плата та ряд пільг, що гарантують безпеку вам та вашій родині."
+  },
+  "sections": [
+    {
+      "title": "Грошове забезпечення та винагороди",
+      "formattedContent": [
+        {
+          "id": "gc1",
+          "children": [
+            {
+              "id": "gc1-1",
+              "text": "Щомісячне грошове забезпечення",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            { "id": "gc1-2", "text": " — від ", "color": "white" },
+            {
+              "id": "gc1-3",
+              "text": "20 000 ",
+              "color": "green",
+              "fontWeight": "bold",
+              "variant": "number"
+            },
+            {
+              "id": "gc1-4",
+              "text": "грн для військових у тилу, до ",
+              "color": "white"
+            },
+            {
+              "id": "gc1-5",
+              "text": "120 000 ",
+              "color": "green",
+              "fontWeight": "bold",
+              "variant": "number"
+            },
+            {
+              "id": "gc1-6",
+              "text": "грн для тих, хто виконує завдання на передовій.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "gc2",
+          "children": [
+            {
+              "id": "gc2-1",
+              "text": "Додаткові надбавки",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "gc2-2",
+              "text": " за особливі умови служби, звання та спеціальність.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "gc3",
+          "children": [
+            {
+              "id": "gc3-1",
+              "text": "Одноразові грошові виплати",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "gc3-2",
+              "text": " при укладенні контракту або отриманні державних нагород.",
+              "color": "white"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Соціальні гарантії для військових та їхніх сімей",
+      "formattedContent": [
+        {
+          "id": "sg1",
+          "children": [
+            {
+              "id": "sg1-1",
+              "text": "Безкоштовне медичне забезпечення",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "sg1-2",
+              "text": " в військових госпіталях та лікувальних закладах.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "sg2",
+          "children": [
+            {
+              "id": "sg2-1",
+              "text": "Можливість реабілітації",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "sg2-2",
+              "text": " після поранень або психологічного навантаження у спеціалізованих центрах.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "sg3",
+          "children": [
+            {
+              "id": "sg3-1",
+              "text": "Безкоштовне навчання та перекваліфікація",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "sg3-2",
+              "text": " для військовослужбовців, які планують змінити професію після служби.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "sg4",
+          "children": [
+            {
+              "id": "sg4-1",
+              "text": "Право на пенсійне забезпечення ",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            { "id": "sg4-2", "text": "після ", "color": "white" },
+            {
+              "id": "sg4-3",
+              "text": "25 ",
+              "color": "green",
+              "fontWeight": "bold",
+              "variant": "number"
+            },
+            {
+              "id": "sg4-4",
+              "text": "років ",
+              "color": "green",
+              "fontWeight": "bold",
+              "variant": "text"
+            },
+            {
+              "id": "sg4-5",
+              "text": "служби або за вислугою років.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "sg5",
+          "children": [
+            {
+              "id": "sg5-1",
+              "text": "Збереження робочого місця",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "sg5-2",
+              "text": " (закон гарантує, що роботодавець не може звільнити військовослужбовця).",
+              "color": "white"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Кар'єрний розвиток та навчання",
+      "formattedContent": [
+        {
+          "id": "cr1",
+          "children": [
+            {
+              "id": "cr1-1",
+              "text": "Безкоштовне навчання",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "cr1-2",
+              "text": " у вищих військових навчальних закладах (як під час служби, так і після її завершення).",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "cr2",
+          "children": [
+            {
+              "id": "cr2-1",
+              "text": "Можливість проходження курсів підвищення кваліфікації",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "cr2-2",
+              "text": " та спеціалізованої підготовки.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "cr3",
+          "children": [
+            {
+              "id": "cr3-1",
+              "text": "Кар'єрне зростання",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "cr3-2",
+              "text": " — від рядового до офіцера.",
+              "color": "white"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Пільги для ветеранів та членів їхніх сімей",
+      "formattedContent": [
+        {
+          "id": "vg1",
+          "children": [
+            {
+              "id": "vg1-1",
+              "text": "Статус учасника бойових дій",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "vg1-2",
+              "text": " та відповідні соціальні виплати.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "vg2",
+          "children": [
+            {
+              "id": "vg2-1",
+              "text": "Безкоштовний проїзд",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "vg2-2",
+              "text": " у громадському транспорті.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "vg3",
+          "children": [
+            {
+              "id": "vg3-1",
+              "text": "Додаткові пільги при вступі до університетів",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            {
+              "id": "vg3-2",
+              "text": " для дітей військовослужбовців.",
+              "color": "white"
+            }
+          ]
+        },
+        {
+          "id": "vg4",
+          "children": [
+            {
+              "id": "vg4-1",
+              "text": "Знижки на комунальні послуги до ",
+              "color": "white"
+            },
+            {
+              "id": "vg4-2",
+              "text": "75%",
+              "color": "green",
+              "fontWeight": "bold",
+              "variant": "number"
+            },
+            { "id": "vg4-3", "text": ".", "color": "white" }
+          ]
+        },
+        {
+          "id": "vg5",
+          "children": [
+            {
+              "id": "vg5-1",
+              "text": "Безкоштовне санаторно-курортне лікування",
+              "color": "white",
+              "fontWeight": "bold"
+            },
+            { "id": "vg5-2", "text": " для ветеранів війни.", "color": "white" }
+          ]
+        }
+      ]
+    }
+  ]
+}
