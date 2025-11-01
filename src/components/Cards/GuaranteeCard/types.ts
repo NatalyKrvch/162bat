@@ -2,7 +2,7 @@ export interface FormattedTextChild {
   id: string;
   text: string;
   color: 'white' | 'green' | string;
-  fontWeight?: 'normal' | 'bold';
+  fontWeight?: 'normal' | 'bold' | string;
   variant?: 'number' | 'text';
 }
 
