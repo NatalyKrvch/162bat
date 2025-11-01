@@ -8,7 +8,7 @@ export interface FormattedTextChild {
 
 export interface FormattedTextItem {
   id: string;
-  children: FormattedTextChild[];
+  children: string | FormattedTextChild[];
 }
 
 export interface GuaranteesCardType {
