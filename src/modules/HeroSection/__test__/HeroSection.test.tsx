@@ -1,3 +1,4 @@
+import { type FormattedTextChild } from '@components/Cards/GuaranteeCard/types';
 import { render } from '@testing-library/react';
 
 import { HERO_SECTION_TEST_ID, INTERNAL_LINK_TEST_ID } from '@/lib/testIds';
@@ -5,10 +6,14 @@ import { HERO_SECTION_TEST_ID, INTERNAL_LINK_TEST_ID } from '@/lib/testIds';
 import HeroSection from '../HeroSection';
 
 describe('HeroSection', () => {
-  const mockData = {
+  const mockData: {
+    sectionTitle: FormattedTextChild[];
+    buttonTitle: string;
+    buttonURL: string;
+  } = {
     sectionTitle: [
       { id: '1', text: 'text1', color: 'white', fontWeight: 'bold' },
-      { id: '2', text: 'text2 ', color: 'white', fontWeight: 'bold' },
+      { id: '2', text: 'text2', color: 'white', fontWeight: 'bold' },
       { id: '3', text: 'text3', color: 'white', fontWeight: 'bold' },
     ],
     buttonTitle: 'buttonTitle',
