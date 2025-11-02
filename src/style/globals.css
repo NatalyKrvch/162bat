@@ -46,7 +46,7 @@
   --color-green: #6a994e;
 
   /*Typography */
-  --font-sans: 'Play';
+  --font-uaf-sans: 'UAFSans', sans-serif;
 
   --text-4xl-40: 40px;
   --text-4xl-40--leading: 140%;
@@ -71,7 +71,7 @@
 }
 
 body {
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-uaf-sans), sans-serif;
   background-color: var(--color-bg-primary);
   color: var(--color-text-white);
   overflow-x: hidden;
