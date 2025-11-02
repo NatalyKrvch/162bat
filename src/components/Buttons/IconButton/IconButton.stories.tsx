@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/nextjs';
+import { type Meta, type StoryObj } from '@storybook/nextjs';
 import { IoClose } from 'react-icons/io5';
 
 import IconButton from './IconButton';

@@ -1,5 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog';
-import { Meta, StoryObj } from '@storybook/nextjs';
+import { type Meta, type StoryObj } from '@storybook/nextjs';
 
 import { Button } from '@/components/Buttons/Button';
 

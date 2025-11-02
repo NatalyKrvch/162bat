@@ -21,7 +21,7 @@
       "@style/*": ["src/style/*"],
       "@lib/*": ["src/lib/*"],
       "@data/*": ["src/data/*"],
-      "@utils/*": ["src/utils/*"],
+      "@utils/*": ["src/utils/*"]
     },
     "types": ["jest", "@testing-library/jest-dom"],
     "plugins": [

@@ -2,9 +2,9 @@ import '@style/globals.css';
 
 import footerData from '@data/footerSectionData.json';
 import headerData from '@data/headerSectionData.json';
-import { Metadata } from 'next';
+import { type Metadata } from 'next';
 import { Play } from 'next/font/google';
-import { ReactNode } from 'react';
+import { type ReactNode } from 'react';
 
 import { Header } from '@/modules';
 import { Footer } from '@/modules/Footer';

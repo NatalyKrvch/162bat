@@ -1,5 +1,6 @@
 import { useKeenSlider } from 'keen-slider/react';
 import { useEffect, useState } from 'react';
+
 import { ARROW_LEFT_KEY, ARROW_RIGHT_KEY } from '../constants/constants';
 
 export const useSlider = (desktopPerView: number = 1) => {

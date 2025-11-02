@@ -1,9 +1,7 @@
 import { render, screen } from '@testing-library/react';
 
- 
-import FAQSection from './FAQSection';
-import type { FAQSectionProps } from './types';
-import { Item } from '@radix-ui/react-accordion';
+import FAQSection from '../FAQSection/FAQSection';
+import type { FAQSectionProps } from '../FAQSection/types';
 
 const mockData: FAQSectionProps['data'] = {
   title: 'Часті питання',

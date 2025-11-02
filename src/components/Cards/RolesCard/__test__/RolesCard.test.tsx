@@ -1,6 +1,8 @@
 import { render } from '@testing-library/react';
-import RolesCard from '../RolesCard';
+
 import { ROLES_CARD_TEST_ID } from '@/lib/testIds';
+
+import RolesCard from '../RolesCard';
 
 describe('RolesCard', () => {
   it('should not render if list is empty', () => {
@@ -11,7 +13,7 @@ describe('RolesCard', () => {
   it('should render correctly with title and list', () => {
     const listItems = ['Item 1', 'Item 2'];
     const { getByTestId, getByText } = render(
-      <RolesCard title="My Title" list={listItems} />
+      <RolesCard title="My Title" list={listItems} />,
     );
 
     const card = getByTestId(ROLES_CARD_TEST_ID);
