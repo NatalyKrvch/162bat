@@ -24,7 +24,7 @@ const RolesCard = ({ title, list }: RolesCardProps) => {
     <article
       data-testid={ROLES_CARD_TEST_ID}
       className={twMerge(
-        'rounded-default bg-card-gradient-top mt-8 flex h-full w-full min-w-0 flex-col overflow-hidden  pt-[2px] lg:pt-px',
+        'rounded-default bg-card-gradient-top  flex h-full w-full min-w-0 flex-col overflow-hidden  pt-[2px] lg:pt-px',
       )}
     >
       <div className="bg-bg-secondary border-grey rounded-inner-card h-full w-full min-w-0 gap-4 border-1 border-t-0 p-5.5 lg:px-8 lg:py-10">
