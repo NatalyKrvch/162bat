@@ -46,7 +46,7 @@ const Carousel = ({ children, perView = 1 }: CarouselProps) => {
           ) : null,
         )}
       </div>
-      <div className="flex gap-6">
+      <div className="flex gap-6 pt-3 lg:pt-5">
         <Button
           aria-label={PREVIOUS_SLIDE_ARIA_LABEL}
           variant="icon"
