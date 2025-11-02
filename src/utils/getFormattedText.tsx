@@ -1,14 +1,14 @@
 import { twMerge } from 'tailwind-merge';
 
-import { FormattedTextNode } from '../components/List/types';
+import { type FormattedTextChild } from '../components/Cards/GuaranteeCard/types';
 
-export function getFormattedText(listItems: FormattedTextNode[]) {
+export function getFormattedText(listItems: FormattedTextChild[]) {
   const colorVariants: Record<string, string> = {
     green: 'text-text-green',
     white: 'text-text-white',
   };
 
-  const listStyle = (item: FormattedTextNode) =>
+  const listStyle = (item: FormattedTextChild) =>
     twMerge(
       colorVariants[item.color ?? 'white'] ?? '',
       item.fontWeight === 'bold'

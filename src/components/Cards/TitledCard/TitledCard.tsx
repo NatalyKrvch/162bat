@@ -22,10 +22,12 @@ const TitledCard = ({
     >
       <h3 className={titleClasses}>{title}</h3>
       <div className="flex flex-col gap-3">
-        {typeof description === 'string' ? (
-          <p>{description}</p>
+        {Array.isArray(description) ? (
+          description.map((item, index) => (
+            <p key={index}>{typeof item === 'string' ? item : item.text}</p>
+          ))
         ) : (
-          description.map(item => <p key={item.id}>{item.text}</p>)
+          <p>{description}</p>
         )}
       </div>
     </article>
