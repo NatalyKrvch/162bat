@@ -1,20 +1,20 @@
 import { Section } from '@/components';
-import guaranteesSectionData from '@/data/guaranteesSectionData.json';
 import faqSectionData from '@/data/faqSectionData.json';
+import guaranteesSectionData from '@/data/guaranteesSectionData.json';
 import heroSectionData from '@/data/heroSectionData.json';
 import historySectionData from '@/data/historySectionData.json';
-import stagesSectionData from '@/data/stagesSectionData.json';
 import rolesSectionData from '@/data/rolesSectionData.json';
+import stagesSectionData from '@/data/stagesSectionData.json';
 import {
+  FAQSection,
   GuaranteesSection,
   HeroSection,
-  StagesSection,
-  FAQSection,
   RolesSection,
+  StagesSection,
 } from '@/modules';
 import HistorySection from '@/modules/HistorySection/HistorySection';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <main className="mb-20 flex flex-col items-center gap-20">
       <Section
@@ -33,17 +33,19 @@ const Home = () => {
         <StagesSection data={stagesSectionData} />
       </Section>
 
+      <Section id="roles" className="flex flex-col items-center gap-10">
+        <RolesSection data={rolesSectionData} />
+      </Section>
+
       <Section id="guarantees" className="flex flex-col items-center gap-10">
         <GuaranteesSection data={guaranteesSectionData} />
       </Section>
+
       <Section id="faq" className="flex flex-col items-center gap-10">
         <FAQSection data={faqSectionData} />
-      </Section>
-      <Section id="roles" className="flex flex-col items-center gap-10">
-        <RolesSection data={rolesSectionData} />
       </Section>
     </main>
   );
 };
 
-export default Home;
+export default HomePage;
