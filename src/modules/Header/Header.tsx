@@ -1,6 +1,11 @@
 import Image from 'next/image';
 
-import { BurgerMenuModal, Button, ExternalLink } from '@/components';
+import {
+  BurgerMenuModal,
+  Button,
+  ExternalLink,
+  InternalLink,
+} from '@/components';
 import { HEADER_TEST_ID } from '@/lib/testIds';
 
 import type { HeaderProps } from './types';
@@ -30,10 +35,10 @@ const Header = ({ data, onClick }: HeaderProps) => {
           </ExternalLink>
         </div>
 
-        <div className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-4">
-          <span className="max-w-[100px] text-center text-sm font-bold lg:text-lg">
-            1 батальйон
-          </span>
+        <InternalLink
+          href="/"
+          className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-4"
+        >
           <Image
             src={image?.src}
             alt={image?.alt}
@@ -41,10 +46,10 @@ const Header = ({ data, onClick }: HeaderProps) => {
             height={75}
             className="object-cover"
           />
-          <span className="max-w-[100px] text-center text-sm font-bold lg:text-right lg:text-lg">
-            Територіальної оборони
+          <span className="max-w-[100px] text-center text-sm font-bold md:text-base lg:text-lg">
+            1 батальйон 119 ОБ ТРО
           </span>
-        </div>
+        </InternalLink>
 
         <div className="mr-5 hidden lg:block">
           <Button
