@@ -37,27 +37,15 @@ exports[`Header component should renders correctly and matches snapshot 1`] = `
             Call us:
           </span>
         </button>
-        <a
-          class="hidden text-2xl leading-[120%] font-bold lg:block"
-          data-testid="external-link-test-id"
-          href="tel:+38093 000 00 00"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          +38093 000 00 00
-        </a>
       </div>
-      <div
+      <a
         class="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-4"
+        data-testid="internal-link-test-id"
+        href="/"
       >
-        <span
-          class="max-w-[100px] text-center text-sm font-bold lg:text-lg"
-        >
-          1 батальйон
-        </span>
         <img
           alt="Company logo"
-          class="object-cover"
+          class="h-14 w-12 object-cover sm:h-14 sm:w-12 md:h-16 md:w-14 lg:h-[75px] lg:w-[67px]"
           data-nimg="1"
           decoding="async"
           height="75"
@@ -68,11 +56,17 @@ exports[`Header component should renders correctly and matches snapshot 1`] = `
           width="67"
         />
         <span
-          class="max-w-[100px] text-center text-sm font-bold lg:text-right lg:text-lg"
+          class="text-[10px] leading-tight font-bold md:text-[12px] lg:text-sm"
         >
-          Територіальної оборони
+          1 батальйон територіальної оборони
+          <br />
+          119 окремої бригади
+          <br />
+          територіальної
+          <br />
+          оборони
         </span>
-      </div>
+      </a>
       <div
         class="mr-5 hidden lg:block"
       >

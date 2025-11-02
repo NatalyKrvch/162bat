@@ -11,21 +11,9 @@ exports[`HistorySection renders correctly and matches snapshot 1`] = `
     >
       Our History
     </h2>
-    <a
-      data-testid="internal-link-test-id"
-      href="/history"
-    >
-      <button
-        class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default underline-thick px-0 text-text-white py-4 xl:py-5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary text-lg leading-none font-bold tracking-normal uppercase lg:text-xl lg:leading-5"
-        data-testid="button-test-id"
-        type="button"
-      >
-        Read More
-      </button>
-    </a>
   </div>
   <p
-    class="mb-10 max-w-240 text-base leading-[150%] lg:mb-8 lg:text-lg xl:mb-10"
+    class="mb-10 text-base leading-[150%] lg:mb-8 lg:text-lg xl:mb-10"
   >
     Intro paragraph about our history.
   </p>
@@ -62,5 +50,17 @@ exports[`HistorySection renders correctly and matches snapshot 1`] = `
       </div>
     </div>
   </div>
+  <a
+    data-testid="internal-link-test-id"
+    href="/history"
+  >
+    <button
+      class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default underline-thick px-0 text-text-white py-4 xl:py-5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary text-lg leading-none font-bold tracking-normal uppercase lg:mt-5 lg:text-xl lg:leading-5"
+      data-testid="button-test-id"
+      type="button"
+    >
+      Read More
+    </button>
+  </a>
 </div>
 `;

@@ -16,7 +16,7 @@ import HistorySection from '@/modules/HistorySection/HistorySection';
 
 const HomePage = () => {
   return (
-    <main className="mb-20 flex flex-col items-center gap-20">
+    <main className="mb-20 flex flex-col items-center gap-25">
       <Section
         id="hero"
         fullWidth
