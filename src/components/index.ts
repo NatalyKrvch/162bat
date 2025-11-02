@@ -5,6 +5,7 @@ export { IconWithTextButton } from './Buttons/IconWithTextButton';
 export { BasicCard } from './Cards/BasicCard';
 export { GuaranteeCard } from './Cards/GuaranteeCard';
 export { QRcard } from './Cards/QRCodeCard';
+export { RolesCard } from './Cards/RolesCard';
 export { StageCard } from './Cards/StageCard';
 export { TitledCard } from './Cards/TitledCard';
 export { Carousel } from './Carousel';
