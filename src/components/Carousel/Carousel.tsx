@@ -28,18 +28,20 @@ const Carousel = ({ children, perView = 1 }: CarouselProps) => {
   } = useSlider(perView);
 
   return (
-    <div className="flex w-full flex-col items-center gap-3">
+    <div className="flex w-full max-w-full min-w-0 flex-col items-center gap-3 overflow-hidden">
       <div
         ref={sliderRef}
-        className="keen-slider"
+        className="keen-slider w-full max-w-full min-w-0 overflow-hidden"
         data-testid={CAROUSEL_TEST_ID}
         tabIndex={0}
         onKeyDown={handleKeyDown}
       >
         {Children.map(children, (child, index) =>
           isValidElement(child) ? (
-            <div key={index} className="keen-slider__slide">
-              {child}
+            <div key={index} className="keen-slider__slide max-w-full">
+              <div className="box-border h-full w-full max-w-full min-w-0">
+                {child}
+              </div>
             </div>
           ) : null,
         )}
