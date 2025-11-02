@@ -17,7 +17,10 @@ describe('FAQCard', () => {
   });
   it('should not be rendered if answer is empty', () => {
     const { container } = render(
-      <FAQCard question="What is this FAQ about?" answer={{text:'', list:[], conclusion:''}} />,
+      <FAQCard
+        question="What is this FAQ about?"
+        answer={{ text: '', list: [], conclusion: '' }}
+      />,
     );
 
     expect(container.firstChild).toBeNull();

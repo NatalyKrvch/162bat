@@ -1,4 +1,4 @@
-import { NavigationVariant } from './Navigation.variants';
+import { type NavigationVariant } from './Navigation.variants';
 
 export interface NavigationProps {
   variant?: NavigationVariant;
