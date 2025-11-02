@@ -16,7 +16,8 @@ const play = Play({
 });
 
 export const metadata: Metadata = {
-  title: '1 батальйон 119 бригади ТРО',
+  title:
+    '1 батальйон територіальної оборони 119 окремої бригади територіальної оборони',
   description: 'Захищай свою країну разом з нами',
   icons: {
     icon: '/favicon.svg',
