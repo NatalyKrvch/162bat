@@ -1,11 +1,7 @@
 import type { ReactNode } from 'react';
 
-export type AccordionItem = {
+export interface AccordionItem {
   id: string;
   title: string;
   content: ReactNode;
-};
-
-export interface AccordionProps {
-  items: AccordionItem[];
 }
