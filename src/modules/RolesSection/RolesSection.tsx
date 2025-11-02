@@ -9,23 +9,16 @@ const RolesSection = ({ data }: RolesSectionProps) => {
 
   const { title, readMoreText, readMoreLink, items } = data;
 
- /* <div className="w-full min-w-0 " key={index}> */ 
   const ITEMS_PER_SLIDE_ON_DESKTOP = 3;
- 
-  const slides  =
-    (items &&
-      items.map((item, index) => ( 
-       
 
-        <div className="  " key={index}>
+  const slides =
+    (items &&
+      items.map((item, index) => (
+        <div className="h-full" key={index}>
           <RolesCard title={item.title} list={item.list} />
-        </div> 
+        </div>
       ))) ||
     [];
-
-
-
-    
 
   return (
     <>
@@ -43,10 +36,10 @@ const RolesSection = ({ data }: RolesSectionProps) => {
           </Button>
         </InternalLink>
       </div>
-
-      <div className="w-full max-w-full">
+      <div className="mt-8 w-full max-w-full">
         <Carousel perView={ITEMS_PER_SLIDE_ON_DESKTOP}>{slides}</Carousel>
-      </div>    </>
+      </div>{' '}
+    </>
   );
 };
 
