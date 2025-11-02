@@ -9,7 +9,6 @@ const RolesSection = ({ data }: RolesSectionProps) => {
 
   const { title, readMoreText, readMoreLink, items } = data;
 
- 
   const ITEMS_PER_SLIDE_ON_DESKTOP = 3;
 
   const slides =
@@ -37,7 +36,7 @@ const RolesSection = ({ data }: RolesSectionProps) => {
           </Button>
         </InternalLink>
       </div>
-      <div className="w-full max-w-full mt-8">
+      <div className="mt-8 w-full max-w-full">
         <Carousel perView={ITEMS_PER_SLIDE_ON_DESKTOP}>{slides}</Carousel>
       </div>{' '}
     </>
