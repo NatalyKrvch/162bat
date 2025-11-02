@@ -3,6 +3,7 @@ export { Button } from './Buttons/Button';
 export { IconButton } from './Buttons/IconButton';
 export { IconWithTextButton } from './Buttons/IconWithTextButton';
 export { BasicCard } from './Cards/BasicCard';
+export { GuaranteeCard } from './Cards/GuaranteeCard';
 export { QRcard } from './Cards/QRCodeCard';
 export { StageCard } from './Cards/StageCard';
 export { TitledCard } from './Cards/TitledCard';

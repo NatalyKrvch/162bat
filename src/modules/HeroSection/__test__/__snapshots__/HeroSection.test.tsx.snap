@@ -21,7 +21,7 @@ exports[`HeroSection renders correctly and matches snapshot 1`] = `
         <span
           class="text-text-white font-bold"
         >
-          text2 
+          text2
         </span>
         <span
           class="text-text-white font-bold"
