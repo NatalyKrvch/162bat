@@ -4,63 +4,40 @@ import { ACCORDION_TEST_ID } from '@/lib/testIds';
 
 import Accordion from '../Accordion';
 
-const mockAccordionItems = [
-  {
-    id: 'accordion-item-1',
-    title: 'Mock Title 1',
-    content: 'Mock content for item 1.',
-  },
-  {
-    id: 'accordion-item-2',
-    title: 'Mock Title 2',
-    content: 'Mock content for item 2.',
-  },
-  {
-    id: 'accordion-item-3',
-    title: 'Mock Title 3',
-    content: 'Mock content for item 3.',
-  },
-];
+const mockAccordionItem = {
+  id: 'accordion-item-1',
+  title: 'Mock Title',
+  content: 'Mock content for the accordion.',
+};
 
 describe('Accordion', () => {
-  it('should render accordion items correctly', () => {
+  it('should render accordion correctly', () => {
     const { container, getByTestId } = render(
-      <Accordion items={mockAccordionItems} />,
+      <Accordion {...mockAccordionItem} />,
     );
 
     const accordion = getByTestId(ACCORDION_TEST_ID);
     expect(accordion).toBeInTheDocument();
+    expect(accordion).toHaveTextContent(mockAccordionItem.title);
 
-    mockAccordionItems.forEach(item => {
-      expect(accordion).toHaveTextContent(item.title);
-    });
     expect(container).toMatchSnapshot();
   });
 
-  it('should open the correct item on click and close others', () => {
-    const { getByTestId } = render(<Accordion items={mockAccordionItems} />);
+  it('should open and close content on click', () => {
+    render(<Accordion {...mockAccordionItem} />);
 
-    for (const accordionItem of mockAccordionItems) {
-      const trigger = screen.getByText(accordionItem.title);
+    const trigger = screen.getByText(mockAccordionItem.title);
+    const content = screen.getByTestId(
+      `accordion-content-${mockAccordionItem.id}`,
+    );
 
-      fireEvent.click(trigger);
+    expect(content).toHaveAttribute('data-state', 'closed');
 
-      const opened = getByTestId(`accordion-content-${accordionItem.id}`);
-      expect(opened).toHaveAttribute('data-state', 'open');
+    fireEvent.click(trigger);
+    expect(content).toHaveAttribute('data-state', 'open');
+    expect(content).toHaveTextContent(mockAccordionItem.content);
 
-      if (typeof accordionItem.content === 'string') {
-        expect(opened).toHaveTextContent(accordionItem.content);
-      }
-
-      const allContentBlocks = screen.getAllByTestId(/accordion-content-/);
-      const closedItems = allContentBlocks.filter(
-        item =>
-          item.getAttribute('data-testid') !==
-          `accordion-content-${accordionItem.id}`,
-      );
-      closedItems.forEach(item => {
-        expect(item).toHaveAttribute('data-state', 'closed');
-      });
-    }
+    fireEvent.click(trigger);
+    expect(content).toHaveAttribute('data-state', 'closed');
   });
 });
