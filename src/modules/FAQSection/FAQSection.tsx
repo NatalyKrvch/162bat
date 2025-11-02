@@ -1,6 +1,7 @@
 import { Button, InternalLink, SectionTitle } from '@/components';
 import FAQCard from '@/components/Cards/FAQCard/FAQCard';
-import { FAQSectionProps } from './types';
+
+import { type FAQSectionProps } from './types';
 
 const FAQSection = ({ data }: FAQSectionProps) => {
   if (!data) {
@@ -29,11 +30,11 @@ const FAQSection = ({ data }: FAQSectionProps) => {
           </Button>
         </InternalLink>
       </div>
-  
 
-      {faqItemsToShow && faqItemsToShow.map((item, index) => (
-        <FAQCard key={index} question={item.question} answer={item.answer} />
-      ))}
+      {faqItemsToShow &&
+        faqItemsToShow.map((item, index) => (
+          <FAQCard key={index} question={item.question} answer={item.answer} />
+        ))}
     </>
   );
 };

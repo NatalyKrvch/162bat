@@ -1,13 +1,14 @@
-import { Button, Carousel, InternalLink, SectionTitle } from '@/components';
+import { Carousel, SectionTitle } from '@/components';
 import RolesCard from '@/components/Cards/RolesCard/RolesCard';
-import { RolesSectionProps } from './types';
+
+import { type RolesSectionProps } from './types';
 
 const RolesSection = ({ data }: RolesSectionProps) => {
   if (!data) {
     return null;
   }
 
-  const { title, readMoreText, readMoreLink, items } = data;
+  const { title, items } = data;
 
   const ITEMS_PER_SLIDE_ON_DESKTOP = 3;
 
@@ -26,15 +27,6 @@ const RolesSection = ({ data }: RolesSectionProps) => {
         <SectionTitle className="xl:text-14 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
           {title}
         </SectionTitle>
-
-        <InternalLink href={readMoreLink}>
-          <Button
-            variant="link"
-            className="text-lg leading-none font-bold tracking-normal uppercase lg:text-xl lg:leading-5"
-          >
-            {readMoreText}
-          </Button>
-        </InternalLink>
       </div>
       <div className="mt-8 w-full max-w-full">
         <Carousel perView={ITEMS_PER_SLIDE_ON_DESKTOP}>{slides}</Carousel>
