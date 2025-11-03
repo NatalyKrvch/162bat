@@ -1,6 +1,6 @@
 echo "🛡️ Running pre-commit checks..."
 
-corepack yarn lint-staged || {
+corepack yarn dlx lint-staged || {
   echo "❌ Lint or format issues found. Commit aborted.";
   exit 1;
 }

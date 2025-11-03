@@ -39,7 +39,7 @@ const RolesSection = ({ data }: RolesSectionProps) => {
       </div>
       <div className="mt-8 w-full max-w-full">
         <Carousel perView={ITEMS_PER_SLIDE_ON_DESKTOP}>{slides}</Carousel>
-      </div>{' '}
+      </div>
     </>
   );
 };
