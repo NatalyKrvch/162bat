@@ -31,7 +31,7 @@ const Accordion = ({ id, title, content }: AccordionItem) => {
             className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
           >
             <div className="flex flex-col gap-6 p-6 pt-0 sm:gap-8 sm:p-8 sm:pt-0 md:gap-10 md:pt-0 md:pb-10">
-              <Divider />
+              <Divider variant="grey" />
               {content}
             </div>
           </AccordionRadix.Content>

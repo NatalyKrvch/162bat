@@ -31,7 +31,7 @@ const RolesCard = ({ title, list }: RolesCardProps) => {
         <h4 className="mb-8 text-[20px] leading-[150%] font-bold whitespace-pre-line lg:text-[32px] lg:leading-[120%]">
           {hasTitle && title.trim()}
         </h4>
-        <div className="gap-3 lg:text-2xl">
+        <div className="gap-3 lg:text-xl">
           {hasList && <List listItems={refactoredList} />}
         </div>
       </div>
