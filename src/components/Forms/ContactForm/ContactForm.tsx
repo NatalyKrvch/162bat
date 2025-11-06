@@ -21,10 +21,10 @@ const ContactForm = ({ data }: ContactFormProps) => {
     tel,
     tgName,
     position,
-    isMilitary,
+    isMilitaryLabel,
     yes,
     no,
-    isAdult,
+    isAdultLabel,
     policy1,
     policy2,
     submit,
@@ -149,7 +149,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
           </div>
           <fieldset className="rounded-xl border border-gray-700 p-4">
             <legend className="mb-2 text-sm font-medium text-gray-300">
-              {isMilitary}
+              {isMilitaryLabel}
             </legend>
             <div className="flex flex-col gap-2">
               <label className="inline-flex items-center gap-2 text-gray-300">
@@ -171,7 +171,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
                 {no}
               </label>
             </div>
-            {errors.isMilitary && (
+            {errors.isMilitaryLabel && (
               <span className="text-sm text-red-500"> {required}</span>
             )}
           </fieldset>
@@ -183,7 +183,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
                 {...register('isAdult', { required: true })}
                 className="accent-orange-500"
               />
-              {isAdult}
+              {isAdultLabel}
             </label>
             {errors.isAdult && (
               <span className="mt-1 block text-sm text-red-500">

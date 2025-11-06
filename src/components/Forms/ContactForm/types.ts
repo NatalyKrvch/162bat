@@ -5,9 +5,8 @@ interface ContactFormProps {
     lastname: string;
     tgName: string;
     tel: string;
-    isMilitary: boolean;
-    privacyPolicyAccepted: boolean;
-    isAdult: boolean;
+    isMilitaryLabel: string;
+    isAdultLabel: string;
     required: string;
     position: string;
     yes: string;
