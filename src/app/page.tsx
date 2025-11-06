@@ -4,11 +4,13 @@ import faqSectionData from '@/data/faqSectionData.json';
 import heroSectionData from '@/data/heroSectionData.json';
 import historySectionData from '@/data/historySectionData.json';
 import stagesSectionData from '@/data/stagesSectionData.json';
+import contactFormSectionData from '@/data/contactFormSectionData.json';
 import {
   GuaranteesSection,
   HeroSection,
   StagesSection,
   FAQSection,
+  ContactFormSection,
 } from '@/modules';
 import HistorySection from '@/modules/HistorySection/HistorySection';
 
@@ -36,6 +38,9 @@ const Home = () => {
       </Section>
       <Section id="faq" className="flex flex-col items-center gap-10">
         <FAQSection data={faqSectionData} />
+      </Section>
+      <Section id="contactForm" className="flex flex-col items-center gap-10">
+        <ContactFormSection data={contactFormSectionData} />
       </Section>
     </main>
   );
