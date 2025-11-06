@@ -1,5 +1,6 @@
 'use client';
 
+import { Button } from '@/components/Buttons/Button';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 const ContactForm = ({ data }: ContactFormProps) => {
@@ -214,12 +215,9 @@ const ContactForm = ({ data }: ContactFormProps) => {
           </div>
 
           <div>
-            <button
-              type="submit"
-              className="w-full rounded-xl bg-orange-600 py-3 font-semibold text-white transition hover:bg-orange-500"
-            >
-              {submit}
-            </button>
+            <Button variant="primary" type="submit">
+              {submit}{' '}
+            </Button>
           </div>
         </div>
       </form>
