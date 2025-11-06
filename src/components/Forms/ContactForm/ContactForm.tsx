@@ -2,7 +2,7 @@
 
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-const ContactForm = ({ data }: ContactFormProps ) => {
+const ContactForm = ({ data }: ContactFormProps) => {
   if (!data) {
     return null;
   }
@@ -11,8 +11,8 @@ const ContactForm = ({ data }: ContactFormProps ) => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<ContactFormProps.data >();
-  const onSubmit: SubmitHandler<ContactFormProps > = data => console.log(data);
+  } = useForm<ContactFormProps.data>();
+  const onSubmit: SubmitHandler<ContactFormProps> = data => console.log(data);
   const {
     surname,
     required,
@@ -29,7 +29,6 @@ const ContactForm = ({ data }: ContactFormProps ) => {
     policy2,
     submit,
   } = data;
- 
 
   return (
     <>
