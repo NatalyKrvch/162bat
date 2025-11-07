@@ -1,9 +1,9 @@
+import type { FormattedTextItem } from '@components/Cards/GuaranteeCard/types';
 import { render, within } from '@testing-library/react';
 
 import { LIST_TEST_ID, STAR_ICON_TEST_ID } from '@/lib/testIds';
 
 import List from '../List';
-import type { ListItem } from '../types';
 
 const mockListItems = [
   {
@@ -21,7 +21,7 @@ const mockListItems = [
   },
 ];
 
-const mockListItemsFormatted: ListItem[] = [
+const mockListItemsFormatted: FormattedTextItem[] = [
   {
     id: 'formatted-content-1',
     children: [

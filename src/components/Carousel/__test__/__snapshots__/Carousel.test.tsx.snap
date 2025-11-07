@@ -3,30 +3,38 @@
 exports[`Carousel calls navigation handlers when buttons are clicked 1`] = `
 <div>
   <div
-    class="flex w-full flex-col items-center gap-3"
+    class="flex w-full max-w-full min-w-0 flex-col items-center gap-3 overflow-hidden"
   >
     <div
-      class="keen-slider"
+      class="keen-slider w-full max-w-full min-w-0 overflow-hidden"
       data-testid="carousel-test-id"
       tabindex="0"
     >
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 1
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 1
+          </div>
         </div>
       </div>
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 2
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 2
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="flex gap-6"
+      class="flex gap-6 pt-3 lg:pt-5"
     >
       <button
         aria-label="Попередній слайд"
@@ -76,30 +84,38 @@ exports[`Carousel calls navigation handlers when buttons are clicked 1`] = `
 exports[`Carousel disables next button when on last slide 1`] = `
 <div>
   <div
-    class="flex w-full flex-col items-center gap-3"
+    class="flex w-full max-w-full min-w-0 flex-col items-center gap-3 overflow-hidden"
   >
     <div
-      class="keen-slider"
+      class="keen-slider w-full max-w-full min-w-0 overflow-hidden"
       data-testid="carousel-test-id"
       tabindex="0"
     >
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 1
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 1
+          </div>
         </div>
       </div>
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 2
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 2
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="flex gap-6"
+      class="flex gap-6 pt-3 lg:pt-5"
     >
       <button
         aria-label="Попередній слайд"
@@ -150,30 +166,38 @@ exports[`Carousel disables next button when on last slide 1`] = `
 exports[`Carousel disables previous button when on first slide 1`] = `
 <div>
   <div
-    class="flex w-full flex-col items-center gap-3"
+    class="flex w-full max-w-full min-w-0 flex-col items-center gap-3 overflow-hidden"
   >
     <div
-      class="keen-slider"
+      class="keen-slider w-full max-w-full min-w-0 overflow-hidden"
       data-testid="carousel-test-id"
       tabindex="0"
     >
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 1
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 1
+          </div>
         </div>
       </div>
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 2
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 2
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="flex gap-6"
+      class="flex gap-6 pt-3 lg:pt-5"
     >
       <button
         aria-label="Попередній слайд"
@@ -224,30 +248,38 @@ exports[`Carousel disables previous button when on first slide 1`] = `
 exports[`Carousel renders correctly and matches snapshot 1`] = `
 <div>
   <div
-    class="flex w-full flex-col items-center gap-3"
+    class="flex w-full max-w-full min-w-0 flex-col items-center gap-3 overflow-hidden"
   >
     <div
-      class="keen-slider"
+      class="keen-slider w-full max-w-full min-w-0 overflow-hidden"
       data-testid="carousel-test-id"
       tabindex="0"
     >
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 1
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 1
+          </div>
         </div>
       </div>
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 2
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 2
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="flex gap-6"
+      class="flex gap-6 pt-3 lg:pt-5"
     >
       <button
         aria-label="Попередній слайд"
@@ -297,30 +329,38 @@ exports[`Carousel renders correctly and matches snapshot 1`] = `
 exports[`Carousel responds to ArrowLeft and ArrowRight keys 1`] = `
 <div>
   <div
-    class="flex w-full flex-col items-center gap-3"
+    class="flex w-full max-w-full min-w-0 flex-col items-center gap-3 overflow-hidden"
   >
     <div
-      class="keen-slider"
+      class="keen-slider w-full max-w-full min-w-0 overflow-hidden"
       data-testid="carousel-test-id"
       tabindex="0"
     >
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 1
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 1
+          </div>
         </div>
       </div>
       <div
-        class="keen-slider__slide"
+        class="keen-slider__slide max-w-full"
       >
-        <div>
-          Slide 2
+        <div
+          class="box-border h-full w-full max-w-full min-w-0"
+        >
+          <div>
+            Slide 2
+          </div>
         </div>
       </div>
     </div>
     <div
-      class="flex gap-6"
+      class="flex gap-6 pt-3 lg:pt-5"
     >
       <button
         aria-label="Попередній слайд"

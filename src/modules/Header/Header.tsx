@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { BurgerMenuModal, Button, ExternalLink } from '@/components';
+import { BurgerMenuModal, Button, InternalLink } from '@/components';
 import { HEADER_TEST_ID } from '@/lib/testIds';
 
 import type { HeaderProps } from './types';
@@ -8,7 +8,7 @@ import type { HeaderProps } from './types';
 const Header = ({ data, onClick }: HeaderProps) => {
   if (!data) return null;
 
-  const { image, number, button, iconButton, menu, contacts } = data;
+  const { image, button, iconButton, menu, contacts } = data;
 
   return (
     <header
@@ -22,29 +22,29 @@ const Header = ({ data, onClick }: HeaderProps) => {
             menu={menu}
             contacts={contacts}
           />
-          <ExternalLink
-            href={`tel:${number}`}
-            className="hidden text-2xl leading-[120%] font-bold lg:block"
-          >
-            {number}
-          </ExternalLink>
         </div>
 
-        <div className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-4">
-          <span className="max-w-[100px] text-center text-sm font-bold lg:text-lg">
-            1 батальйон
-          </span>
+        <InternalLink
+          href="/"
+          className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-4"
+        >
           <Image
             src={image?.src}
             alt={image?.alt}
             width={67}
             height={75}
-            className="object-cover"
+            className="h-14 w-12 object-cover sm:h-14 sm:w-12 md:h-16 md:w-14 lg:h-[75px] lg:w-[67px]"
           />
-          <span className="max-w-[100px] text-center text-sm font-bold lg:text-right lg:text-lg">
-            Територіальної оборони
+          <span className="text-[10px] leading-tight font-bold md:text-[12px] lg:text-sm">
+            1 батальйон територіальної оборони
+            <br />
+            119 окремої бригади
+            <br />
+            територіальної
+            <br />
+            оборони
           </span>
-        </div>
+        </InternalLink>
 
         <div className="mr-5 hidden lg:block">
           <Button

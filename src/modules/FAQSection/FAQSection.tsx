@@ -1,6 +1,7 @@
 import { Button, InternalLink, SectionTitle } from '@/components';
 import FAQCard from '@/components/Cards/FAQCard/FAQCard';
-import { FAQSectionProps } from './types';
+
+import { type FAQSectionProps } from './types';
 
 const FAQSection = ({ data }: FAQSectionProps) => {
   if (!data) {
@@ -19,21 +20,21 @@ const FAQSection = ({ data }: FAQSectionProps) => {
         <SectionTitle className="xl:text-14 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
           {title}
         </SectionTitle>
-
-        <InternalLink href={readMoreLink}>
-          <Button
-            variant="link"
-            className="text-lg leading-none font-bold tracking-normal uppercase lg:text-xl lg:leading-5"
-          >
-            {readMoreText}
-          </Button>
-        </InternalLink>
       </div>
-  
 
-      {faqItemsToShow && faqItemsToShow.map((item, index) => (
-        <FAQCard key={index} question={item.question} answer={item.answer} />
-      ))}
+      {faqItemsToShow &&
+        faqItemsToShow.map((item, index) => (
+          <FAQCard key={index} question={item.question} answer={item.answer} />
+        ))}
+
+      <InternalLink href={readMoreLink}>
+        <Button
+          variant="link"
+          className="mt-5 text-lg leading-none font-bold tracking-normal uppercase lg:text-xl lg:leading-5"
+        >
+          {readMoreText}
+        </Button>
+      </InternalLink>
     </>
   );
 };

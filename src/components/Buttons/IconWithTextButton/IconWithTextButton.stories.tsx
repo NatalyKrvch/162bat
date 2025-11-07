@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/nextjs';
+import { type Meta, type StoryObj } from '@storybook/nextjs';
 import { RiMenu3Fill } from 'react-icons/ri';
 
 import IconWithTextButton from './IconWithTextButton';

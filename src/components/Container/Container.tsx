@@ -7,7 +7,7 @@ import type { ContainerProps } from './types';
 
 const Container = ({
   children,
-  className='',
+  className = '',
   fullWidth = false,
 }: PropsWithChildren<ContainerProps>) => {
   return (

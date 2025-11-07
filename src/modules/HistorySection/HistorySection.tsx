@@ -21,17 +21,8 @@ const HistorySection = ({ data }: HistorySectionProps) => {
         <SectionTitle className="xl:text-14 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
           {title}
         </SectionTitle>
-
-        <InternalLink href={readMoreLink}>
-          <Button
-            variant="link"
-            className="text-lg leading-none font-bold tracking-normal uppercase lg:text-xl lg:leading-5"
-          >
-            {readMoreText}
-          </Button>
-        </InternalLink>
       </div>
-      <p className="mb-10 max-w-240 text-base leading-[150%] lg:mb-8 lg:text-lg xl:mb-10">
+      <p className="mb-10 text-base leading-[150%] lg:mb-8 lg:text-lg xl:mb-10">
         {introText}
       </p>
 
@@ -45,6 +36,15 @@ const HistorySection = ({ data }: HistorySectionProps) => {
           />
         </BasicCard>
       </div>
+
+      <InternalLink href={readMoreLink}>
+        <Button
+          variant="link"
+          className="text-lg leading-none font-bold tracking-normal uppercase lg:mt-5 lg:text-xl lg:leading-5"
+        >
+          {readMoreText}
+        </Button>
+      </InternalLink>
     </>
   );
 };

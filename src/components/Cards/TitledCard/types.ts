@@ -7,7 +7,7 @@ export type TextNode = {
 
 export interface TitledCardProps {
   title: string;
-  description: string | TextNode[];
+  description: string | string[] | TextNode[];
   titleColor?: TitleColor;
   className?: string;
 }

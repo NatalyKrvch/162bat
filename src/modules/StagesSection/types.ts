@@ -1,4 +1,4 @@
-import { StageCardProps } from '@/components/Cards/StageCard/types';
+import { type StageCardProps } from '@/components/Cards/StageCard/types';
 
 export type FinalMessage = {
   title: string;

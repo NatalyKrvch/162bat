@@ -13,7 +13,11 @@ import {
 } from './constants/constants';
 import { useSlider } from './hooks/useSlider';
 
-const Carousel = ({ children }: PropsWithChildren) => {
+type CarouselProps = PropsWithChildren<{
+  perView?: number;
+}>;
+
+const Carousel = ({ children, perView = 1 }: CarouselProps) => {
   const {
     sliderRef,
     handleClickNext,
@@ -21,26 +25,28 @@ const Carousel = ({ children }: PropsWithChildren) => {
     handleKeyDown,
     isFirstSlide,
     isLastSlide,
-  } = useSlider();
+  } = useSlider(perView);
 
   return (
-    <div className="flex w-full flex-col items-center gap-3">
+    <div className="flex w-full max-w-full min-w-0 flex-col items-center gap-3 overflow-hidden">
       <div
         ref={sliderRef}
-        className="keen-slider"
+        className="keen-slider w-full max-w-full min-w-0 overflow-hidden"
         data-testid={CAROUSEL_TEST_ID}
         tabIndex={0}
         onKeyDown={handleKeyDown}
       >
         {Children.map(children, (child, index) =>
           isValidElement(child) ? (
-            <div key={index} className="keen-slider__slide">
-              {child}
+            <div key={index} className="keen-slider__slide max-w-full">
+              <div className="box-border h-full w-full max-w-full min-w-0">
+                {child}
+              </div>
             </div>
           ) : null,
         )}
       </div>
-      <div className="flex gap-6">
+      <div className="flex gap-6 pt-3 lg:pt-5">
         <Button
           aria-label={PREVIOUS_SLIDE_ARIA_LABEL}
           variant="icon"

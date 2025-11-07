@@ -4,8 +4,10 @@
   /*Colors */
   --color-main: #6a994e;
 
-  --color-bg-primary: #151312;
-  --color-bg-secondary: #181818;
+  --color-bg-primary: #444A38;
+  /*--color-bg-primary: #151312;*/
+  --color-bg-secondary: #2d3427;
+  /*--color-bg-secondary: #181818;*/
 
   --color-stroke-focused: #f845fc;
   --color-stroke-grey: #bdbcdb;
@@ -13,7 +15,7 @@
   --color-text-white: #ffffff;
   --color-text-green: #6a994e;
   --color-text-disabled: #212121;
-  --color-text-validation: #386641;
+  --color-text-validation: #2d3427;
   --color-text-error: #f93232;
   --color-text-success: #439f6e;
   --color-text-light-green: #a7c957;
@@ -22,14 +24,15 @@
   --color-btn-text: #ffffff;
   --color-btn-bg-hover: #a7c957;
   --color-btn-text-hover: #ffffff;
-  --color-btn-bg-click: #386641;
+  --color-btn-bg-click: #2d3427;
+  /*--color-btn-bg-click: #386641;*/
   --color-btn-text-click: #ffffff;
   --color-btn-bg-disabled: #f4f3fe;
   --color-btn-text-disabled: #c5c0db;
 
   --color-btn-text-secondary: #ffffff;
   --color-btn-text-hover-secondary: #a7c957;
-  --color-btn-text-click-secondary: #386641;
+  --color-btn-text-click-secondary: #2d3427;
   --color-btn-text-disabled-secondary: #c5c0db;
 
   --color-form-color: #1e1e1e;
@@ -46,7 +49,7 @@
   --color-green: #6a994e;
 
   /*Typography */
-  --font-sans: 'Play';
+  --font-uaf-sans: 'UAFSans', sans-serif;
 
   --text-4xl-40: 40px;
   --text-4xl-40--leading: 140%;
@@ -71,7 +74,7 @@
 }
 
 body {
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-uaf-sans), sans-serif;
   background-color: var(--color-bg-primary);
   color: var(--color-text-white);
   overflow-x: hidden;
@@ -126,7 +129,7 @@ body {
 }
 
 .bg-guarantees-section {
-  background-image: url('/guarantees-section-bg.png');
+  background-image: url('/images/guarantees-section-bg.webp');
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;

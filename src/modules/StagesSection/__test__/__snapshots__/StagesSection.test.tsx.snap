@@ -32,7 +32,7 @@ exports[`StagesSection renders correctly and matches snapshot 1`] = `
         class="mb-4 break-inside-avoid"
       >
         <article
-          class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-5.5 lg:px-8 xl:items-start"
+          class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-5.5 lg:h-[200px] lg:px-8 xl:items-start"
           data-testid="stage-card-test-id"
         >
           <p
@@ -49,7 +49,7 @@ exports[`StagesSection renders correctly and matches snapshot 1`] = `
               Step One
             </h3>
             <p
-              class="text-base leading-[140%] tracking-normal lg:text-lg"
+              class="lg:text-basis text-base leading-[140%] tracking-normal"
             >
               Details of step one.
             </p>
@@ -60,7 +60,7 @@ exports[`StagesSection renders correctly and matches snapshot 1`] = `
         class="mb-4 break-inside-avoid"
       >
         <article
-          class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-5.5 lg:px-8 xl:items-start"
+          class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-5.5 lg:h-[200px] lg:px-8 xl:items-start"
           data-testid="stage-card-test-id"
         >
           <p
@@ -77,7 +77,7 @@ exports[`StagesSection renders correctly and matches snapshot 1`] = `
               Step Two
             </h3>
             <p
-              class="text-base leading-[140%] tracking-normal lg:text-lg"
+              class="lg:text-basis text-base leading-[140%] tracking-normal"
             >
               Details of step two.
             </p>
