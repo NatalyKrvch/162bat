@@ -204,3 +204,7 @@ body {
     opacity: 0;
   }
 }
+
+#contactForm{
+  scroll-margin-top: 120px; 
+}
