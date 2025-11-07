@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 
 import {
@@ -14,11 +15,15 @@ import { getCurrentYear } from '@/utils';
 
 import type { FooterProps } from './types';
 
-const Footer = ({ data, onClick }: FooterProps) => {
+const Footer = ({ data }: FooterProps) => {
   if (!data) return null;
 
   const { image, menu, contactUs, button, legal } = data;
   const currentYear = getCurrentYear();
+
+  function goToForm() {
+    window.location.href = '/#contactForm';
+  }
 
   return (
     <footer className="bg-(--color-bg-secondary)" data-testid={FOOTER_TEST_ID}>
@@ -52,7 +57,7 @@ const Footer = ({ data, onClick }: FooterProps) => {
 
               <Button
                 variant="primary"
-                onClick={onClick}
+                onClick={goToForm}
                 className="text-base leading-1.5 font-bold tracking-normal lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
               >
                 {button.title}

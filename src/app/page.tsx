@@ -12,7 +12,6 @@ import {
   HeroSection,
   RolesSection,
   StagesSection,
-  FAQSection,
   ContactFormSection,
 } from '@/modules';
 import HistorySection from '@/modules/HistorySection/HistorySection';

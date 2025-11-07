@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 
 import { BurgerMenuModal, Button, InternalLink } from '@/components';
@@ -5,10 +6,14 @@ import { HEADER_TEST_ID } from '@/lib/testIds';
 
 import type { HeaderProps } from './types';
 
-const Header = ({ data, onClick }: HeaderProps) => {
+const Header = ({ data }: HeaderProps) => {
   if (!data) return null;
 
   const { image, button, iconButton, menu, contacts } = data;
+
+  function goToForm() {
+    window.location.href = '/#contactForm';
+  }
 
   return (
     <header
@@ -49,7 +54,7 @@ const Header = ({ data, onClick }: HeaderProps) => {
         <div className="mr-5 hidden lg:block">
           <Button
             variant="primary"
-            onClick={onClick}
+            onClick={goToForm}
             className="text-base font-bold"
           >
             {button.title}
