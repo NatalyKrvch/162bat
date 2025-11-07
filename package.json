@@ -12,13 +12,16 @@
     "test": "jest --passWithNoTests",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "plop": "plop --plopfile .plop/plopfile.js"
+    "plop": "plop --plopfile .plop/plopfile.js",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-dialog": "^1.1.15",
     "@tailwindcss/postcss": "^4.1.11",
     "next": "15.3.5",
+    "patch-package": "^8.0.1",
+    "postinstall-postinstall": "^2.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.66.0",
