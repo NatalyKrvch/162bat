@@ -12,5 +12,8 @@
   "isAdultLabel": " Мені від 18 до 58 років",
   "policy1": "  Натискаючи кнопку нижче, ви погоджуєтесь з нашою",
   "policy2": "  Політикою конфіденційності",
-  "submit": "  ВІДПРАВИТИ ЗАЯВКУ"
+  "submit": "  ВІДПРАВИТИ ЗАЯВКУ",
+  "isMilitary": "",
+  "isAdult": false,
+  "privacyPolicyAccepted": false
 }

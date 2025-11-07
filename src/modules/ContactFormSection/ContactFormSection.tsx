@@ -1,7 +1,8 @@
 import { BasicCard, SectionTitle } from '@/components';
-import { ContactFormSectionProps } from './types';
 import ContactForm from '@/components/Forms/ContactForm/ContactForm';
 import contactFormData from '@/data/contactFormData.json';
+
+import { type ContactFormSectionProps } from './types';
 
 const ContactFormSection = ({ data }: ContactFormSectionProps) => {
   if (!data) {
@@ -22,7 +23,7 @@ const ContactFormSection = ({ data }: ContactFormSectionProps) => {
           </p>
         </div>
 
-        {<ContactForm data={contactFormData}  />}
+        {<ContactForm data={contactFormData} />}
       </BasicCard>
     </>
   );
