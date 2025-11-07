@@ -1,4 +1,3 @@
-export { FAQSection } from './FAQSection';
 export { Footer } from './Footer';
 export { GuaranteesSection } from './GuaranteesSection';
 export { Header } from './Header';
@@ -7,4 +6,4 @@ export { HistorySection } from './HistorySection';
 export { RolesSection } from './RolesSection';
 export { StagesSection } from './StagesSection';
 export { FAQSection } from './FAQSection';
-export {ContactFormSection} from './ContactFormSection'
+export { ContactFormSection } from './ContactFormSection';
