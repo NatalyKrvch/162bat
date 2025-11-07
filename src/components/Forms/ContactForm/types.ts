@@ -1,4 +1,4 @@
-interface ContactFormProps {
+export interface ContactFormProps {
   data: {
     name: string;
     surname: string;
@@ -7,6 +7,9 @@ interface ContactFormProps {
     tel: string;
     isMilitaryLabel: string;
     isAdultLabel: string;
+    isMilitary: string;
+    privacyPolicyAccepted: boolean;
+    isAdult: boolean;
     required: string;
     position: string;
     yes: string;
