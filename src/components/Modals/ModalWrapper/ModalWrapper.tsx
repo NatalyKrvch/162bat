@@ -7,6 +7,7 @@ import { twMerge } from 'tailwind-merge';
 import { MODAL_TRIGGER_TEST_ID } from '@/lib/testIds';
 
 import type { ModalWrapperProps } from './types';
+import { usePathname } from 'next/navigation';
 
 const ModalWrapper = ({
   children,
