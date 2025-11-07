@@ -8,7 +8,6 @@ import { type ReactNode } from 'react';
 
 import { Header } from '@/modules';
 import { Footer } from '@/modules/Footer';
-import { log } from 'console';
 
 const uafSans = localFont({
   src: [
@@ -31,12 +30,10 @@ export const metadata: Metadata = {
 };
 
 const layout = ({ children }: { children: ReactNode }) => {
-
-  
   return (
     <html lang="uk" className={uafSans.variable}>
       <body>
-        <Header data={headerData}   />
+        <Header data={headerData} />
         {children}
         <Footer data={footerData} />
       </body>
