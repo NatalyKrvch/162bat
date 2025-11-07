@@ -1,12 +1,12 @@
 'use client';
 import * as Dialog from '@radix-ui/react-dialog';
-import { useEffect, useState, type PropsWithChildren } from 'react';
+import { usePathname } from 'next/navigation';
+import { type PropsWithChildren, useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import { MODAL_TRIGGER_TEST_ID } from '@/lib/testIds';
 
 import type { ModalWrapperProps } from './types';
-import { usePathname } from 'next/navigation';
 
 const ModalWrapper = ({
   children,

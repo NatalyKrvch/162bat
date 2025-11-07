@@ -4,7 +4,7 @@
   /*Colors */
   --color-main: #6a994e;
 
-  --color-bg-primary: #444A38;
+  --color-bg-primary: #444a38;
   /*--color-bg-primary: #151312;*/
   --color-bg-secondary: #2d3427;
   /*--color-bg-secondary: #181818;*/
@@ -205,6 +205,6 @@ body {
   }
 }
 
-#contactForm{
-  scroll-margin-top: 120px; 
+#contactForm {
+  scroll-margin-top: 120px;
 }

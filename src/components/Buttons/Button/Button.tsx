@@ -7,7 +7,7 @@ import { getButtonVariantClasses } from './helpers/getButtonVariantClasses';
 import type { ButtonProps } from './types';
 
 const Button = ({
-  type = "button",
+  type = 'button',
   disabled,
   onClick,
   children,

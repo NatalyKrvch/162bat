@@ -1,18 +1,18 @@
 import { Section } from '@/components';
+import contactFormSectionData from '@/data/contactFormSectionData.json';
 import faqSectionData from '@/data/faqSectionData.json';
 import guaranteesSectionData from '@/data/guaranteesSectionData.json';
 import heroSectionData from '@/data/heroSectionData.json';
 import historySectionData from '@/data/historySectionData.json';
 import rolesSectionData from '@/data/rolesSectionData.json';
 import stagesSectionData from '@/data/stagesSectionData.json';
-import contactFormSectionData from '@/data/contactFormSectionData.json';
 import {
+  ContactFormSection,
   FAQSection,
   GuaranteesSection,
   HeroSection,
   RolesSection,
   StagesSection,
-  ContactFormSection,
 } from '@/modules';
 import HistorySection from '@/modules/HistorySection/HistorySection';
 
