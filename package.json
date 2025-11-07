@@ -13,7 +13,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "plop": "plop --plopfile .plop/plopfile.js",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "lint:fix": "npx eslint . --fix"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
