@@ -6,7 +6,7 @@ exports[`ModalWrapper should open modal when trigger is clicked 1`] = `
   data-aria-hidden="true"
 >
   <button
-    aria-controls="radix-_r_0_"
+    aria-controls="radix-«r0»"
     aria-expanded="true"
     aria-haspopup="dialog"
     data-state="open"
