@@ -32,7 +32,6 @@ const ModalWrapper = ({
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-    <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger data-testid={MODAL_TRIGGER_TEST_ID} asChild>
         {trigger}
       </Dialog.Trigger>
