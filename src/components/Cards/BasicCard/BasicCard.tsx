@@ -18,7 +18,7 @@ const BasicCard = ({
     <div
       data-testid={BASIC_CARD_TEST_ID}
       className={twMerge(
-        'rounded-default h-full w-full',
+        'rounded-default h-full w-full [transform:translateZ(0)]',
         hasBorder &&
           (isTopGradient
             ? 'bg-card-gradient-top pt-px'
