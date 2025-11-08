@@ -1,4 +1,5 @@
 'use client';
+'use client';
 import * as Dialog from '@radix-ui/react-dialog';
 import { type PropsWithChildren, useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -6,6 +7,7 @@ import { twMerge } from 'tailwind-merge';
 import { MODAL_TRIGGER_TEST_ID } from '@/lib/testIds';
 
 import type { ModalWrapperProps } from './types';
+import { usePathname } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 
 const ModalWrapper = ({
@@ -21,7 +23,15 @@ const ModalWrapper = ({
     setOpen(false);
   }, [pathname]);
 
+  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
   return (
+    <Dialog.Root open={open} onOpenChange={setOpen}>
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger data-testid={MODAL_TRIGGER_TEST_ID} asChild>
         {trigger}

@@ -97,33 +97,33 @@ const ContactForm = ({ data }: ContactFormProps) => {
           )}
         </div>
 
-        <div>
-          <label
-            htmlFor="tel"
-            className="mb-2 block text-sm font-medium text-gray-300"
-          >
-            {tel}
-          </label>
-          <input
-            id="tel"
-            type="tel"
-            placeholder="+380..."
-            {...register('tel', {
-              required: required,
-              pattern: {
-                value: /^(?:\+380|0)\d{9}$/,
-                message: 'Невірний формат номера телефону',
-              },
-            })}
-            className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
-          />
-          {errors.tel && (
-            <span className="text-sm text-red-500">
-              {errors.tel.message || required}
-            </span>
-          )}
+          <div>
+            <label
+              htmlFor="tel"
+              className="mb-2 block text-sm font-medium text-gray-300"
+            >
+              {tel}
+            </label>
+            <input
+              id="tel"
+              type="tel"
+              placeholder="+380..."
+              {...register('tel', {
+                required: required,
+                pattern: {
+                  value: /^(?:\+380|0)\d{9}$/,
+                  message: 'Невірний формат номера телефону',
+                },
+              })}
+              className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
+            />
+            {errors.tel && (
+              <span className="text-sm text-red-500">
+                {errors.tel.message || required}
+              </span>
+            )}
+          </div>
         </div>
-      </div>
 
       {/* Rightside */}
       <div className="flex flex-col gap-6">
