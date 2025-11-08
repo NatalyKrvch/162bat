@@ -7,7 +7,6 @@ import historySectionData from '@/data/historySectionData.json';
 import rolesSectionData from '@/data/rolesSectionData.json';
 import stagesSectionData from '@/data/stagesSectionData.json';
 import {
-  ContactFormSection,
   FAQSection,
   GuaranteesSection,
   HeroSection,
