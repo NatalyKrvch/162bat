@@ -13,7 +13,7 @@ exports[`Accordion should render accordion correctly 1`] = `
       data-state="closed"
     >
       <div
-        class="rounded-default h-full w-full bg-card-gradient-left pl-px"
+        class="rounded-default h-full w-full [transform:translateZ(0)] bg-card-gradient-left pl-px"
         data-testid="basic-card-test-id"
       >
         <div

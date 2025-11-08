@@ -7,7 +7,7 @@ exports[`QRcard should render QRcomponent correctly 1`] = `
     data-testid="qr-card-test-id"
   >
     <div
-      class="rounded-default h-full w-full bg-card-gradient-left pl-px"
+      class="rounded-default h-full w-full [transform:translateZ(0)] bg-card-gradient-left pl-px"
       data-testid="basic-card-test-id"
     >
       <div

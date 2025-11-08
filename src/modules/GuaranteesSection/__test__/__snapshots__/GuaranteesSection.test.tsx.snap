@@ -21,7 +21,7 @@ exports[`GuaranteesSection renders correctly and matches snapshot 1`] = `
       </h3>
     </div>
     <div
-      class="rounded-default h-full w-full"
+      class="rounded-default h-full w-full [transform:translateZ(0)]"
       data-testid="basic-card-test-id"
     >
       <div

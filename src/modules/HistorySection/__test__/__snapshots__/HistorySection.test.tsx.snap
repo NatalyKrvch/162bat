@@ -21,7 +21,7 @@ exports[`HistorySection renders correctly and matches snapshot 1`] = `
     class="mx-auto w-full md:px-16 lg:px-20 xl:px-52"
   >
     <div
-      class="rounded-default h-full w-full bg-card-gradient-top pt-px"
+      class="rounded-default h-full w-full [transform:translateZ(0)] bg-card-gradient-top pt-px"
       data-testid="basic-card-test-id"
     >
       <div
