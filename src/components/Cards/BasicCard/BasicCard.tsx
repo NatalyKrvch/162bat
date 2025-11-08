@@ -21,8 +21,8 @@ const BasicCard = ({
         'rounded-default h-full w-full [transform:translateZ(0)]',
         hasBorder &&
           (isTopGradient
-            ? 'bg-card-gradient-top pt-px'
-            : 'bg-card-gradient-left pl-px'),
+            ? 'bg-card-gradient-top pt-[0.5px]'
+            : 'bg-card-gradient-left pl-[0.5px]'),
         borderClassName,
       )}
     >

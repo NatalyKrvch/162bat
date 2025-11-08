@@ -27,7 +27,11 @@ const HistorySection = ({ data }: HistorySectionProps) => {
       </p>
 
       <div className="mx-auto w-full md:px-16 lg:px-20 xl:px-52">
-        <BasicCard className="p-5.5 lg:px-8 lg:py-10">
+        <BasicCard
+          hasBorder
+          gradientPosition="top"
+          className="p-5.5 lg:px-8 lg:py-10"
+        >
           <TitledCard
             title={card.title}
             titleColor="green"
