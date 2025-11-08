@@ -3,7 +3,7 @@
 exports[`BasicCard should apply custom className and render custom content 1`] = `
 <div>
   <div
-    class="rounded-default h-full w-full [transform:translateZ(0)] bg-card-gradient-top pt-px"
+    class="rounded-default h-full w-full [transform:translateZ(0)] bg-card-gradient-top pt-[0.5px]"
     data-testid="basic-card-test-id"
   >
     <div
@@ -25,7 +25,7 @@ exports[`BasicCard should apply custom className and render custom content 1`] =
 exports[`BasicCard should render correctly with the top gradient by default 1`] = `
 <div>
   <div
-    class="rounded-default h-full w-full [transform:translateZ(0)] bg-card-gradient-top pt-px"
+    class="rounded-default h-full w-full [transform:translateZ(0)] bg-card-gradient-top pt-[0.5px]"
     data-testid="basic-card-test-id"
   >
     <div
@@ -55,7 +55,7 @@ exports[`BasicCard should render correctly without gradient and border 1`] = `
 exports[`BasicCard should render with the left gradient 1`] = `
 <div>
   <div
-    class="rounded-default h-full w-full [transform:translateZ(0)] bg-card-gradient-left pl-px"
+    class="rounded-default h-full w-full [transform:translateZ(0)] bg-card-gradient-left pl-[0.5px]"
     data-testid="basic-card-test-id"
   >
     <div
