@@ -8,7 +8,6 @@ import { MODAL_TRIGGER_TEST_ID } from '@/lib/testIds';
 
 import type { ModalWrapperProps } from './types';
 import { usePathname } from 'next/navigation';
-import { usePathname } from 'next/navigation';
 
 const ModalWrapper = ({
   children,
@@ -16,13 +15,6 @@ const ModalWrapper = ({
   animationStyle,
   className = '',
 }: PropsWithChildren<ModalWrapperProps>) => {
-  const [open, setOpen] = useState(false);
-  const pathname = usePathname();
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
