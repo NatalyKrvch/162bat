@@ -74,6 +74,5 @@
     "ts-node": "^10.9.2",
     "typescript": "^5",
     "vitest": "^3.2.4"
-  },
-  "packageManager": "yarn@4.6.0+sha224.acd0786f07ffc6c933940eb65fc1d627131ddf5455bddcc295dc90fd"
+  }
 }
