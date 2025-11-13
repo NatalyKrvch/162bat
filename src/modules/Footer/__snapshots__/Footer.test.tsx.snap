@@ -54,10 +54,10 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             </ul>
           </nav>
           <div
-            class="flex flex-col items-center justify-between gap-6 xl:flex-row lg:gap-8 mb-10"
+            class="mb-10 flex flex-col items-center justify-between gap-6 lg:gap-8 xl:flex-row"
           >
             <address
-              class="flex gap-3 flex-col md:gap-5 md:flex-row lg:text-2xl not-italic"
+              class="flex flex-col gap-3 not-italic md:flex-row md:gap-5 lg:text-2xl"
             />
             <div
               class="flex gap-5 md:gap-4 lg:text-xl"
