@@ -8,8 +8,13 @@ const mockMenu = [
 ];
 
 const mockContacts = {
-  number: '+380123456789',
-  email: 'test@example.com',
+  phoneNumbers: ['+380123456789'],
+  messengers: {
+    viber: {
+      icon: '/viber.svg',
+      link: 'viber://chat?number=+380123456789',
+    },
+  },
 };
 
 describe('Menu', () => {
@@ -17,6 +22,7 @@ describe('Menu', () => {
     const { container } = render(
       <MenuItems buttonText="Menu" menu={mockMenu} contacts={mockContacts} />,
     );
+
     expect(screen.getByRole('button', { name: 'Menu' })).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
@@ -25,6 +31,7 @@ describe('Menu', () => {
     render(
       <MenuItems buttonText="Menu" menu={mockMenu} contacts={mockContacts} />,
     );
+
     const button = screen.getByRole('button', { name: 'Menu' });
     fireEvent.click(button);
 
@@ -36,10 +43,7 @@ describe('Menu', () => {
     });
 
     expect(
-      screen.getByRole('link', { name: mockContacts.number }),
-    ).toHaveAttribute('href', `tel:${mockContacts.number}`);
-    expect(
-      screen.getByRole('link', { name: mockContacts.email }),
-    ).toHaveAttribute('href', `mailto:${mockContacts.email}`);
+      screen.getByRole('link', { name: mockContacts.phoneNumbers[0] }),
+    ).toHaveAttribute('href', `tel:${mockContacts.phoneNumbers[0]}`);
   });
 });

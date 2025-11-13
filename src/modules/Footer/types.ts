@@ -8,18 +8,27 @@ type MenuItem = {
   href: string;
 };
 
+type Messenger = {
+  icon: string;
+  link: string;
+};
+
+type Messengers = Record<string, Messenger>;
+
+type Contacts = {
+  phoneNumbers: string[];
+  messengers: Messengers;
+};
+
 export interface FooterProps {
   data: {
     image: Image;
     menu: MenuItem[];
-    contactUs: {
-      title: string;
-      number: string;
-    };
     button: {
       title: string;
     };
     legal: string;
+    contacts: Contacts;
   };
   onClick?: () => void;
 }
