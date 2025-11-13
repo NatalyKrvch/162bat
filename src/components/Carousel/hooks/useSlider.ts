@@ -32,14 +32,14 @@ export const useSlider = (desktopPerView: number = 1) => {
   });
 
   useEffect(() => {
+    const viewportWidth = document.documentElement.clientWidth;
+
     const updateContainerWidth = () => {
       const container = instanceRef.current?.container;
       if (!container) return;
 
-      if (window.innerWidth >= 1280) {
-        container.style.removeProperty('width');
-      } else {
-        container.style.width = `${window.innerWidth - SLIDE_OFFSET}px`;
+      if (viewportWidth <= 1280) {
+        container.style.width = `${viewportWidth - SLIDE_OFFSET}px`;
       }
 
       instanceRef.current?.update();
