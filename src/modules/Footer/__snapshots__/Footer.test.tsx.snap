@@ -54,10 +54,10 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             </ul>
           </nav>
           <div
-            class="flex flex-col items-center justify-between gap-6 xl:flex-row lg:gap-8 mb-10"
+            class="mb-10 flex flex-col items-center justify-between gap-6 lg:gap-8 xl:flex-row"
           >
             <address
-              class="flex gap-3 flex-col md:gap-5 md:flex-row lg:text-2xl not-italic"
+              class="flex flex-col gap-3 not-italic md:flex-row md:gap-5 lg:text-2xl"
             />
             <div
               class="flex gap-5 md:gap-4 lg:text-xl"
@@ -67,7 +67,7 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             class="flex justify-center"
           >
             <button
-              class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled text-base leading-1.5 max-w-80 font-bold tracking-normal lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
+              class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled max-w-80 text-base leading-1.5 font-bold tracking-normal lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
               data-testid="button-test-id"
               type="button"
             >
