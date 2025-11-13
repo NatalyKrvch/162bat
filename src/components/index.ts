@@ -14,6 +14,7 @@ export { Divider } from './Divider';
 export { Arrow } from './Icons/Arrow';
 export { Chevron } from './Icons/Chevron';
 export { ExternalLink } from './Links/ExternalLink';
+export { IconLink } from './Links/IconLink';
 export { InternalLink } from './Links/InternalLink';
 export { MenuItemLink } from './Links/MenuItemLink';
 export { List } from './List';

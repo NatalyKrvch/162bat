@@ -11,14 +11,14 @@ const mockData: FooterProps['data'] = {
     { title: 'About', href: '/about' },
     { title: 'Contact', href: '/contact' },
   ],
-  contactUs: {
-    title: 'Call us:',
-    number: '+1234567890',
-  },
   button: {
     title: 'Get Started',
   },
   legal: 'Company Name',
+  contacts: {
+    phoneNumbers: [],
+    messengers: {},
+  },
 };
 
 describe('Footer component', () => {

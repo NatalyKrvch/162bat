@@ -15,7 +15,7 @@ exports[`MenuItemLink should render component correctly 1`] = `
 exports[`MenuItemLink should render correctly variant for footer 1`] = `
 <div>
   <a
-    class="cursor-pointer text-white hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl custom-class"
+    class="cursor-pointer text-white hover:text-btn-text-hover-secondary active:text-green min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl custom-class"
     data-testid="internal-link-test-id"
     href="/test"
   >

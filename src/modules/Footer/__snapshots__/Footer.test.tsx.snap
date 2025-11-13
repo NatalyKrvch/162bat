@@ -35,7 +35,7 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             >
               <li>
                 <a
-                  class="cursor-pointer text-white hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
+                  class="cursor-pointer text-white hover:text-btn-text-hover-secondary active:text-green min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
                   data-testid="internal-link-test-id"
                   href="/about"
                 >
@@ -44,7 +44,7 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
               </li>
               <li>
                 <a
-                  class="cursor-pointer text-white hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
+                  class="cursor-pointer text-white hover:text-btn-text-hover-secondary active:text-green min-w-fit text-base leading-none font-bold tracking-normal lg:text-xl"
                   data-testid="internal-link-test-id"
                   href="/contact"
                 >
@@ -54,26 +54,20 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             </ul>
           </nav>
           <div
-            class="flex flex-col items-center gap-4 md:flex-row lg:gap-20"
+            class="mb-10 flex flex-col items-center justify-between gap-6 lg:gap-8 xl:flex-row"
           >
-            <p
-              class="flex flex-col gap-0.5 md:flex-row md:gap-4 lg:text-xl"
-            >
-              <span
-                class="whitespace-nowrap"
-              >
-                Call us:
-              </span>
-              <a
-                aria-label="Call +1234567890"
-                class="font-bold whitespace-nowrap"
-                href="tel:+1234567890"
-              >
-                +1234567890
-              </a>
-            </p>
+            <address
+              class="flex flex-col gap-3 not-italic md:flex-row md:gap-5 lg:text-2xl"
+            />
+            <div
+              class="flex gap-5 md:gap-4 lg:text-xl"
+            />
+          </div>
+          <div
+            class="flex justify-center"
+          >
             <button
-              class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled text-base leading-1.5 font-bold tracking-normal lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
+              class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled max-w-80 text-base leading-1.5 font-bold tracking-normal lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
               data-testid="button-test-id"
               type="button"
             >

@@ -2,6 +2,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { IoClose } from 'react-icons/io5';
 import { RiMenu2Fill } from 'react-icons/ri';
 
+import { IconLink } from '@/components';
 import { IconWithTextButton } from '@/components/Buttons/IconWithTextButton';
 import { ExternalLink } from '@/components/Links/ExternalLink';
 import { MenuItemLink } from '@/components/Links/MenuItemLink';
@@ -15,6 +16,8 @@ const BurgerMenuModal = ({
   menu,
   contacts,
 }: BurgerMenuModalProps) => {
+  const messengers = Object.entries(contacts.messengers);
+
   return (
     <ModalWrapper
       trigger={
@@ -53,14 +56,19 @@ const BurgerMenuModal = ({
             </li>
           ))}
         </Navigation>
-        <address className="flex w-full flex-col items-center p-4 text-2xl font-bold not-italic">
+        <address className="flex w-full flex-col items-center p-14 text-2xl font-bold not-italic">
           <p className="pb-3 text-(--color-text-light-green)">Контакти</p>
-          <ExternalLink href={`tel:${contacts.number}`}>
-            {contacts.number}
-          </ExternalLink>
-          <ExternalLink href={`mailto:${contacts.email}`}>
-            {contacts.email}
-          </ExternalLink>
+          {contacts.phoneNumbers.map(phoneNumber => (
+            <ExternalLink key={phoneNumber} href={`tel:${phoneNumber}`}>
+              {phoneNumber}
+            </ExternalLink>
+          ))}
+
+          <div className="mt-4 flex gap-5">
+            {messengers.map(([name, data]) => (
+              <IconLink key={name} link={data.link} icon={data.icon} />
+            ))}
+          </div>
         </address>
       </div>
     </ModalWrapper>

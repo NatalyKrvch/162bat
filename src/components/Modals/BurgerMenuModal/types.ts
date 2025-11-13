@@ -3,11 +3,16 @@ type MenuItem = {
   href: string;
 };
 
+type Messenger = {
+  icon: string;
+  link: string;
+};
+
 export interface BurgerMenuModalProps {
   buttonText: string;
   menu: MenuItem[];
   contacts: {
-    number: string;
-    email: string;
+    phoneNumbers: string[];
+    messengers: Record<string, Messenger>;
   };
 }

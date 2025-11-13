@@ -12,19 +12,27 @@ type IconButton = {
   title: string;
 };
 
+type Messenger = {
+  icon: string;
+  link: string;
+};
+
+type Messengers = Record<string, Messenger>;
+
+type Contacts = {
+  phoneNumbers: string[];
+  messengers: Messengers;
+};
+
 export interface HeaderProps {
   data: {
     image: Image;
     iconButton: IconButton;
-    number: string;
     button: {
       title: string;
     };
     menu: MenuItem[];
-    contacts: {
-      number: string;
-      email: string;
-    };
+    contacts: Contacts;
   };
   onClick?: () => void;
 }

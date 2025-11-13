@@ -10,25 +10,17 @@
     },
     {
       "title": "Про батальйон",
-      "href": "/about"
+      "href": "/history"
     },
     {
       "title": "Вакансії",
       "href": "/vacancies"
     },
     {
-      "title": "FAQ",
+      "title": "Часті питання",
       "href": "/faq"
-    },
-    {
-      "title": "Контакти",
-      "href": "/contacts"
     }
   ],
-  "contactUs": {
-    "title": "Зв'язатись з нами:",
-    "number": "+38093 000 00 00"
-  },
   "button": {
     "title": "Заповнити анкету"
   },

@@ -3,6 +3,7 @@ import { type Meta, type StoryObj } from '@storybook/nextjs';
 import BurgerMenuModal from './BurgerMenuModal';
 
 const buttonText = 'Меню';
+
 const menu = [
   {
     title: 'Головна',
@@ -13,9 +14,19 @@ const menu = [
     href: '/about',
   },
 ];
+
 const contacts = {
-  number: '+38093 000 00 00',
-  email: 'infomail@gmail.com',
+  phoneNumbers: ['+38093 000 00 00'],
+  messengers: {
+    viber: {
+      icon: '/icons/messengers/viber-logo.svg',
+      link: 'viber://chat?number=+380930000000',
+    },
+    telegram: {
+      icon: '/icons/messengers/telegram-logo.svg',
+      link: 'https://t.me/+380930000000',
+    },
+  },
 };
 
 export default {

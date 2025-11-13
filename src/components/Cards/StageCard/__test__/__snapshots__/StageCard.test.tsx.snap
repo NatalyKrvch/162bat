@@ -3,14 +3,18 @@
 exports[`StageCard renders correctly with valid data 1`] = `
 <div>
   <article
-    class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-5.5 lg:h-[200px] lg:px-8 xl:items-start"
+    class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-6 lg:h-[200px] lg:px-8 xl:items-start"
     data-testid="stage-card-test-id"
   >
-    <p
-      class="rotated text-description text-4xl-40 leading-[140%] font-bold tracking-normal"
+    <div
+      class="flex h-full items-center justify-center"
     >
-      КРОК 1
-    </p>
+      <p
+        class="rotated text-description text-4xl-40 leading-[140%] font-bold tracking-normal"
+      >
+        КРОК 1
+      </p>
+    </div>
     <div
       class="flex flex-col gap-3"
     >

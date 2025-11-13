@@ -10,7 +10,6 @@ const mockData: HeaderProps['data'] = {
   iconButton: {
     title: 'Call us:',
   },
-  number: '+38093 000 00 00',
   button: {
     title: 'Get Started',
   },
@@ -25,8 +24,8 @@ const mockData: HeaderProps['data'] = {
     },
   ],
   contacts: {
-    number: '+38093 000 00 00',
-    email: 'infomail@gmail.com',
+    phoneNumbers: [],
+    messengers: {},
   },
 };
 

@@ -1,7 +1,8 @@
 import '@style/globals.css';
 
-import footerData from '@data/footerSectionData.json';
-import headerData from '@data/headerSectionData.json';
+import contactsData from '@data/contactsData.json';
+import footerSectionData from '@data/footerSectionData.json';
+import headerSectionData from '@data/headerSectionData.json';
 import { type Metadata } from 'next';
 import localFont from 'next/font/local';
 import { type ReactNode } from 'react';
@@ -27,6 +28,16 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.svg',
   },
+};
+
+const headerData = {
+  ...headerSectionData,
+  contacts: contactsData,
+};
+
+const footerData = {
+  ...footerSectionData,
+  contacts: contactsData,
 };
 
 const layout = ({ children }: { children: ReactNode }) => {

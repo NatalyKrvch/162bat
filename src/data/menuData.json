@@ -1,14 +1,4 @@
 {
-  "image": {
-    "src": "/logo.svg",
-    "alt": "Логотип батальйону"
-  },
-  "iconButton": {
-    "title": "Меню"
-  },
-  "button": {
-    "title": "Заповнити анкету"
-  },
   "menu": [
     {
       "title": "Головна",
