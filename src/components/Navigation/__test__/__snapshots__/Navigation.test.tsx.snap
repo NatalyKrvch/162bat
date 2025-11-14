@@ -8,7 +8,7 @@ exports[`Navigation should renders without crashing 1`] = `
     data-testid="navigation-test-id"
   >
     <ul
-      class="flex flex-col gap-6.75 lg:gap-0"
+      class="flex flex-col gap-0"
     >
       <li>
         Item 1
