@@ -28,7 +28,6 @@ const ContactForm = ({ data }: ContactFormProps) => {
     isMilitaryLabel,
     yes,
     no,
-    isAdultLabel,
     policy1,
     policy2,
     submit,
@@ -97,33 +96,33 @@ const ContactForm = ({ data }: ContactFormProps) => {
           )}
         </div>
 
-          <div>
-            <label
-              htmlFor="tel"
-              className="mb-2 block text-sm font-medium text-gray-300"
-            >
-              {tel}
-            </label>
-            <input
-              id="tel"
-              type="tel"
-              placeholder="+380..."
-              {...register('tel', {
-                required: required,
-                pattern: {
-                  value: /^(?:\+380|0)\d{9}$/,
-                  message: 'Невірний формат номера телефону',
-                },
-              })}
-              className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
-            />
-            {errors.tel && (
-              <span className="text-sm text-red-500">
-                {errors.tel.message || required}
-              </span>
-            )}
-          </div>
+        <div>
+          <label
+            htmlFor="tel"
+            className="mb-2 block text-sm font-medium text-gray-300"
+          >
+            {tel}
+          </label>
+          <input
+            id="tel"
+            type="tel"
+            placeholder="+380..."
+            {...register('tel', {
+              required: required,
+              pattern: {
+                value: /^(?:\+380|0)\d{9}$/,
+                message: 'Почніть номер з +380 або з 0',
+              },
+            })}
+            className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
+          />
+          {errors.tel && (
+            <span className="text-sm text-red-500">
+              {errors.tel.message || required}
+            </span>
+          )}
         </div>
+      </div>
 
       {/* Rightside */}
       <div className="flex flex-col gap-6">
@@ -169,7 +168,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
                 type="radio"
                 value="true"
                 {...register('isMilitary', { required: true })}
-                className="accent-orange-500"
+                className="accent-green"
               />
               {yes}
             </label>
@@ -178,7 +177,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
                 type="radio"
                 value="false"
                 {...register('isMilitary', { required: true })}
-                className="accent-orange-500"
+                className="accent-green"
               />
               {no}
             </label>
@@ -189,29 +188,15 @@ const ContactForm = ({ data }: ContactFormProps) => {
         </fieldset>
 
         <div>
-          <label className="inline-flex items-center gap-2 text-gray-300">
-            <input
-              type="checkbox"
-              {...register('isAdult', { required: true })}
-              className="accent-orange-500"
-            />
-            {isAdultLabel}
-          </label>
-          {errors.isAdult && (
-            <span className="mt-1 block text-sm text-red-500">{required}</span>
-          )}
-        </div>
-
-        <div>
           <label className="inline-flex items-start gap-2 text-gray-300">
             <input
               type="checkbox"
               {...register('privacyPolicyAccepted', { required: true })}
-              className="mt-1 accent-orange-500"
+              className="accent-green mt-1"
             />
             <span>
-              {policy1}{' '}
-              <a href="#" className="text-orange-400 hover:underline">
+              {policy1}
+              <a href="#" className="text-green font-bold hover:underline">
                 {policy2}
               </a>
             </span>

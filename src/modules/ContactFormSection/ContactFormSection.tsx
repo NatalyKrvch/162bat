@@ -13,7 +13,7 @@ const ContactFormSection = ({ data }: ContactFormSectionProps) => {
 
   return (
     <>
-      <BasicCard className="p-10">
+      <BasicCard hasBorder={false} className="p-10">
         <div className="mb-15 flex flex-col items-center">
           <SectionTitle className="xl:text-14 mb-5 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
             {title}
