@@ -11,27 +11,66 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
       data-testid="container-test-id"
     >
       <div
-        class="mb-6 flex items-start justify-between lg:mb-8 xl:mb-10"
+        class="mb-6 flex items-baseline justify-between lg:mb-8 xl:mb-10"
       >
-        <img
-          alt="Company logo"
-          data-nimg="1"
-          decoding="async"
-          height="100"
-          loading="lazy"
-          src="/_next/image?url=%2Flogo.png&w=256&q=75"
-          srcset="/_next/image?url=%2Flogo.png&w=96&q=75 1x, /_next/image?url=%2Flogo.png&w=256&q=75 2x"
-          style="color: transparent;"
-          width="83"
-        />
-        <div>
+        <div
+          class="flex flex-col gap-15"
+        >
+          <div
+            class="flex flex-col items-start gap-5 md:flex-row md:gap-3"
+          >
+            <div
+              class="translate-y-[-2px] text-2xl leading-none font-semibold md:text-xl"
+            >
+              𝑨
+            </div>
+            <div
+              class="text-base leading-[1.1] font-semibold md:text-2xl"
+            >
+              Сили
+              <br />
+              територіальної
+              <br />
+              оборони
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start gap-5 md:flex-row md:items-center md:gap-3"
+          >
+            <img
+              alt="Company logo"
+              data-nimg="1"
+              decoding="async"
+              height="90"
+              loading="lazy"
+              src="/_next/image?url=%2Flogo.png&w=256&q=75"
+              srcset="/_next/image?url=%2Flogo.png&w=96&q=75 1x, /_next/image?url=%2Flogo.png&w=256&q=75 2x"
+              style="color: transparent;"
+              width="73"
+            />
+            <span
+              class="text-[10px] leading-[1.3] font-bold md:text-[12px] lg:text-sm"
+            >
+              1 батальйон територіальної оборони
+              <br />
+              119 окремої бригади
+              <br />
+              територіальної
+              <br />
+              оборони
+            </span>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-end"
+        >
           <nav
             aria-label="footer menu"
             class=""
             data-testid="navigation-test-id"
           >
             <ul
-              class="mb-10 flex flex-col gap-2 sm:flex-row md:gap-x-11"
+              class="mb-10 flex flex-col items-end gap-2 xl:items-center xl:flex-row md:gap-x-11"
             >
               <li>
                 <a
@@ -67,7 +106,7 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             class="flex justify-center"
           >
             <button
-              class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled max-w-80 text-base leading-1.5 font-bold tracking-normal lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
+              class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled max-w-80 text-base leading-[1.1] font-semibold tracking-normal md:leading-1.5 md:font-bold lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
               data-testid="button-test-id"
               type="button"
             >

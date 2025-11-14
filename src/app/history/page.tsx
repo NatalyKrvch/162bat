@@ -48,7 +48,10 @@ const HistoryPage = () => {
 
       <div className="mx-auto max-w-[450px] sm:max-w-[600px] lg:max-w-[840px]">
         <div>
-          <BasicCard className="mb-6 px-4 py-5 lg:px-10 lg:py-8">
+          <BasicCard
+            hasBorder={false}
+            className="mb-6 px-4 py-5 lg:px-10 lg:py-8"
+          >
             <TitledCard
               titleColor="green"
               title={beginningSectionData.title}
@@ -59,7 +62,7 @@ const HistoryPage = () => {
 
         <div className="mx-auto grid max-w-[840px] grid-cols-1 gap-6 sm:grid-cols-2">
           {battleJourneyGridItems.map((item, index) => (
-            <BasicCard key={index}>
+            <BasicCard hasBorder={false} key={index}>
               {item.type === 'image' ? (
                 item.src && (
                   <div className="relative h-[330px] w-full">

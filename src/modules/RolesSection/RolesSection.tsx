@@ -1,7 +1,15 @@
-import { Button, Carousel, InternalLink, SectionTitle } from '@/components';
+'use client';
+
+import dynamic from 'next/dynamic';
+
+import { Button, InternalLink, SectionTitle } from '@/components';
 import RolesCard from '@/components/Cards/RolesCard/RolesCard';
 
 import { type RolesSectionProps } from './types';
+
+const Carousel = dynamic(() => import('@/components/Carousel/Carousel'), {
+  ssr: false,
+});
 
 const RolesSection = ({ data }: RolesSectionProps) => {
   if (!data) {
@@ -24,7 +32,7 @@ const RolesSection = ({ data }: RolesSectionProps) => {
   return (
     <>
       <div className="flex flex-col items-start lg:mb-10 lg:flex-row lg:items-center lg:justify-between xl:mb-10">
-        <SectionTitle className="xl:text-14 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
+        <SectionTitle className="xl:text-14 mb-4 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
           {title}
         </SectionTitle>
 

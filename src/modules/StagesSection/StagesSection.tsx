@@ -27,7 +27,7 @@ const StagesSection = ({ data }: StagesSectionProps) => {
       <div className="flex flex-col items-center">
         <div className="columns-1 gap-4 lg:mb-1.5 xl:mb-2.5 xl:columns-2 xl:gap-6">
           {steps.map(step => (
-            <div key={step.step} className="mb-4 break-inside-avoid">
+            <div key={step.step} className="mb-5 break-inside-avoid">
               <StageCard {...step} />
             </div>
           ))}

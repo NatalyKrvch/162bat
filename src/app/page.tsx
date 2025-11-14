@@ -18,7 +18,7 @@ import HistorySection from '@/modules/HistorySection/HistorySection';
 
 const HomePage = () => {
   return (
-    <main className="mb-20 flex flex-col items-center gap-25">
+    <main className="mb-10 flex flex-col items-center gap-15 lg:mb-20 lg:gap-25">
       <Section
         id="hero"
         fullWidth
@@ -46,6 +46,7 @@ const HomePage = () => {
       <Section id="faq" className="flex flex-col items-center gap-10">
         <FAQSection data={faqSectionData} />
       </Section>
+
       <Section id="contactForm" className="flex flex-col items-center gap-10">
         <ContactFormSection data={contactFormSectionData} />
       </Section>
