@@ -31,10 +31,36 @@ const Footer = ({ data }: FooterProps) => {
   return (
     <footer className="bg-(--color-bg-secondary)" data-testid={FOOTER_TEST_ID}>
       <Container className="py-4 lg:py-10">
-        <div className="mb-6 flex items-start justify-between lg:mb-8 xl:mb-10">
-          <Image src={image.src} alt={image.alt} width={83} height={100} />
+        <div className="mb-6 flex items-baseline justify-between lg:mb-8 xl:mb-10">
+          <div className="flex flex-col gap-15">
+            <div className="flex flex-col items-start gap-5 md:flex-row md:gap-3">
+              <div className="translate-y-[-2px] text-2xl leading-none font-semibold md:text-xl">
+                &#x1D468;
+              </div>
+              <div className="text-base leading-[1.1] font-semibold md:text-2xl">
+                Сили
+                <br />
+                територіальної
+                <br />
+                оборони
+              </div>
+            </div>
 
-          <div>
+            <div className="flex flex-col items-start gap-5 md:flex-row md:items-center md:gap-3">
+              <Image src={image.src} alt={image.alt} width={73} height={90} />
+              <span className="text-[10px] leading-[1.3] font-bold md:text-[12px] lg:text-sm">
+                1 батальйон територіальної оборони
+                <br />
+                119 окремої бригади
+                <br />
+                територіальної
+                <br />
+                оборони
+              </span>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-end">
             <Navigation variant={NavigationVariant.Footer}>
               {menu.map(item => (
                 <li key={item.title}>
@@ -66,7 +92,7 @@ const Footer = ({ data }: FooterProps) => {
             <div className="flex justify-center">
               <Button
                 variant="primary"
-                className="max-w-80 text-base leading-1.5 font-bold tracking-normal lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
+                className="max-w-80 text-base leading-[1.1] font-semibold tracking-normal md:leading-1.5 md:font-bold lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
                 onClick={goToForm}
               >
                 {button.title}

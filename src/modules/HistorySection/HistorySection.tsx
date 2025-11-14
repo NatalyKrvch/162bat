@@ -18,7 +18,7 @@ const HistorySection = ({ data }: HistorySectionProps) => {
   return (
     <>
       <div className="flex flex-col items-start lg:mb-6 lg:flex-row lg:items-center lg:justify-between xl:mb-8">
-        <SectionTitle className="xl:text-14 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
+        <SectionTitle className="xl:text-14 mb-3 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
           {title}
         </SectionTitle>
       </div>
@@ -27,11 +27,7 @@ const HistorySection = ({ data }: HistorySectionProps) => {
       </p>
 
       <div className="mx-auto w-full md:px-16 lg:px-20 xl:px-52">
-        <BasicCard
-          hasBorder
-          gradientPosition="top"
-          className="p-5.5 lg:px-8 lg:py-10"
-        >
+        <BasicCard hasBorder={false} className="p-5.5 lg:px-8 lg:py-10">
           <TitledCard
             title={card.title}
             titleColor="green"
@@ -44,7 +40,7 @@ const HistorySection = ({ data }: HistorySectionProps) => {
       <InternalLink href={readMoreLink}>
         <Button
           variant="link"
-          className="text-lg leading-none font-bold tracking-normal uppercase lg:mt-5 lg:text-xl lg:leading-5"
+          className="mt-3 text-lg leading-none font-bold tracking-normal uppercase lg:mt-5 lg:text-xl lg:leading-5"
         >
           {readMoreText}
         </Button>

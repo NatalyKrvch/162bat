@@ -207,7 +207,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
         </div>
 
         <div>
-          <Button variant="primary" type="submit">
+          <Button variant="primary" className="font-bold" type="submit">
             {submit}
           </Button>
         </div>

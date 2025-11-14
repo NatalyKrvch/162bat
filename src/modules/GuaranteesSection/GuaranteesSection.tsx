@@ -16,7 +16,7 @@ const GuaranteesSection = ({ data }: GuaranteesSectionProps) => {
         <SectionTitle className="text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
           {title}
         </SectionTitle>
-        <h3 className="text-green mb-4 font-bold md:text-xl">{subtitle}</h3>
+        <h3 className="mb-4 text-white md:text-xl">{subtitle}</h3>
       </div>
 
       <BasicCard

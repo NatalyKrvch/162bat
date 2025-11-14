@@ -29,7 +29,7 @@ exports[`StagesSection renders correctly and matches snapshot 1`] = `
       class="columns-1 gap-4 lg:mb-1.5 xl:mb-2.5 xl:columns-2 xl:gap-6"
     >
       <div
-        class="mb-4 break-inside-avoid"
+        class="mb-5 break-inside-avoid"
       >
         <article
           class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-6 lg:h-[200px] lg:px-8 xl:items-start"
@@ -61,7 +61,7 @@ exports[`StagesSection renders correctly and matches snapshot 1`] = `
         </article>
       </div>
       <div
-        class="mb-4 break-inside-avoid"
+        class="mb-5 break-inside-avoid"
       >
         <article
           class="rounded-default border-grey bg-bg-secondary flex w-full items-center gap-4 border-1 px-3 py-6 lg:h-[200px] lg:px-8 xl:items-start"

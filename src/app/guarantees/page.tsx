@@ -13,7 +13,7 @@ const GuaranteesPage = () => {
         <SectionTitle className="xl:text-14 mb-8 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%] xl:max-w-[1000px]">
           {dataToShow.title}
         </SectionTitle>
-        <p className="text-green mb-2 text-xl font-bold lg:text-3xl">
+        <p className="text-green mb-4 text-xl font-bold lg:text-3xl">
           {dataToShow.intro.subtitle}
         </p>
         <p className="text-lg leading-[130%] lg:text-xl">
