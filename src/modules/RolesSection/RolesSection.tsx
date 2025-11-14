@@ -1,7 +1,15 @@
-import { Button, Carousel, InternalLink, SectionTitle } from '@/components';
+'use client';
+
+import dynamic from 'next/dynamic';
+
+import { Button, InternalLink, SectionTitle } from '@/components';
 import RolesCard from '@/components/Cards/RolesCard/RolesCard';
 
 import { type RolesSectionProps } from './types';
+
+const Carousel = dynamic(() => import('@/components/Carousel/Carousel'), {
+  ssr: false,
+});
 
 const RolesSection = ({ data }: RolesSectionProps) => {
   if (!data) {
