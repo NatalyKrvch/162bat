@@ -1,6 +1,10 @@
+'use client';
+
 import * as Dialog from '@radix-ui/react-dialog';
+import { usePathname } from 'next/navigation';
 import { IoClose } from 'react-icons/io5';
 import { RiMenu2Fill } from 'react-icons/ri';
+import { twMerge } from 'tailwind-merge';
 
 import { IconLink } from '@/components';
 import { IconWithTextButton } from '@/components/Buttons/IconWithTextButton';
@@ -16,6 +20,7 @@ const BurgerMenuModal = ({
   menu,
   contacts,
 }: BurgerMenuModalProps) => {
+  const pathname = usePathname();
   const messengers = Object.entries(contacts.messengers);
 
   return (
@@ -42,24 +47,38 @@ const BurgerMenuModal = ({
         </Dialog.Close>
       </div>
 
-      <div className="flex h-full flex-col justify-start gap-6.75 lg:justify-center lg:gap-0">
+      <div className="mt-8 flex h-full flex-col justify-start gap-6.75 lg:mt-0 lg:justify-center lg:gap-0">
         <Navigation>
-          {menu.map(item => (
-            <li key={item.title} className="w-full">
-              <Dialog.Close asChild>
-                <MenuItemLink
-                  text={item.title}
-                  href={item.href}
-                  className="flex justify-center text-2xl text-white"
-                />
-              </Dialog.Close>
-            </li>
-          ))}
+          {menu.map(item => {
+            const isActive = pathname === item.href;
+
+            return (
+              <li key={item.title} className="w-full">
+                <Dialog.Close asChild>
+                  <MenuItemLink
+                    text={item.title}
+                    href={item.href}
+                    className={twMerge(
+                      'flex justify-center text-2xl',
+                      isActive
+                        ? 'font-bold text-(--color-text-light-green)'
+                        : 'text-white',
+                    )}
+                  />
+                </Dialog.Close>
+              </li>
+            );
+          })}
         </Navigation>
-        <address className="flex w-full flex-col items-center p-14 text-2xl font-bold not-italic">
+
+        <address className="flex w-full flex-col items-center p-2 text-2xl font-bold not-italic lg:p-14">
           <p className="pb-3 text-(--color-text-light-green)">Контакти</p>
           {contacts.phoneNumbers.map(phoneNumber => (
-            <ExternalLink key={phoneNumber} href={`tel:${phoneNumber}`}>
+            <ExternalLink
+              key={phoneNumber}
+              href={`tel:${phoneNumber}`}
+              className="pb-2"
+            >
               {phoneNumber}
             </ExternalLink>
           ))}

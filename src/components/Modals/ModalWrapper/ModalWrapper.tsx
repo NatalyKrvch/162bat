@@ -1,5 +1,5 @@
 'use client';
-'use client';
+
 import * as Dialog from '@radix-ui/react-dialog';
 import { usePathname } from 'next/navigation';
 import { type PropsWithChildren, useEffect, useState } from 'react';
