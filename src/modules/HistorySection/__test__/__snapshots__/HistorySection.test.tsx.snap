@@ -6,7 +6,7 @@ exports[`HistorySection renders correctly and matches snapshot 1`] = `
     class="flex flex-col items-start lg:mb-6 lg:flex-row lg:items-center lg:justify-between xl:mb-8"
   >
     <h2
-      class="font-bold uppercase xl:text-14 w-fit mb-3 text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]"
+      class="font-bold uppercase xl:text-14 mb-3 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]"
       data-testid="section-title-test-id"
     >
       Our History
@@ -55,7 +55,7 @@ exports[`HistorySection renders correctly and matches snapshot 1`] = `
     href="/history"
   >
     <button
-      class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default underline-thick px-0 text-text-white py-4 xl:py-5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary text-lg leading-none font-bold tracking-normal uppercase mt-3 lg:mt-5 lg:text-xl lg:leading-5"
+      class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default underline-thick px-0 text-text-white py-4 xl:py-5 hover:text-btn-text-hover-secondary active:text-btn-text-click-secondary disabled:text-btn-text-disabled-secondary mt-3 text-lg leading-none font-bold tracking-normal uppercase lg:mt-5 lg:text-xl lg:leading-5"
       data-testid="button-test-id"
       type="button"
     >

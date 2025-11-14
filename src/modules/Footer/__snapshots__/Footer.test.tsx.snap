@@ -17,15 +17,15 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
           class="flex flex-col gap-15"
         >
           <div
-            class="flex flex-col md:flex-row items-start gap-5 md:gap-3"
+            class="flex flex-col items-start gap-5 md:flex-row md:gap-3"
           >
             <div
-              class="text-2xl md:text-xl leading-none font-semibold translate-y-[-2px]"
+              class="translate-y-[-2px] text-2xl leading-none font-semibold md:text-xl"
             >
               𝑨
             </div>
             <div
-              class="font-semibold leading-[1.1] text-base md:text-2xl"
+              class="text-base leading-[1.1] font-semibold md:text-2xl"
             >
               Сили
               <br />
@@ -35,7 +35,7 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             </div>
           </div>
           <div
-            class="flex flex-col gap-5 md:gap-3 items-start md:flex-row md:items-center"
+            class="flex flex-col items-start gap-5 md:flex-row md:items-center md:gap-3"
           >
             <img
               alt="Company logo"
@@ -106,7 +106,7 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             class="flex justify-center"
           >
             <button
-              class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled max-w-80 text-base leading-[1.1] md:leading-1.5 font-semibold md:font-bold tracking-normal lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
+              class="rounded-default w-full cursor-pointer transition-colors disabled:cursor-default bg-btn-bg text-text-white px-6 py-4 sm:px-8 sm:py-5 hover:bg-btn-bg-hover active:bg-btn-bg-click disabled:bg-btn-bg-disabled disabled:text-btn-text-disabled max-w-80 text-base leading-[1.1] font-semibold tracking-normal md:leading-1.5 md:font-bold lg:px-8 lg:py-4 lg:text-[22px] lg:leading-none"
               data-testid="button-test-id"
               type="button"
             >

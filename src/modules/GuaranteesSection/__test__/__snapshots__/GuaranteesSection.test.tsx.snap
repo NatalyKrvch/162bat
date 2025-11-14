@@ -15,7 +15,7 @@ exports[`GuaranteesSection renders correctly and matches snapshot 1`] = `
         Guarantees Title
       </h2>
       <h3
-        class="text-white mb-4 md:text-xl"
+        class="mb-4 text-white md:text-xl"
       >
         Your safety is our priority
       </h3>
