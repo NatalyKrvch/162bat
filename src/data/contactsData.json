@@ -2,11 +2,6 @@
   "phoneNumbers": ["+38 073 415 16 94", "+38 096 515 02 04"],
 
   "messengers": {
-    "viber": {
-      "icon": "icons/messengers/viber-logo.svg",
-      "link": "viber://contact?number=380965150204"
-    },
-
     "telegram": {
       "icon": "icons/messengers/telegram-logo.svg",
       "link": "https://t.me/+380965150204"
