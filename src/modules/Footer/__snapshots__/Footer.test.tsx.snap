@@ -96,7 +96,7 @@ exports[`Footer component renders correctly and matches snapshot 1`] = `
             class="mb-10 flex flex-col items-center justify-between gap-6 lg:gap-8 xl:flex-row"
           >
             <address
-              class="flex flex-col gap-3 not-italic xl:flex-row md:gap-5 lg:text-2xl"
+              class="flex flex-col gap-3 not-italic md:gap-5 lg:text-2xl xl:flex-row"
             />
             <div
               class="flex gap-5 md:gap-4 lg:text-xl"
