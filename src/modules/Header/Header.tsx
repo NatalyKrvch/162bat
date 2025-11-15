@@ -31,7 +31,7 @@ const Header = ({ data }: HeaderProps) => {
 
         <InternalLink
           href="/"
-          className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-4"
+          className="absolute top-1/2 left-1/2 ml-4 flex -translate-x-1/2 -translate-y-1/2 items-center gap-4 md:ml-0"
         >
           <Image
             src={image?.src}
