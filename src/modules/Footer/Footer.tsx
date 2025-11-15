@@ -37,6 +37,7 @@ const Footer = ({ data }: FooterProps) => {
               <div className="translate-y-[-2px] text-2xl leading-none font-semibold md:text-xl">
                 &#x1D468;
               </div>
+
               <div className="text-base leading-[1.1] font-semibold md:text-2xl">
                 Сили
                 <br />
@@ -48,6 +49,7 @@ const Footer = ({ data }: FooterProps) => {
 
             <div className="flex flex-col items-start gap-5 md:flex-row md:items-center md:gap-3">
               <Image src={image.src} alt={image.alt} width={73} height={90} />
+
               <span className="text-[10px] leading-[1.3] font-bold md:text-[12px] lg:text-sm">
                 1 батальйон територіальної оборони
                 <br />

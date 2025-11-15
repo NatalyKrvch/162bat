@@ -18,7 +18,7 @@ const ContactFormSection = ({ data }: ContactFormSectionProps) => {
           <SectionTitle className="xl:text-14 mb-5 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%]">
             {title}
           </SectionTitle>
-          <p className="text-center text-base leading-[130%] tracking-normal lg:text-2xl lg:leading-[120%]">
+          <p className="text-base leading-[130%] tracking-normal md:text-center lg:text-2xl lg:leading-[120%]">
             {subtitle}
           </p>
         </div>
