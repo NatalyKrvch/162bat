@@ -76,7 +76,7 @@ const Footer = ({ data }: FooterProps) => {
             </Navigation>
 
             <div className="mb-10 flex flex-col items-center justify-between gap-6 lg:gap-8 xl:flex-row">
-              <address className="flex flex-col gap-3 not-italic md:flex-row md:gap-5 lg:text-2xl">
+              <address className="flex flex-col gap-3 not-italic md:gap-5 lg:text-2xl xl:flex-row">
                 {contacts.phoneNumbers.map(phoneNumber => (
                   <ExternalLink key={phoneNumber} href={`tel:${phoneNumber}`}>
                     {phoneNumber}
