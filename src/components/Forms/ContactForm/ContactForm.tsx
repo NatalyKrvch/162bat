@@ -1,7 +1,10 @@
 'use client';
 
+import { FormCheckbox } from '@components/FormControls/FormCheckbox';
+import FormInput from '@components/FormControls/FormInput';
+import { FormRadioGroup } from '@components/FormControls/FormRadioGroup';
 import { type ContactFormProps } from '@components/Forms/ContactForm/types';
-import { type SubmitHandler, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 import { Button } from '@/components/Buttons/Button';
 
@@ -14,8 +17,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
 
   if (!data) return null;
 
-  const onSubmit: SubmitHandler<ContactFormProps['data']> = formData =>
-    console.log(formData);
+  const onSubmit = formData => console.log(formData);
 
   const {
     surname,
@@ -39,178 +41,93 @@ const ContactForm = ({ data }: ContactFormProps) => {
       className="grid grid-cols-1 gap-8 text-gray-200 lg:grid-cols-2"
     >
       <div className="flex flex-col gap-6">
-        <div>
-          <label
-            htmlFor="surname"
-            className="mb-2 block text-sm font-medium text-gray-300"
-          >
-            {surname}
-          </label>
-          <input
-            id="surname"
-            type="text"
-            placeholder={surname}
-            {...register('surname', { required: true })}
-            className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
-          />
-          {errors.surname && (
-            <span className="text-sm text-red-500">{required}</span>
-          )}
-        </div>
+        <FormInput
+          id="surname"
+          label={surname}
+          placeholder={surname}
+          register={register('surname', { required: true })}
+          error={errors.surname}
+          errorText={required}
+        />
 
-        <div>
-          <label
-            htmlFor="name"
-            className="mb-2 block text-sm font-medium text-gray-300"
-          >
-            {name}
-          </label>
-          <input
-            id="name"
-            type="text"
-            placeholder={name}
-            {...register('name', { required: true })}
-            className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
-          />
-          {errors.name && (
-            <span className="text-sm text-red-500">{required}</span>
-          )}
-        </div>
+        <FormInput
+          id="name"
+          label={name}
+          placeholder={name}
+          register={register('name', { required: true })}
+          error={errors.name}
+          errorText={required}
+        />
 
-        <div>
-          <label
-            htmlFor="lastname"
-            className="mb-2 block text-sm font-medium text-gray-300"
-          >
-            {lastname}
-          </label>
-          <input
-            id="lastname"
-            type="text"
-            placeholder={lastname}
-            {...register('lastname', { required: true })}
-            className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
-          />
-          {errors.lastname && (
-            <span className="text-sm text-red-500">{required}</span>
-          )}
-        </div>
+        <FormInput
+          id="lastname"
+          label={lastname}
+          placeholder={lastname}
+          register={register('lastname', { required: true })}
+          error={errors.lastname}
+          errorText={required}
+        />
 
-        <div>
-          <label
-            htmlFor="tel"
-            className="mb-2 block text-sm font-medium text-gray-300"
-          >
-            {tel}
-          </label>
-          <input
-            id="tel"
-            type="tel"
-            placeholder="+380..."
-            {...register('tel', {
-              required: required,
-              pattern: {
-                value: /^(?:\+380|0)\d{9}$/,
-                message: 'Почніть номер з +380 або з 0',
-              },
-            })}
-            className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
-          />
-          {errors.tel && (
-            <span className="text-sm text-red-500">
-              {errors.tel.message || required}
-            </span>
-          )}
-        </div>
+        <FormInput
+          id="tel"
+          label={tel}
+          type="tel"
+          placeholder="+380..."
+          register={register('tel', {
+            required,
+            pattern: {
+              value: /^(?:\+380|0)\d{9}$/,
+              message: 'Почніть номер з +380 або з 0',
+            },
+          })}
+          error={errors.tel}
+          errorText={required}
+        />
       </div>
 
-      {/* Rightside */}
       <div className="flex flex-col gap-6">
-        <div>
-          <label
-            htmlFor="tgName"
-            className="mb-2 block text-sm font-medium text-gray-300"
-          >
-            {tgName}
-          </label>
-          <input
-            id="tgName"
-            type="text"
-            placeholder="@username"
-            {...register('tgName')}
-            className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
-          />
-        </div>
+        <FormInput
+          id="tgName"
+          label={tgName}
+          placeholder="@username"
+          register={register('tgName')}
+        />
 
-        <div>
-          <label
-            htmlFor="position"
-            className="mb-2 block text-sm font-medium text-gray-300"
-          >
-            {position}
-          </label>
-          <input
-            id="position"
-            type="text"
-            placeholder={position}
-            {...register('position')}
-            className="w-full rounded-xl border border-gray-600 bg-gray-800/50 px-4 py-2 text-gray-100 placeholder-gray-400 transition outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-500/40"
-          />
-        </div>
+        <FormInput
+          id="position"
+          label={position}
+          placeholder={position}
+          register={register('position')}
+        />
 
-        <fieldset className="rounded-xl border border-gray-700 p-4">
-          <legend className="mb-2 text-sm font-medium text-gray-300">
-            {isMilitaryLabel}
-          </legend>
-          <div className="flex flex-col gap-2">
-            <label className="inline-flex items-center gap-2 text-gray-300">
-              <input
-                type="radio"
-                value="true"
-                {...register('isMilitary', { required: true })}
-                className="accent-green"
-              />
-              {yes}
-            </label>
-            <label className="inline-flex items-center gap-2 text-gray-300">
-              <input
-                type="radio"
-                value="false"
-                {...register('isMilitary', { required: true })}
-                className="accent-green"
-              />
-              {no}
-            </label>
-          </div>
-          {errors.isMilitary && (
-            <span className="text-sm text-red-500">{required}</span>
-          )}
-        </fieldset>
+        <FormRadioGroup
+          label={isMilitaryLabel}
+          register={register('isMilitary', { required: true })}
+          options={[
+            { value: 'true', label: yes },
+            { value: 'false', label: no },
+          ]}
+          error={errors.isMilitary}
+          errorText={required}
+        />
 
-        <div>
-          <label className="inline-flex items-start gap-2 text-gray-300">
-            <input
-              type="checkbox"
-              {...register('privacyPolicyAccepted', { required: true })}
-              className="accent-green mt-1"
-            />
-            <span>
-              {policy1}
+        <FormCheckbox
+          label={
+            <>
+              {policy1}{' '}
               <a href="#" className="text-green font-bold hover:underline">
                 {policy2}
               </a>
-            </span>
-          </label>
-          {errors.privacyPolicyAccepted && (
-            <span className="mt-1 block text-sm text-red-500">{required}</span>
-          )}
-        </div>
+            </>
+          }
+          register={register('privacyPolicyAccepted', { required: true })}
+          error={errors.privacyPolicyAccepted}
+          errorText={required}
+        />
 
-        <div>
-          <Button variant="primary" className="font-bold" type="submit">
-            {submit}
-          </Button>
-        </div>
+        <Button variant="primary" className="font-bold" type="submit">
+          {submit}
+        </Button>
       </div>
     </form>
   );
