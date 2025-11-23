@@ -18,7 +18,7 @@ describe('MenuItemLink', () => {
     const menuItemLink = screen.getByTestId(INTERNAL_LINK_TEST_ID);
 
     expect(menuItemLink).toBeInTheDocument();
-    expect(menuItemLink).toHaveClass('hover:bg-(--color-bg-secondary) p-4');
+    expect(menuItemLink).toHaveClass('hover:bg-(--color-bg-primary) p-4');
     expect(container).toMatchSnapshot();
   });
 

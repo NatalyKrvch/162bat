@@ -3,7 +3,7 @@
 exports[`Header component should renders correctly and matches snapshot 1`] = `
 <div>
   <header
-    class="sticky top-0 left-0 z-20 h-(--height-header-mobile) w-screen bg-(--color-bg-primary) lg:h-(--height-header)"
+    class="sticky top-0 left-0 z-20 h-(--height-header-mobile) w-screen bg-(--color-bg-secondary) lg:h-(--height-header)"
     data-testid="header-test-id"
   >
     <div
