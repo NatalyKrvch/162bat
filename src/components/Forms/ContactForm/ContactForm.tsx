@@ -17,7 +17,9 @@ const ContactForm = ({ data }: ContactFormProps) => {
 
   if (!data) return null;
 
-  const onSubmit = formData => console.log(formData);
+  const onSubmit = (formData: ContactFormProps['data']) => {
+    console.log(formData);
+  };
 
   const {
     surname,
