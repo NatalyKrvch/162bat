@@ -18,7 +18,7 @@ const Header = ({ data }: HeaderProps) => {
   return (
     <header
       data-testid={HEADER_TEST_ID}
-      className="sticky top-0 left-0 z-20 h-(--height-header-mobile) w-screen bg-(--color-bg-primary) lg:h-(--height-header)"
+      className="sticky top-0 left-0 z-20 h-(--height-header-mobile) w-screen bg-(--color-bg-secondary) lg:h-(--height-header)"
     >
       <div className="relative flex h-full w-full items-center justify-between px-4 py-4 lg:px-8 lg:py-8">
         <div className="z-10 flex items-center justify-center gap-4 xl:gap-15.5">

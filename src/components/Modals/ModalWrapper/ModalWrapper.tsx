@@ -31,7 +31,7 @@ const ModalWrapper = ({
         <Dialog.Overlay className={twMerge('fixed inset-0', animationStyle)} />
         <Dialog.Content
           className={twMerge(
-            'fixed top-0 left-0 z-50 bg-(--color-bg-primary) outline-none',
+            'fixed top-0 left-0 z-50 bg-(--color-bg-secondary) outline-none',
             animationStyle,
             className,
           )}

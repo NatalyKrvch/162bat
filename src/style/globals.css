@@ -5,9 +5,7 @@
   --color-main: #6a994e;
 
   --color-bg-primary: #444a38;
-  /*--color-bg-primary: #151312;*/
-  --color-bg-secondary: #2d3427;
-  /*--color-bg-secondary: #181818;*/
+  --color-bg-secondary: #3c4132;
 
   --color-stroke-focused: #f845fc;
   --color-stroke-grey: #bdbcdb;
@@ -25,7 +23,6 @@
   --color-btn-bg-hover: #a7c957;
   --color-btn-text-hover: #ffffff;
   --color-btn-bg-click: #2d3427;
-  /*--color-btn-bg-click: #386641;*/
   --color-btn-text-click: #ffffff;
   --color-btn-bg-disabled: #f4f3fe;
   --color-btn-text-disabled: #c5c0db;
