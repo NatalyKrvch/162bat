@@ -6,6 +6,7 @@ import { FormRadioGroup } from '@components/FormControls/FormRadioGroup';
 import { type ContactFormProps } from '@components/Forms/ContactForm/types';
 import { useForm } from 'react-hook-form';
 
+import { InternalLink } from '@/components';
 import { Button } from '@/components/Buttons/Button';
 
 const ContactForm = ({ data }: ContactFormProps) => {
@@ -116,10 +117,13 @@ const ContactForm = ({ data }: ContactFormProps) => {
         <FormCheckbox
           label={
             <>
-              {policy1}{' '}
-              <a href="#" className="text-green font-bold hover:underline">
+              {policy1}
+              <InternalLink
+                href="/privacy-policy"
+                className="text-green font-bold hover:underline"
+              >
                 {policy2}
-              </a>
+              </InternalLink>
             </>
           }
           register={register('privacyPolicyAccepted', { required: true })}
