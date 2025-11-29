@@ -1,4 +1,5 @@
 import historyPageData from '@data/historyPageData.json';
+import { type Metadata } from 'next';
 import Image from 'next/image';
 
 import {
@@ -10,6 +11,13 @@ import {
 } from '@/components';
 
 import { type BattleJourneyItemType, type HistoryPageDataType } from './types';
+
+export const metadata: Metadata = {
+  title:
+    'Історія батальйону — 1 батальйон територіальної оборони 119 окремої бригади територіальної оборони',
+  description:
+    'Історія створення, бойовий шлях та розвиток 1 батальйону територіальної оборони 119 окремої бригади територіальної оборони.',
+};
 
 const HistoryPage = () => {
   const dataToShow: HistoryPageDataType = historyPageData;

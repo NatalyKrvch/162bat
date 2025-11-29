@@ -1,3 +1,5 @@
+import { type Metadata } from 'next';
+
 import { Section } from '@/components';
 import contactFormSectionData from '@/data/contactFormSectionData.json';
 import faqSectionData from '@/data/faqSectionData.json';
@@ -15,6 +17,13 @@ import {
   StagesSection,
 } from '@/modules';
 import HistorySection from '@/modules/HistorySection/HistorySection';
+
+export const metadata: Metadata = {
+  title:
+    '1 батальйон територіальної оборони 119 окремої бригади територіальної оборони',
+  description:
+    'Долучайся до 1 батальйону 119 окремої бригади територіальної оборони. Коротко про підрозділ, умови служби та форма заявки на вступ.',
+};
 
 const HomePage = () => {
   return (

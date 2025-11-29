@@ -1,4 +1,13 @@
+import { type Metadata } from 'next';
+
 import { Container } from '@/components';
+
+export const metadata: Metadata = {
+  title:
+    'Політика конфіденційності — 1 батальйон територіальної оборони 119 окремої бригади територіальної оборони',
+  description:
+    'Політика конфіденційності вебсайту 1 батальйону територіальної оборони 119 окремої бригади територіальної оборони.',
+};
 
 const PrivacyPolicyPage = () => {
   return (

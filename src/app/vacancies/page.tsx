@@ -1,6 +1,14 @@
 import vacanciesData from '@data/rolesSectionData.json';
+import { type Metadata } from 'next';
 
 import { Accordion, Container, SectionTitle } from '@/components';
+
+export const metadata: Metadata = {
+  title:
+    'Вакансії — 1 батальйон територіальної оборони 119 окремої бригади територіальної оборони',
+  description:
+    'Актуальні вакансії у 1 батальйоні територіальної оборони 119 окремої бригади територіальної оборони. Дізнайся, кого ми шукаємо, та як подати заявку.',
+};
 
 const VacanciesPage = () => {
   const title = vacanciesData.title;

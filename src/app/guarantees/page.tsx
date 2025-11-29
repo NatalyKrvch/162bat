@@ -1,8 +1,16 @@
 import guaranteesPageData from '@data/guaranteesPageData.json';
+import { type Metadata } from 'next';
 
 import { Container, GuaranteeCard, SectionTitle } from '@/components';
 
 import type { GuaranteesPageDataType } from './types';
+
+export const metadata: Metadata = {
+  title:
+    'Гарантії та пільги — 1 батальйон територіальної оборони 119 окремої бригади територіальної оборони',
+  description:
+    'Офіційні гарантії, пільги та соціальний захист військовослужбовців 1 батальйону територіальної оборони 119 окремої бригади територіальної оборони.',
+};
 
 const GuaranteesPage = () => {
   const dataToShow = guaranteesPageData as GuaranteesPageDataType;
