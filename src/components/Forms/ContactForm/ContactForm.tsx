@@ -4,23 +4,27 @@ import { FormCheckbox } from '@components/FormControls/FormCheckbox';
 import FormInput from '@components/FormControls/FormInput';
 import { FormRadioGroup } from '@components/FormControls/FormRadioGroup';
 import { type ContactFormProps } from '@components/Forms/ContactForm/types';
+import { Turnstile } from '@marsidev/react-turnstile';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 import { InternalLink } from '@/components';
 import { Button } from '@/components/Buttons/Button';
 
 const ContactForm = ({ data }: ContactFormProps) => {
+  const [status, setStatus] = useState<
+    'idle' | 'loading' | 'success' | 'error'
+  >('idle');
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<ContactFormProps['data']>();
 
   if (!data) return null;
-
-  const onSubmit = (formData: ContactFormProps['data']) => {
-    console.log(formData);
-  };
 
   const {
     surname,
@@ -37,6 +41,39 @@ const ContactForm = ({ data }: ContactFormProps) => {
     policy2,
     submit,
   } = data;
+
+  const onSubmit = async (formData: ContactFormProps['data']) => {
+    if (!turnstileToken) {
+      alert('Будь ласка, зачекайте перевірки капчі (Я не робот)');
+      return;
+    }
+
+    setStatus('loading');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...formData,
+          turnstileToken,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Помилка при відправці');
+      }
+
+      setStatus('success');
+      reset();
+      setTurnstileToken(null);
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+    }
+  };
+
+  console.log('Мій ключ:', process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY);
 
   return (
     <form
@@ -131,9 +168,41 @@ const ContactForm = ({ data }: ContactFormProps) => {
           errorText={required}
         />
 
-        <Button variant="primary" className="font-bold" type="submit">
-          {submit}
-        </Button>
+        {/* 👇 БЛОК КАПЧІ (Відображається перед кнопкою) */}
+        <div className="my-2 min-h-[65px]">
+          {/* Показуємо капчу, поки форма не відправлена успішно */}
+          {status !== 'success' && (
+            <Turnstile
+              siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ''}
+              onSuccess={token => setTurnstileToken(token)}
+              options={{ theme: 'dark' }}
+            />
+          )}
+        </div>
+
+        {/* КНОПКА ТА СТАТУСИ */}
+        <div className="flex flex-col gap-3">
+          <Button
+            variant="primary"
+            className="font-bold disabled:cursor-not-allowed disabled:opacity-50"
+            type="submit"
+            disabled={status === 'loading' || status === 'success'}
+          >
+            {status === 'loading' ? 'Відправка...' : submit}
+          </Button>
+
+          {status === 'success' && (
+            <div className="rounded border border-green-500 bg-green-900/20 p-3 text-center text-green-400">
+              ✅ Дякуємо! Вашу заявку успішно відправлено.
+            </div>
+          )}
+
+          {status === 'error' && (
+            <div className="rounded border border-red-500 bg-red-900/20 p-3 text-center text-red-400">
+              ❌ Помилка. Спробуйте ще раз пізніше.
+            </div>
+          )}
+        </div>
       </div>
     </form>
   );
