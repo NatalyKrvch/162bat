@@ -1,21 +1,21 @@
 import type { NextConfig } from 'next';
 
-const cspHeader = `
-    default-src 'self';
-    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com blob:;
-    worker-src 'self' blob:;
-    style-src 'self' 'unsafe-inline';
-    img-src 'self' data: blob: https://challenges.cloudflare.com;
-    font-src 'self';
-    connect-src 'self' https://challenges.cloudflare.com;
-    frame-src 'self' https://challenges.cloudflare.com;
-    frame-ancestors 'none';
-    base-uri 'self';
-    form-action 'self';
-    upgrade-insecure-requests;
-`
-  .replace(/\s{2,}/g, ' ')
-  .trim();
+const cspDirectives = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com blob:",
+  "worker-src 'self' blob:",
+  "style-src 'self' 'unsafe-inline'",
+  "img-src 'self' data: blob: https://challenges.cloudflare.com",
+  "font-src 'self'",
+  "connect-src 'self' https://challenges.cloudflare.com",
+  "frame-src 'self' https://challenges.cloudflare.com",
+  "frame-ancestors 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  'upgrade-insecure-requests',
+];
+
+const cspHeader = cspDirectives.join('; ');
 
 const nextConfig: NextConfig = {
   async headers() {
