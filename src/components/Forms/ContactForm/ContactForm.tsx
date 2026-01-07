@@ -73,8 +73,6 @@ const ContactForm = ({ data }: ContactFormProps) => {
     }
   };
 
-  console.log('Мій ключ:', process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY);
-
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
