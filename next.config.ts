@@ -1,54 +1,53 @@
 import type { NextConfig } from 'next';
 
-const CONTENT_SECURITY_POLICY = `
-  default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com;
-  worker-src 'self' blob:;
-  style-src 'self' 'unsafe-inline';
-  img-src 'self' data: blob:;
-  font-src 'self';
-  connect-src 'self' https://challenges.cloudflare.com;
-  frame-src 'self' https://challenges.cloudflare.com;
-  frame-ancestors 'none';
-  base-uri 'self';
-  form-action 'self';
-  upgrade-insecure-requests;
-`;
-
-const securityHeaders = [
-  {
-    key: 'Content-Security-Policy',
-    value: CONTENT_SECURITY_POLICY.replace(/\s{2,}/g, ' ').trim(),
-  },
-  {
-    key: 'Strict-Transport-Security',
-    value: 'max-age=63072000; includeSubDomains; preload',
-  },
-  { key: 'X-Frame-Options', value: 'DENY' },
-  { key: 'X-Content-Type-Options', value: 'nosniff' },
-  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-  {
-    key: 'Permissions-Policy',
-    value: [
-      'geolocation=()',
-      'microphone=()',
-      'camera=()',
-      'payment=()',
-      'usb=()',
-      'bluetooth=()',
-      'fullscreen=(self)',
-    ].join(', '),
-  },
-  { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
-  { key: 'Cross-Origin-Resource-Policy', value: 'same-origin' },
-];
+const cspHeader = `
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com blob:;
+    worker-src 'self' blob:;
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: blob: https://challenges.cloudflare.com;
+    font-src 'self';
+    connect-src 'self' https://challenges.cloudflare.com;
+    frame-src 'self' https://challenges.cloudflare.com;
+    frame-ancestors 'none';
+    base-uri 'self';
+    form-action 'self';
+    upgrade-insecure-requests;
+`
+  .replace(/\s{2,}/g, ' ')
+  .trim();
 
 const nextConfig: NextConfig = {
   async headers() {
     return [
       {
         source: '/:path*',
-        headers: securityHeaders,
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: cspHeader,
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=()',
+          },
+        ],
       },
     ];
   },
