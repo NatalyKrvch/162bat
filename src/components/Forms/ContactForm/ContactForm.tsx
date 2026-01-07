@@ -166,9 +166,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
           errorText={required}
         />
 
-        {/* 👇 БЛОК КАПЧІ (Відображається перед кнопкою) */}
         <div className="my-2 min-h-[65px]">
-          {/* Показуємо капчу, поки форма не відправлена успішно */}
           {status !== 'success' && (
             <Turnstile
               siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ''}
@@ -178,7 +176,6 @@ const ContactForm = ({ data }: ContactFormProps) => {
           )}
         </div>
 
-        {/* КНОПКА ТА СТАТУСИ */}
         <div className="flex flex-col gap-3">
           <Button
             variant="primary"
