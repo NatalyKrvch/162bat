@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { BurgerMenuModal, Button, InternalLink } from '@/components';
 import { HEADER_TEST_ID } from '@/lib/testIds';
+import { goToForm } from '@/utils';
 
 import type { HeaderProps } from './types';
 
@@ -10,10 +11,6 @@ const Header = ({ data }: HeaderProps) => {
   if (!data) return null;
 
   const { image, button, iconButton, menu, contacts } = data;
-
-  function goToForm() {
-    window.location.href = '/#contactForm';
-  }
 
   return (
     <header

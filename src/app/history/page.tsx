@@ -1,9 +1,11 @@
+import contactFormSectionData from '@data/contactFormSectionData.json';
 import historyPageData from '@data/historyPageData.json';
 import { type Metadata } from 'next';
 import Image from 'next/image';
 
 import { BasicCard, Container, SectionTitle, TitledCard } from '@/components';
 
+import ContactFormSection from '../../modules/ContactFormSection/ContactFormSection';
 import { type BattleJourneyItemType, type HistoryPageDataType } from './types';
 
 export const metadata: Metadata = {
@@ -78,11 +80,15 @@ const HistoryPage = () => {
         </div>
 
         <BasicCard
-          className="bg-green mt-6 mb-6 px-10 py-8 text-center text-lg font-bold whitespace-pre-line lg:text-2xl"
+          className="bg-green mt-6 mb-10 px-10 py-8 text-center text-lg font-bold whitespace-pre-line lg:text-2xl"
           hasBorder={false}
         >
           {callToActionText}
         </BasicCard>
+      </div>
+
+      <div className="mb-10">
+        <ContactFormSection data={contactFormSectionData} />
       </div>
     </Container>
   );

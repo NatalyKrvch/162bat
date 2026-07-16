@@ -23,3 +23,4 @@ export { ModalWrapper } from './Modals/ModalWrapper';
 export { Navigation } from './Navigation';
 export { Section } from './Section';
 export { SectionTitle } from './SectionTitle';
+export { VacanciesList } from './VacanciesList';

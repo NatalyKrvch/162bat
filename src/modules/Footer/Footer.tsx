@@ -13,7 +13,7 @@ import {
 import { MenuItemVariant } from '@/components/Links/MenuItemLink/MenuItemLink.variants';
 import { NavigationVariant } from '@/components/Navigation/Navigation.variants';
 import { FOOTER_TEST_ID } from '@/lib/testIds';
-import { getCurrentYear } from '@/utils';
+import { getCurrentYear, goToForm } from '@/utils';
 
 import type { FooterProps } from './types';
 
@@ -23,10 +23,6 @@ const Footer = ({ data }: FooterProps) => {
   const { image, menu, button, legal, contacts } = data;
   const currentYear = getCurrentYear();
   const messengers = Object.entries(contacts.messengers);
-
-  function goToForm() {
-    window.location.href = '/#contactForm';
-  }
 
   return (
     <footer className="bg-(--color-bg-secondary)" data-testid={FOOTER_TEST_ID}>
