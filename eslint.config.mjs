@@ -5,6 +5,16 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  {
+    ignores: [
+      '.next/',
+      'node_modules/',
+      'dist/',
+      'build/',
+      'next-env.d.ts',
+      'postcss.config.mjs',
+    ],
+  },
   ...compat.config({
     extends: [
       'next/core-web-vitals',

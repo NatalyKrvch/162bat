@@ -2,13 +2,7 @@ import historyPageData from '@data/historyPageData.json';
 import { type Metadata } from 'next';
 import Image from 'next/image';
 
-import {
-  BasicCard,
-  Carousel,
-  Container,
-  SectionTitle,
-  TitledCard,
-} from '@/components';
+import { BasicCard, Container, SectionTitle, TitledCard } from '@/components';
 
 import { type BattleJourneyItemType, type HistoryPageDataType } from './types';
 
@@ -32,17 +26,6 @@ const HistoryPage = () => {
     { type: 'card', data: totalWarSectionData },
     { type: 'card', data: todaySectionData },
     { type: 'image', src: todaySectionPhoto },
-  ];
-  const galleryImages = [
-    '/images/history/gallery/history-1.webp',
-    '/images/history/gallery/history-2.webp',
-    '/images/history/gallery/history-3.webp',
-    '/images/history/gallery/history-4.webp',
-    '/images/history/gallery/history-5.webp',
-    '/images/history/gallery/history-6.webp',
-    '/images/history/gallery/history-7.webp',
-    '/images/history/gallery/history-8.webp',
-    '/images/history/gallery/history-9.webp',
   ];
 
   return (
@@ -100,22 +83,6 @@ const HistoryPage = () => {
         >
           {callToActionText}
         </BasicCard>
-      </div>
-
-      <div className="mt-12 mb-3 flex flex-col lg:mt-20 lg:mb-8 lg:justify-between xl:mt-30 xl:mb-10">
-        <SectionTitle className="xl:text-14 mb-8 w-fit text-left text-2xl leading-[120%] tracking-normal lg:text-5xl lg:leading-[110%] xl:max-w-[1000px]">
-          Галерея
-        </SectionTitle>
-      </div>
-
-      <div className="lg-mb-20 mb-10">
-        <Carousel perView={3}>
-          {galleryImages.map(item => (
-            <BasicCard key={item} hasBorder={false}>
-              <Image src={item} alt={'photo'} width={412} height={312} />
-            </BasicCard>
-          ))}
-        </Carousel>
       </div>
     </Container>
   );

@@ -1,6 +1,7 @@
 export { ContactFormSection } from './ContactFormSection';
 export { FAQSection } from './FAQSection';
 export { Footer } from './Footer';
+export { GallerySection } from './GallerySection';
 export { GuaranteesSection } from './GuaranteesSection';
 export { Header } from './Header';
 export { HeroSection } from './HeroSection';
