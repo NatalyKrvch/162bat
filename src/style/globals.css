@@ -43,6 +43,7 @@
 
   --color-grey: #3d3d3d;
   --color-grey-50: #3d3d3d80;
+  --color-grey-dark: rgba(11, 10, 10, 1);
   --color-green: #6a994e;
 
   /*Typography */
@@ -126,9 +127,11 @@ body {
 }
 
 .bg-guarantees-section {
-  background-image: url('/images/guarantees-section-bg.webp');
+  --tint: color-mix(in srgb, var(--color-grey-dark), transparent 25%);
+
+  background-image: linear-gradient(var(--tint), var(--tint)), url('/images/guarantees-section-bg.webp');
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
