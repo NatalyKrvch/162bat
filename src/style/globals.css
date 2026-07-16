@@ -133,9 +133,11 @@ body {
 }
 
 .bg-hero-section {
-  background-image: url('/images/hero-bg-image.webp');
+  --tint: color-mix(in srgb, var(--color-bg-primary), transparent 70%);
+
+  background-image: linear-gradient(var(--tint), var(--tint)), url('/images/hero-bg.webp');
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
