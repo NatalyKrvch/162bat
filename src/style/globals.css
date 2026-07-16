@@ -127,7 +127,7 @@ body {
 }
 
 .bg-guarantees-section {
-  --tint: color-mix(in srgb, var(--color-grey-dark), transparent 40%);
+  --tint: color-mix(in srgb, var(--color-grey-dark), transparent 30%);
 
   background-image: linear-gradient(var(--tint), var(--tint)), url('/images/guarantees-section-bg.webp');
   background-size: cover;
