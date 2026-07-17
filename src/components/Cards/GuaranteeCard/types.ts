@@ -3,7 +3,7 @@ export interface FormattedTextChild {
   text: string;
   color: 'white' | 'green' | string;
   fontWeight?: 'normal' | 'bold' | string;
-  variant?: 'number' | 'text';
+  variant?: 'number' | 'text' | string;
 }
 
 export interface FormattedTextItem {
@@ -14,4 +14,6 @@ export interface FormattedTextItem {
 export interface GuaranteesCardType {
   title: string;
   formattedContent: FormattedTextItem[];
+  titleBasis?: string;
+  contentBasis?: string;
 }

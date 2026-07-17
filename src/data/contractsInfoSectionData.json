@@ -1,0 +1,124 @@
+{
+  "title": "Служба за контрактом",
+  "subtitle": "Обирайте напрямок за вашим фахом і плануйте своє майбутнє без невизначеності",
+  "guarantee": {
+    "title": "Головні переваги контрактів",
+    "formattedContent": [
+      {
+        "id": "guarantee-bullet-1",
+        "children": [
+          {
+            "id": "b1-c1",
+            "text": "Чіткі терміни та відстрочка",
+            "color": "white",
+            "fontWeight": "bold",
+            "variant": "text"
+          },
+          {
+            "id": "b1-c2",
+            "text": " — служба триває ",
+            "color": "white",
+            "fontWeight": "normal",
+            "variant": "text"
+          },
+          {
+            "id": "b1-c3",
+            "text": "10, 14 або 24 місяці",
+            "color": "green",
+            "fontWeight": "bold",
+            "variant": "text"
+          },
+          {
+            "id": "b1-c4",
+            "text": " на ваш вибір, а після завершення контракту ви отримуєте від ",
+            "color": "white",
+            "fontWeight": "normal",
+            "variant": "text"
+          },
+          {
+            "id": "b1-c5",
+            "text": "6 місяців",
+            "color": "green",
+            "fontWeight": "bold",
+            "variant": "text"
+          },
+          {
+            "id": "b1-c6",
+            "text": " гарантованої відстрочки від мобілізації.",
+            "color": "white",
+            "fontWeight": "normal",
+            "variant": "text"
+          }
+        ]
+      },
+      {
+        "id": "guarantee-bullet-2",
+        "children": [
+          {
+            "id": "b2-c1",
+            "text": "Повна ясність до підписання",
+            "color": "white",
+            "fontWeight": "bold",
+            "variant": "text"
+          },
+          {
+            "id": "b2-c2",
+            "text": " — ви заздалегідь отримуєте чітке ",
+            "color": "white",
+            "fontWeight": "normal",
+            "variant": "text"
+          },
+          {
+            "id": "b2-c3",
+            "text": "розуміння умов служби",
+            "color": "green",
+            "fontWeight": "bold",
+            "variant": "text"
+          },
+          {
+            "id": "b2-c4",
+            "text": ", своїх майбутніх обов'язків та місця перебування ще до того, як ухвалите остаточне рішення та підпишете документи.",
+            "color": "white",
+            "fontWeight": "normal",
+            "variant": "text"
+          }
+        ]
+      },
+      {
+        "id": "guarantee-bullet-3",
+        "children": [
+          {
+            "id": "b3-c1",
+            "text": "Повага до вашого досвіду",
+            "color": "white",
+            "fontWeight": "bold",
+            "variant": "text"
+          },
+          {
+            "id": "b3-c2",
+            "text": " — можливість самостійно ",
+            "color": "white",
+            "fontWeight": "normal",
+            "variant": "text"
+          },
+          {
+            "id": "b3-c3",
+            "text": "обрати підрозділ і посаду",
+            "color": "green",
+            "fontWeight": "bold",
+            "variant": "text"
+          },
+          {
+            "id": "b3-c4",
+            "text": " відповідно до ваших цивільних навичок та пройти обов'язкове якісне навчання перед виходом на службу.",
+            "color": "white",
+            "fontWeight": "normal",
+            "variant": "text"
+          }
+        ]
+      }
+    ]
+  },
+  "buttonText": "Дізнатися більше",
+  "readMoreLink": "/"
+}

@@ -1,4 +1,5 @@
 export { ContactFormSection } from './ContactFormSection';
+export { ContractsInfoSection } from './ContractsInfoSection';
 export { FAQSection } from './FAQSection';
 export { Footer } from './Footer';
 export { GallerySection } from './GallerySection';

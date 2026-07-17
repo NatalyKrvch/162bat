@@ -2,6 +2,7 @@ import { type Metadata } from 'next';
 
 import { Section } from '@/components';
 import contactFormSectionData from '@/data/contactFormSectionData.json';
+import contractsInfoSectionData from '@/data/contractsInfoSectionData.json';
 import faqSectionData from '@/data/faqSectionData.json';
 import guaranteesSectionData from '@/data/guaranteesSectionData.json';
 import heroSectionData from '@/data/heroSectionData.json';
@@ -11,6 +12,7 @@ import rolesSectionData from '@/data/rolesSectionData.json';
 import stagesSectionData from '@/data/stagesSectionData.json';
 import {
   ContactFormSection,
+  ContractsInfoSection,
   FAQSection,
   GallerySection,
   GuaranteesSection,
@@ -44,6 +46,10 @@ const HomePage = () => {
 
       <Section id="roles" className="flex flex-col items-center gap-10">
         <RolesSection data={rolesSectionData} />
+      </Section>
+
+      <Section id="roles" className="flex flex-col items-center gap-10">
+        <ContractsInfoSection data={contractsInfoSectionData} />
       </Section>
 
       <Section id="stages" className="flex flex-col items-center gap-10">
